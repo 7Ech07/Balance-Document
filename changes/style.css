@@ -1,6 +1,6 @@
 @font-face { font-family: "TF2"; src: url('../fonts/TF2.ttf') format('truetype'); }
 @font-face { font-family: "TF2Secondary"; src: url('../fonts/TF2secondary.ttf') format('truetype'); }
-@font-face { font-family: "TF2Build"; src: url('../fonts/TF2build.ttf') format('truetype'); }
+@font-face { font-family: "tf2build"; src: url('../fonts/TF2build.ttf') format('truetype'); }
 @font-face { font-family: "Bevan"; src: url('../fonts/Bevan.ttf') format('truetype'); }
 
 body {
