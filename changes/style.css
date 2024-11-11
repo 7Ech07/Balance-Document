@@ -1,0 +1,36 @@
+@font-face { font-family: "TF2"; src: url('../fonts/TF2.ttf') format('truetype'); }
+@font-face { font-family: "TF2Secondary"; src: url('../fonts/TF2secondary.ttf') format('truetype'); }
+@font-face { font-family: "TF2Build"; src: url('../fonts/tf2build.ttf') format('truetype'); }
+@font-face { font-family: "Bevan"; src: url('../fonts/bevan.ttf') format('truetype'); }
+
+h1 {
+	font-family: Bevan;
+	font-size: 80px;
+	text-align: center;
+	color: #F4722B;
+	text-shadow: 3px 3px #FFD700;
+	margin: initial auto;
+}
+
+h2 {
+	font-family: TF2Build;
+	font-size: 34px;
+	text-align: center-left;
+	color: #F4722B;
+	text-shadow: 3px 3px #FFD700;
+	margin: initial auto;
+}
+
+/* Stat colors */
+.stat {
+	font-family: TF2Secondary;
+	font-size: 16px;
+	margin: 0px 7px;
+}
+.upside { color: #99CCFF; }
+.upside2 { color: #86b6e4; }
+.downside { color: #ff3434; }
+.downside2 { color: #e43a3a; }
+.neutral { color: #fdfcfa; }
+.neutral2 { color: #d9d9d9; }
+.subtle { color: #756B5E; }
