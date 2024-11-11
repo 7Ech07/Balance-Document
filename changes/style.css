@@ -4,7 +4,7 @@
 @font-face { font-family: "Bevan"; src: url('../fonts/bevan.ttf') format('truetype'); }
 
 body {
-  background-color: #302b25; /* Light grey with a hint of blue */
+	background-color: #302b25;
 }
 
 h1 {
@@ -22,6 +22,14 @@ h2 {
 	text-align: center-left;
 	color: #F4722B;
 	text-shadow: 3px 3px #FFD700;
+	margin: initial auto;
+}
+
+p {
+	font-family: TF2Secondary;
+	font-size: 16px;
+	text-align: center;
+	color: #ebe2ca;
 	margin: initial auto;
 }
 
