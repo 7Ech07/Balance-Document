@@ -20,8 +20,8 @@ h2 {
 	font-family: TF2Build;
 	font-size: 34px;
 	text-align: center-left;
-	color: #F4722B;
-	text-shadow: 3px 3px #FFD700;
+	color: #FFD700;
+	text-shadow: 3px 3px #141414;
 	margin: initial auto;
 }
 
@@ -36,7 +36,7 @@ p {
 /* Stat colors */
 .stat {
 	font-family: TF2Secondary;
-	font-size: 16px;
+	font-size: 24px;
 	margin: 0px 7px;
 }
 .upside { color: #99CCFF; }
