@@ -3,6 +3,10 @@
 @font-face { font-family: "TF2Build"; src: url('../fonts/tf2build.ttf') format('truetype'); }
 @font-face { font-family: "Bevan"; src: url('../fonts/bevan.ttf') format('truetype'); }
 
+body {
+  background-color: #302b25; /* Light grey with a hint of blue */
+}
+
 h1 {
 	font-family: Bevan;
 	font-size: 80px;
