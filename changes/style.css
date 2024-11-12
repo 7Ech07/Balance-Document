@@ -33,6 +33,12 @@ p {
 	margin: initial auto;
 }
 
+td img {
+  	width: 100px;
+  	height: 100px;
+ 	object-fit: cover;
+}
+
 /* Stat colors */
 .stat {
 	font-family: TF2Secondary;
