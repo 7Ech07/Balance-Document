@@ -39,6 +39,12 @@ td img {
  	object-fit: cover;
 }
 
+table {
+  width: 80%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
 /* Stat colors */
 .stat {
 	font-family: TF2Secondary;
