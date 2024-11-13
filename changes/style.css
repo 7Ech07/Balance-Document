@@ -40,6 +40,8 @@ a {
 
 .image-container {
   position: relative;
+  width: 100px; /* Adjust size as needed */
+  height: 100px; /* Adjust size as needed */
 }
 
 .image-container img {
