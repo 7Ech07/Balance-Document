@@ -82,7 +82,7 @@ td, .image-container, .image-container img {
 }
 
 img {
-  right: -100px;
+  right: 50px;
 }
 
 td img {
@@ -100,7 +100,6 @@ table {
 td {
   width: 100px; /* or your desired width */
   height: 100px; /* or your desired height */
-  text-align: center;
   vertical-align: middle;
 }
 
