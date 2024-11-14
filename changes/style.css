@@ -82,7 +82,7 @@ td, .image-container, .image-container img {
 }
 
 img {
-  right: -50px;
+  right: -100px;
 }
 
 td img {
@@ -109,7 +109,7 @@ td {
 	font-family: TF2Secondary;
 	font-size: 24px;
 	margin: 0px 7px;
-	text-align: center;
+	text-align: left;
 }
 .upside { color: #99CCFF; }
 .upside2 { color: #86b6e4; }
