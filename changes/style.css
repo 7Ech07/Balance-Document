@@ -7,6 +7,12 @@ body {
 	background-color: #302b25;
 }
 
+table {
+  width: auto;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
 h1 {
 	font-family: Bevan;
 	font-size: 80px;
