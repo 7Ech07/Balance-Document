@@ -39,6 +39,10 @@ a {
   vertical-align: middle;	
 }
 
+div {
+  text-align: center;
+}
+
 .image-container {
   position: relative;
   display: inline-block;
