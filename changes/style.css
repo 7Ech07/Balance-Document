@@ -35,7 +35,8 @@ p {
 
 /* Images */
 a {
-	text-decoration: none;
+  text-decoration: none;
+  vertical-align: middle;	
 }
 
 .image-container {
