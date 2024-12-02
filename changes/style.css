@@ -54,6 +54,7 @@ div {
   display: inline-block;
   width: 100px;
   height: 100px;
+  text-shadow: 1px 1px #141414;
 }
 
 .image-container img {
@@ -85,9 +86,15 @@ img {
   right: 0px;
 }
 
-td img {
+td.button img {
   	width: 100px;
   	height: 100px;
+ 	object-fit: cover;
+}
+
+td.weapon img {
+	max-width: 100%;
+	height: auto;
  	object-fit: cover;
 }
 
@@ -109,6 +116,7 @@ td {
 	font-size: 24px;
 	margin: 0px 7px;
 	text-align: left;
+	text-shadow: 1px 1px #141414;
 }
 .upside { color: #99CCFF; }
 .upside2 { color: #86b6e4; }
