@@ -31,6 +31,16 @@ h2 {
 	margin: initial auto;
 }
 
+h3 {		/* This is for the title card headings*/
+	font-family: TF2Build;
+	font-size: 28px;
+	text-align: center;
+	color: #FFD700;
+	margin: 0;          /* Removes the default margin */
+	padding: 0;         /* Removes the default padding */
+	line-height: 1.2;
+}
+
 p {
 	font-family: TF2Secondary;
 	font-size: 24px;
@@ -104,9 +114,10 @@ table {
   border-collapse: collapse;
 }
 
+
 td {
-  width: 100px; /* or your desired width */
-  height: 100px; /* or your desired height */
+  width: 100px;
+  height: 100px;
   vertical-align: middle;
 }
 
@@ -117,6 +128,7 @@ td {
 	margin: 0px 7px;
 	text-align: left;
 	text-shadow: 1px 1px #141414;
+	line-height: 1.2;
 }
 .upside { color: #99CCFF; }
 .upside2 { color: #86b6e4; }
@@ -125,3 +137,53 @@ td {
 .neutral { color: #fdfcfa; }
 .neutral2 { color: #d9d9d9; }
 .subtle { color: #756B5E; }
+
+ .container {
+      display: inline-block; /* Allows wrapping the rectangle neatly inside the td */
+    }
+
+.rounded-rectangle {
+	 width: 100%;
+	 height: auto;
+      background-color: #2b2724; /* Background colour */
+      border-radius: 50px; /* Radius for rounded corners */
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow */
+	 display: flex;
+	 flex-direction: row;
+	 margin: 20px;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column; /* Stacks items vertically within each column */
+      justify-content: center;
+    }
+
+.column.image img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover; /* Adjusts how the image fills its space */
+  margin: 20px;
+}
+
+    .column.text {
+      flex: 2;                /* Right column takes 2 portions of the width */
+      text-align: left;       /* Left-aligns the text */
+      color: #333;            /* Text colour */
+    }
+
+
+hr {
+  width: 60%;
+  opacity: 0.5;
+}
+
+a {
+  color: #F9DA3D;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #CF6A32;
+}

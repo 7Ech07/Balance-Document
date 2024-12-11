@@ -28,7 +28,7 @@
       </td>
 	</tr>
 	<tr>
-      <td colspan="1">
+      <td colspan="2">
         <ul>
           <li class="stat neutral"><b>Changes:</b></li>
           <ul><li class="stat upside">(+)
@@ -37,10 +37,12 @@
           </ul></li>
         </ul>
       </td>
-    <td colspan="1">
-	  <img src="../weapons/multiclass/weapons/Shotgun.png" alt="Shotgun"/>
-	</td>
 	</tr>
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
 
     <tr>
       <td colspan="2">
@@ -49,12 +51,12 @@
           This is maybe a bit petty, but it’s always annoyed me how projectile weapons have a left/right bias that you
           need to compensate for up close. Making projectiles always fire from the centre would be ugly and make it
           harder to shoot around corners, so I came up with this as a compromise that is hopefully minimally obtrusive.
-          I chose 200 HU since it’s the minimum distance at which projectile aim correction works.
+          I chose 200 HU since it’s the minimum distance at which <a href="https://www.youtube.com/watch?v=AUPBC5W1KHo&t=0s" target="_blank" title="Shounic's video on this topic">projectile aim correction</a> works.
         </p>
       </td>
 	</tr>
 	<tr>
-      <td colspan="1">
+      <td colspan="2">
         <ul>
           <li class="stat neutral"><b>Changes:</b></li>
           <ul><li class="stat neutral">(~)
@@ -63,9 +65,11 @@
           </ul></li>
         </ul>
       </td>
-    <td>
-	</td colspan="1">
-	</tr>
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
 
     <tr>
       <td colspan="2">
@@ -87,10 +91,17 @@
           </ul></li>
         </ul>
       </td>
-    <td>
-	</td colspan="1">
+	<td colspan="1">
+	  <img src="../weapons/multiclass/weapons/Shotgun.png" alt="Shotgun"/>
+	</td>
 	</tr>
-	
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+
 	<tr>
       <td colspan="2">
         <h2>Pistol</h2>
@@ -117,14 +128,20 @@
 	  <img src="../weapons/multiclass/weapons/Pistol.png" alt="Pistol"/>
 	</td>
 	</tr>
-	
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+
 	<tr>
       <td colspan="2">
         <h2>Reserve Shooter</h2>
         <p>
           This item is capable of shutting down blast jumping because the Mini-Crits don’t care whose 
-		  explosion was responsible for launching the target airborne. Additionally, it is somewhat outclassed 
-		  by the Panic Attack as the ‘combo Shotgun’ (especially on Pyro).
+		  explosion was responsible for launching the target airborne. I think the extent to which it does this is unhealthy. 
+		  Additionally, it is somewhat outclassed by the Panic Attack as the ‘combo Shotgun’ (especially on Pyro).
         </p>
 	   <p>
           To justify this weapon existing on Pyro, I gave it the ability to combo with the primaries like on
@@ -133,37 +150,120 @@
         </p>
       </td>
 	</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Prevent Mini-Crits on blast jumpers, 
+        and add another attribute to expand on the item’s identity
+      </li>
+      <li class="stat neutral"><b>Changes:</b>
+        <ul>
+          <li class="stat upside">(+)
+            Added: +20% more accurate
+          </li>
+          <li class="stat downside">(-)
+            Added: 20% damage penalty
+          </li>
+          <li class="stat downside">(-)
+            Only Mini-Crits targets launched by the user’s explosives
+            <ul>
+              <li class="stat downside2"><i>
+                This applies to reflected projectiles and the projectiles from the Flame Burst attack,
+                Phlogistinator and Dragon’s Fury (see Pyro section), but not Airblast
+              </i></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/multiclass/weapons/Pistol.png" alt="Reserve Shooter" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Reserve Shooter</h3>
+          <p class="stat subtle">
+            Shotgun
+          </p>
+		 <p class="stat upside">
+            Mini-Crits players launched airborne by your own explosives
+          </p>
+          <p class="stat upside">
+            20% more accurate
+          </p>
+          <p class="stat upside">
+            20% faster draw speed
+          </p>
+          <p class="stat downside">
+            20% damage penalty
+          </p>
+          <p class="stat downside">
+            -33% clip size penalty
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+      <td colspan="2">
+        <h2>Panic Attack</h2>
+        <p>
+          Whilst a vastly more competent weapon now, people have complained the modern iteration of the Panic Attack 
+		  loses much of the charm of the original. The current version also provides near-unreactable damage with its
+		  fast draw speed, which is a design I wouldn't mind moving away from.
+        </p>
+      </td>
+	</tr>
 	<tr>
       <td colspan="1">
         <ul>
-          <li class="stat neutral"><b>Goal:</b> Prevent Mini-Crits on blast jumpers, 
-		  and add another attribute to expand on the item’s identity</li>
-		 <li class="stat neutral"><b>Changes:</b></li>
+          <li class="stat neutral"><b>New Design</b> — Combine the original design with the usability of the current one </li>
           <ul><li class="stat upside">(+)
-            Added: +20% more accurate
+            +60% faster firing speed
           </ul></li>
-		<ul><li class="stat downside">(-)
-            Added: 20% damage penalty
+		<ul><li class="stat upside">(+)
+            This weapon reloads when not active
           </ul></li>
 		 <ul><li class="stat downside">(-)
-            Only Mini-Crits targets launched by the user’s explosives
-			<ul><li class="stat downside2"><i>
-				This applies to reflected projectiles and the projectiles from the Flame Burst attack,
-				Phlogistinator and Dragon’s Fury (see Pyro section), but not Airblast
-			</i></li></ul>
+            40% damage penalty
+          </ul></li>
+		<ul><li class="stat downside">(-)
+            50% clip size penalty
+          </ul></li>
+		<ul><li class="stat downside">(-)
+            30% wider horizontal spread
           </ul></li>
         </ul>
       </td>
     <td colspan="1">
 	</td>
 	</tr>
-	
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
 	<tr>
       <td colspan="2">
         <h2>B.A.S.E. Jumper</h2>
         <p>
-          This item isn’t very useful, especially after its nerf. While I do think it deserved to be looked at
-		  , I think the nerf went a bit too far.
+          This item isn’t very useful, especially after its nerf. While I do think it deserved to be looked at,
+		 I think the nerf went a bit too far.
         </p>
       </td>
 	</tr>
@@ -189,7 +289,13 @@
     <td colspan="1">
 	</td>
 	</tr>
-	
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+
 	<tr>
       <td colspan="2">
         <h2>Melee Combat</h2>
@@ -206,24 +312,32 @@
 		 <li class="stat neutral"><b>Changes:</b></li>
           <ul><li class="stat upside">(+)
             Added: Third successful hit in a row Crits
-          </ul></li>
+          </li>
 		  <ul><li class="stat upside2"><i>
 		    The degree of forgiveness is higher than what the Gunslinger currently has (the Gunslinger has 
 			a timer of 1 second between swings, so perhaps 1.5 seconds instead)
 	       </i></li></ul>
+		</ul>
           <ul><li class="stat upside">(+)
             Melee attacks now penetrate players, damaging all enemies in the path of the swing even if a 
 			teammate is in the way
-          </ul></li>
+          </li>
 		  <ul><li class="stat upside2"><i>
 		    Backstabs will still hit through teammates, but will only hit the enemy closest to the Spy
 	       </i></li></ul>
+		</ul>
         </ul>
       </td>
     <td colspan="1">
 	</td>
 	</tr>
-	
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+
 	<tr>
       <td colspan="2">
         <h2>Pain Train</h2>
