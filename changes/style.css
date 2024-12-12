@@ -138,39 +138,44 @@ td {
 .neutral2 { color: #d9d9d9; }
 .subtle { color: #756B5E; }
 
- .container {
-      display: inline-block; /* Allows wrapping the rectangle neatly inside the td */
-    }
-
 .rounded-rectangle {
-	 width: 100%;
-	 height: auto;
-      background-color: #2b2724; /* Background colour */
-      border-radius: 50px; /* Radius for rounded corners */
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow */
-	 display: flex;
-	 flex-direction: row;
-	 margin: 20px;
-    }
-
-    .column {
-      display: flex;
-      flex-direction: column; /* Stacks items vertically within each column */
-      justify-content: center;
-    }
-
-.column.image img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  object-fit: cover; /* Adjusts how the image fills its space */
-  margin: 20px;
+  background-color: #2b2724; /* Background colour */
+  border-radius: 50px; /* Radius for rounded corners */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow */
+  display: flex;
+  flex-direction: row;
+  margin: 20px; /* External margin */
+  padding: 10px; /* Internal padding */
 }
 
-    .column.text {
-      flex: 2;                /* Right column takes 2 portions of the width */
-      text-align: left;       /* Left-aligns the text */
-      color: #333;            /* Text colour */
-    }
+.column {
+  display: flex;
+  flex-direction: column; /* Stacks items vertically within each column */
+  justify-content: center; /* Centers content vertically */
+}
+
+.column.image {
+  flex: 1; /* Image column takes up 1 part of the space */
+  display: flex; /* Ensure the image is properly aligned */
+  justify-content: center; /* Center the image horizontally */
+  align-items: center; /* Center the image vertically */
+}
+
+.column.image img {
+  max-width: 100%; /* Cap width to the column's width */
+  max-height: 100%; /* Ensure the image doesn’t overflow */
+  object-fit: contain; /* Preserve aspect ratio within column */
+  margin: 0; /* Remove extra margins around the image */
+}
+
+.column.text {
+  flex: 2; /* Text column takes up 2 parts of the space */
+  padding-left: 15px; /* Add space between the image and the text */
+  text-align: left; /* Align text to the left */
+  color: #333; /* Text colour */
+}
 
 
 hr {
