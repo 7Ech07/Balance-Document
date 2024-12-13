@@ -38,6 +38,7 @@ h3 {		/* This is for the title card headings*/
 	color: #FFD700;
 	margin: 0;          /* Removes the default margin */
 	padding: 0;         /* Removes the default padding */
+	text-shadow: 1px 1px #141414;
 	line-height: 1.2;
 }
 
