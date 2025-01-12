@@ -13,30 +13,163 @@
 </h1>
 
 <table>
-  <tr id="hitscan">
-    <h2>
-      Frontier Justice
-    </h2>
-    <p>
-      TBD
-    </p>
-    <td>
-      <p>
-        <span class="stat upside">
-           TBD
-        </span>
-      </p>
-    </td>
-    <td>
+	<tr>
+      <td colspan="2">
+        <h2>Frontier Justice</h2>
+        <p>
+          The design of this weapon – trade some of your power normally for a boost when you would otherwise 
+		  be vulnerable – is interesting, but the current implementation creates some issues. In addition to
+		  being another weapon that can snowball off kills, enemies are often unable to tell if destroying any
+		  given Sentry will grant the Engie Crits, how many Crits the Engie gets, and whether or not he still
+		  has them when the weapon is stowed. I also dislike how the loadout system allows players to take advantage
+		  of the weapon's strength situationally without needing to engage with its downside.
+      </td>
+	</tr>
+	<tr>
+      <td colspan="1">
+        <ul>
+		<li class="stat neutral"><b>Goal:</b> Make the item more predictable to fight against, and incentivise
+		more active use of the shotgun
+		</li>
+		<li class="stat neutral"><b>Changes:</b>
+          <ul><li class="stat upside">
+            (+) Kills by the Engineer that are assisted by their Sentry grant 2 stored Crits (instead of 1)
+          </ul></li>
+		<ul><li class="stat downside">
+            (-) Only Sentries built while the weapon is equipped will store Revenge Crits
+		</li>
+		  <ul><li class="stat downside2"><i>
+			Sentries built with this weapon equipped will have a capacitor and antenna (similar to the device
+			on the gun) attached to them for the sake of telegraphing
+		  </ul></li></i>
+		  <ul><li class="stat downside2"><i>
+			If this Sentry dies while you have a different primary equipped, you still do not get Revenge Crits
+		  </ul></li></i>
+		</ul>
+		<ul><li class="stat downside">
+            (-) Revenge Crits have a 10 second timer on use after Sentry destruction, after which they will be
+			reset to 0
+          </ul></li>
+		<ul><li class="stat neutral">
+            (~) Destruction of a Sentry that would cause the Engineer to gain Revenge Crits causes him to play a voiceline
+          </ul></li>
+        </ul>
+      </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/scout/Frontier Justice.png" alt="Frontier Justice" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Frontier Justice</h3>
+          <p class="stat subtle">
+            Shotgun
+          </p>
+          <p class="stat upside">
+            Your Sentry stores 2 Revenge Crits for each Sentry kill or kills assisted by the Sentry, and 1 for each other Sentry assist when your Sentry is destroyed
+          </p>
+		<p class="stat downside">
+            -50% clip size
+          </p>
+		<p class="stat downside">
+            Revenge Crits are lost on death or after 10 seconds
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+	</tr>
 	
-    </td>
-  </tr>
-    <tbody>  <!-- Secondary changes -->
-      <p>
-        <span class="positive">
-			
-        </span>
-      </p>
-    </tbody>
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
   </table>
 </html>
+
+	<tr>
+      <td colspan="2">
+        <h2>Rescue Ranger</h2>
+        <p>
+         The last nerf to this item was intended to reduce its overall power due to the sheer amount of utility
+		 it provides. The change succeeded at this, but the item is still extremely powerful in defensive 
+		 scenarios because of how it significantly reduces risk to the Engineer. I think a more targeted change
+		 to address this problem would make the weapon more fair.
+      </td>
+	</tr>
+	<tr>
+      <td colspan="1">
+        <ul>
+		<li class="stat neutral"><b>Goal:</b> Make it more difficult to sustain buildings from safety
+		</li>
+		<li class="stat neutral"><b>Changes:</b>
+          <ul><li class="stat upside">
+            (+) Base damage increased to 50 (was 40)
+          </ul></li>
+		<ul><li class="stat upside">
+            (+) Repairs no longer cost Metal
+          </ul></li>
+		<ul><li class="stat upside">
+            (-) Ramp-up reduced to 120% (max damage unchanged)
+          </ul></li>
+		<ul><li class="stat downside">
+            (-) Healing is applied over time at a rate of 20 health/second
+		</li>
+		  <ul><li class="stat downside2"><i>
+			This effect can stack
+		  </ul></li></i>
+		</ul>
+		<ul><li class="stat downside">
+            (-) Buildings targeted by the Alt-fire undergo a brief deconstruction animation back into a toolbox
+			before being teleported to the Engineer
+		</li>
+            <ul><li class="stat downside2"><i>
+			Buildings deconstruct four times as fast as they take to build
+		  </ul></li></i>
+		  <ul><li class="stat downside2"><i>
+			The Engineer cannot pick up any other buildings during the deconstruction animation, and the building
+			will self-destruct if the Engineer dies during it
+		  </ul></li></i>
+		</ul>
+        </ul>
+      </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/scout/Rescue Ranger.png" alt="Rescue Ranger" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Rescue Ranger</h3>
+          <p class="stat subtle">
+            Modified Shotgun
+          </p>
+          <p class="stat upside">
+            Alt-fire: Use 100 Metal to pick up your targeted building from long range after a brief animation
+          </p>
+		<p class="stat upside">
+            Fires a special bolt that can repair friendly buildings
+          </p>
+		<p class="stat downside">
+            -34% clip size
+          </p>
+		<p class="stat downside">
+            -50% max primary ammo on wearer
+          </p>
+		<p class="stat downside">
+            Self Mark-for-Death when hauling buildings
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+	</tr>
