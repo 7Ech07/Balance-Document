@@ -23,6 +23,7 @@
 		  given Sentry will grant the Engie Crits, how many Crits the Engie gets, and whether or not he still
 		  has them when the weapon is stowed. I also dislike how the loadout system allows players to take advantage
 		  of the weapon's strength situationally without needing to engage with its downside.
+        </p>
       </td>
 	</tr>
 	<tr>
@@ -61,7 +62,7 @@
       <div class="rounded-rectangle">
         <!-- Left column -->
         <div class="column image">
-          <img src="../weapons/scout/Frontier Justice.png" alt="Frontier Justice" />
+          <img src="../weapons/engineer/Frontier Justice.png" alt="Frontier Justice" />
         </div>
         <!-- Right column -->
         <div class="column text">
@@ -90,9 +91,6 @@
   </td>
 </tr>
 
-  </table>
-</html>
-
 	<tr>
       <td colspan="2">
         <h2>Rescue Ranger</h2>
@@ -101,6 +99,7 @@
 		 it provides. The change succeeded at this, but the item is still extremely powerful in defensive 
 		 scenarios because of how it significantly reduces risk to the Engineer. I think a more targeted change
 		 to address this problem would make the weapon more fair.
+        </p>
       </td>
 	</tr>
 	<tr>
@@ -115,7 +114,7 @@
 		<ul><li class="stat upside">
             (+) Repairs no longer cost Metal
           </ul></li>
-		<ul><li class="stat upside">
+		<ul><li class="stat downside">
             (-) Ramp-up reduced to 120% (max damage unchanged)
           </ul></li>
 		<ul><li class="stat downside">
@@ -145,7 +144,7 @@
       <div class="rounded-rectangle">
         <!-- Left column -->
         <div class="column image">
-          <img src="../weapons/scout/Rescue Ranger.png" alt="Rescue Ranger" />
+          <img src="../weapons/engineer/Rescue Ranger.png" alt="Rescue Ranger" />
         </div>
         <!-- Right column -->
         <div class="column text">
@@ -173,3 +172,255 @@
     </div>
   </td>
 	</tr>
+	
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+	<tr>
+      <td colspan="2">
+        <h2>Wrangler</h2>
+        <p>
+         The current version of the Wrangler is extremely good at stalling pushes due to its ability to create a 
+		 600 health object that can waste the vast majority of an Über’s duration on its own. This ability also 
+		 requires fairly little effort from the Engineer player.
+        </p>
+        <p>
+		Removing the shield entirely would fix this problem, but it would also make the item really weak, 
+		as Sentries were tuned around the Engineer’s repair rate and can be quickly destroyed when not receiving
+		in-combat repairs. Something must be given in compensation for the shield.
+        </p>
+        <p>
+		Lifesteal on the Sentry still allows it to tank more damage, but it requires the Engineer to use the 
+		item for its intended purpose, and still leaves the Sentry vulnerable to the things it’s designed to be 
+		vulnerable to.
+        </p>
+      </td>
+	</tr>
+	<tr>
+      <td colspan="1">
+        <ul>
+		<li class="stat neutral"><b>Goal:</b> Reduce the stalling capabilities of this item
+		</li>
+		<li class="stat neutral"><b>Changes:</b>
+          <ul><li class="stat upside">
+            (+) Added: The Sentry heals 30% of the damage dealt while Wrangled
+          </ul></li>
+		<ul><li class="stat upside">
+            (+) While Wrangled, Sentry rocket fire rate is properly increased by 50%
+          </ul></li>
+		<ul><li class="stat upside">
+            (+) Un-Wrangling a Sentry only disables it for 1 second
+          </ul></li>
+		<ul><li class="stat downside">
+            (-) Removed: 66% damage and repair reduction on the Sentry while active
+		</li></ul>
+        </ul>
+      </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/engineer/Wrangler.png" alt="Wrangler" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Wrangler</h3>
+          <p class="stat subtle">
+            Laser Pointer
+          </p>
+          <p class="stat neutral">
+            Take manual control of your Sentry Gun. Wrangled Sentries restore 30% of the damage they deal as health.
+          </p>
+		<p class="stat neutral">
+            Sentries are disabled for 1 second after becoming un-wrangled.
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+	</tr>
+	
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+	<tr>
+      <td colspan="2">
+        <h2>Short Circuit</h2>
+        <p>
+         The previous rework of this item was intended to make it more skillful and more reliant on positioning and anticipation. 
+		 It was a resounding failure. The energy ball takes significantly less timing and effort to use than the old electrical
+		 field attack, while being able to cover a significant area for a whole two seconds at a time.
+        </p>
+        <p>
+		The general concept of the Short Circuit is questionable, both in terms of how it tries to negate one of the pillars of the game’s combat,
+		and in how it's largely restricted to fighting two classes. I’ve decided to de-emphasise projectile destruction and add other utilities.
+        </p>
+      </td>
+	</tr>
+	<tr>
+      <td colspan="1">
+        <ul>
+		<li class="stat neutral"><b>Goal:</b> New Design – Multi-purpose utility weapon that runs on Metal
+		</li>
+          <ul><li class="stat neutral">
+            (i) Fires a short-distance electrical arc
+          </li>
+		  <ul><li class="stat neutral2"><i>
+			This attack fires a hitscan beam with 500 HU of range that deals damage on contact with the collision
+			hull (making it a little more forgiving than normal hitscan)
+		  </ul></li></i>
+		  <ul><li class="stat neutral2"><i>
+			0.6 second cooldown
+		  </ul></li></i>
+		  <ul><li class="stat neutral2"><i>
+			Deals 15 damage
+		  </ul></li></i>
+		</ul>
+		<ul><li class="stat upside">
+            (+) Hold primary fire to charge the weapon, increasing damage and Metal cost. Fully-charged
+			shots destroy projectiles
+          </li>
+		  <ul><li class="stat upside2"><i>
+			Damage increases to 50
+		  </ul></li></i>
+		  <ul><li class="stat upside2"><i>
+			The projectile destruction uses a cylinder with more forgiveness than the hitscan trace (but
+			requires more precision than previous iterations of the weapon)
+		  </ul></li></i>
+		  <ul><li class="stat upside2"><i>
+			0.5 seconds to fully charge, another 0.5 seconds to overcharge (see below)
+		  </ul></li></i>
+		</ul>
+		<ul><li class="stat downside">
+            (-) Overcharging causes an explosion
+          </li>
+		  <ul><li class="stat upside2"><i>
+			The explosion occurs in front of the user (like detonating a Detonator flare point-blank) and deals
+			30 damage
+		  </ul></li></i>
+		</ul>
+		<ul><li class="stat downside">
+            (-) Uses Metal for ammo
+		</li></ul>
+		<ul><li class="stat downside">
+            (-) Per shot: 10–40 Metal
+		</li></ul>
+        </ul>
+      </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/engineer/Short Circuit.png" alt="Short Circuit" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Short Circuit</h3>
+          <p class="stat subtle">
+            Mechanical Arm
+          </p>
+          <p class="stat neutral">
+            Fires a short-distance electrical arc
+          </p>
+		<p class="stat neutral">
+           Hold to charge, increasing damage, and Metal cost
+          </p>
+		<p class="stat neutral">
+           Fully-charged shots destroy projectiles and explode in your hand when overcharged
+          </p>
+		<p class="stat neutral">
+           Uses Metal for ammo
+          </p>
+		<p class="stat neutral">
+           Per shot: 10-40 Metal
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+	</tr>
+	
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+	<tr>
+      <td colspan="2">
+        <h2>Gunslinger & Mini-Sentry</h2>
+        <p>
+         The Gunslinger is a somewhat polarising weapon. It's especially threatening to short-range classes who
+		 struggle to effectively kill the Mini-Sentries. However, the Minis are more of an annoyance than a threat
+		 to classes like Demo, and in my opinion the Gunslinger doesn't keep up with the Jag even for aggressive play.
+        </p>
+      </td>
+	</tr>
+	<tr>
+      <td colspan="1">
+        <ul>
+		<li class="stat neutral"><b>Goal:</b> Make the Mini-Sentry less annoying and more powerful
+		</li>
+		<li class="stat neutral"><b>Changes:</b>
+          <ul><li class="stat upside">
+            (+) Mini-Sentry base construction speed increased to pre-Gun Mettle levels
+          </li></ul>
+		<ul><li class="stat downside">
+            (-) Mini-Sentry bullets do not deal knockback or inflict flinch
+          </li></ul>
+		<ul><li class="stat downside">
+            (-) Mini-Sentry turn speed reduced to that of a Level 1 Sentry
+          </li></ul>
+		<ul><li class="stat downside">
+            (-) Mini-Sentry health reduced to 80
+          </li></ul>
+        </ul>
+      </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/engineer/Short Circuit.png" alt="Short Circuit" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Short Circuit</h3>
+          <p class="stat subtle">
+            Mechanical Arm
+          </p>
+          <p class="stat neutral">
+            Fires a short-distance electrical arc
+          </p>
+		<p class="stat neutral">
+           Hold to charge, increasing damage, and Metal cost
+          </p>
+		<p class="stat neutral">
+           Fully-charged shots destroy projectiles and explode in your hand when overcharged
+          </p>
+		<p class="stat neutral">
+           Uses Metal for ammo
+          </p>
+		<p class="stat neutral">
+           Per shot: 10-40 Metal
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+	</tr>
+	
+	
+  </table>
+</html>

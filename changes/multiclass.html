@@ -12,6 +12,35 @@
   </h1>
 
   <table>
+     <tr>
+      <td colspan="2">
+        <h2>Server Settings</h2>
+        <p>
+          I think most people who take interest in the game's balance already agree on these points, but I'm going
+		  to explain anyway. Random Crits are disruptive to gameplay because they cause engagements to end abruptly in
+		  unsatisfying ways, and they aren't effective at breaking stalemates. Random shotgun spread makes weapons behave
+		  somewhat unreliably at mid-close range. Fixed spread being a buff is only true in that particularly high-deviation
+		  shots being impossible means you stand slightly further back and still be confident you won't lose damage purely due to spread.
+		  I'm fine with this in the case of the Shotgun, and a random chance to do less damage isn't a sensible way of trying to keep
+		  Scout in check or whatever. Random fall damage also adds inconsistency and does not have a <i> single </i> redeeming quality.
+        </p>
+      </td>
+	</tr>
+	<tr>
+      <td colspan="2">
+        <ul>
+          <li class="stat neutral"><b>Changes:</b></li>
+          <ul><li class="stat neutral">(~)
+            Random Crits, random bullet spread on shotgun-type weapons and random fall damage are disabled by default (including in official servers)
+          </ul></li>
+        </ul>
+      </td>
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+  
     <tr>
       <td colspan="2">
         <h2>Hitscan Weapons</h2>
@@ -38,33 +67,6 @@
         </ul>
       </td>
 	</tr>
-<tr>
-  <td colspan="2">
-    <hr>
-  </td>
-</tr>
-
-    <tr>
-      <td colspan="2">
-        <h2>Projectile Weapons</h2>
-        <p>
-          This is maybe a bit petty, but it’s always annoyed me how projectile weapons have a left/right bias that you
-          need to compensate for up close. Making projectiles always fire from the centre would be ugly and make it
-          harder to shoot around corners, so I came up with this as a compromise that is hopefully minimally obtrusive.
-          I chose 200 HU since it’s the minimum distance at which <a href="https://www.youtube.com/watch?v=AUPBC5W1KHo&t=0s" target="_blank" title="Shounic's video on this topic">projectile aim correction</a> works.
-        </p>
-      </td>
-	</tr>
-	<tr>
-      <td colspan="2">
-        <ul>
-          <li class="stat neutral"><b>Changes:</b></li>
-          <ul><li class="stat neutral">(~)
-            When firing at a player within 200 HU, the projectile will be spawned out of the centre of the screen,
-            regardless of weapon or viewmodel location.
-          </ul></li>
-        </ul>
-      </td>
 <tr>
   <td colspan="2">
     <hr>
@@ -164,6 +166,60 @@
   </td>
 </tr>
 
+    <tr>
+      <td colspan="2">
+        <h2>Projectile Weapons</h2>
+        <p>
+          This is maybe a bit petty, but it’s always annoyed me how projectile weapons have a left/right bias that you
+          need to compensate for up close. Making projectiles always fire from the centre would be ugly and make it
+          harder to shoot around corners, so I came up with this as a compromise that is hopefully minimally obtrusive.
+          I chose 200 HU since it’s the minimum distance at which <a href="https://www.youtube.com/watch?v=AUPBC5W1KHo&t=0s" target="_blank" title="Shounic's video on this topic">projectile aim correction</a> works.
+        </p>
+      </td>
+	</tr>
+	<tr>
+      <td colspan="2">
+        <ul>
+          <li class="stat neutral"><b>Changes:</b></li>
+          <ul><li class="stat neutral">(~)
+            When firing at a player within 200 HU, the projectile will be spawned out of the centre of the screen,
+            regardless of weapon or viewmodel location.
+          </ul></li>
+        </ul>
+      </td>
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+    <tr>
+      <td colspan="2">
+        <h2>Explosives</h2>
+        <p>
+          I've experimented with other people's suggestions to reduce the power of explosive weapons previously, and the results have usually
+		  been fun. This change aims to reduce the margin of error the explosive classes have when fighting less durable opponents. Direct 
+		  hits will be as rewarded as they are now and explosives will still be useful for controlling space and punishing grouping up, but 
+		  damage falling off faster increases the margain of error for an opponent’s movement in a 1v1. On Soldier, this should discourage 
+		  exclusively trying to shoot the floor in 1v1s, and on Demo, it should force him to put a bit more effort into sticky spam to do the same damage.
+        </p>
+      </td>
+	</tr>
+	<tr>
+      <td colspan="2">
+        <ul>
+          <li class="stat neutral"><b>Changes:</b></li>
+          <ul><li class="stat neutral">(-)
+            Splash damage now falls off quadratically with distance rather than linearly (see graph)
+          </ul></li>
+        </ul>
+      </td>
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
 
 	<tr>
       <td colspan="2">
@@ -248,7 +304,7 @@
       <td colspan="2">
         <h2>Panic Attack</h2>
         <p>
-          Whilst a vastly more competent weapon now, people have complained the modern iteration of the Panic Attack 
+          Whilst a vastly more competent weapon now, people have complained that the modern iteration of the Panic Attack 
 		  loses much of the charm of the original. The current version also provides near-unreactable damage with its
 		  fast draw speed, which is a design I wouldn't mind moving away from.
         </p>
