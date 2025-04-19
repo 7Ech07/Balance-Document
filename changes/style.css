@@ -37,6 +37,7 @@ h3 {		/* This is for the title card headings*/
 	text-align: center;
 	color: #FFD700;
 	margin: 0;          /* Removes the default margin */
+	margin-bottom: 12px;
 	padding: 0;         /* Removes the default padding */
 	text-shadow: 1px 1px #141414;
 	line-height: 1.2;
@@ -97,6 +98,14 @@ img {
   right: 0px;
 }
 
+.home-button img {
+	position: fixed;
+	left: 20px;
+  	width: 80px;
+  	height: 80px;
+ 	object-fit: cover;
+}
+
 td.button img {
   	width: 100px;
   	height: 100px;
@@ -127,6 +136,7 @@ td {
 	font-family: TF2Secondary;
 	font-size: 24px;
 	margin: 0px 7px;
+	margin-bottom: 12px;
 	text-align: left;
 	text-shadow: 1px 1px #141414;
 	line-height: 1.2;
@@ -138,6 +148,7 @@ td {
 .neutral { color: #fdfcfa; }
 .neutral2 { color: #d9d9d9; }
 .subtle { color: #756B5E; }
+.subtle2 { color: #756B5E; text-align: center; }
 
 .rounded-rectangle {
   width: 100%;

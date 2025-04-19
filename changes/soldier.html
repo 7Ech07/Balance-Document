@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 
+<a href="../index.html" class="home-button">
+  <div class="image-container">
+    <img src="../resources/Home.png" class="normal" alt="Home"/>
+    <img src="../resources/Scout_inv.png" class="hover" alt="Home"/>
+  </div>
+</a>
+
 <head>
   <title>
     Home
@@ -13,30 +20,213 @@
 </h1>
 
 <table>
-  <tr id="direct hit">
-    <h2>
-      Direct Hit
-    </h2>
-    <p>
-      TBD    
-    </p>
-    <td>
-      <p>
-        <span class="stat upside">
-          TBD
-        </span>
-      </p>
-    </td>
-    <td>
-	
-    </td>
-  </tr>
-    <tbody>  <!-- Secondary changes -->
-      <p>
-        <span class="positive">
-			
-        </span>
-      </p>
-    </tbody>
-  </table>
+<tr>
+<td colspan="2">
+  <h2>
+    Direct Hit
+  </h2>
+  <p>
+   I think the extent to which the Direct Hit counters certain things is excessive. It one-shots Scout even up to the range where Scout needs four shots to
+   kill the Soldier, it deals massive damage to blast jumpers despite being already the easiest launcher to hit airshots with, and it can damage Sentries
+   from infinite range faster than they can be repaired.
+  </p>
+  <p>
+   However, the Direct Hit isn't exactly overpowered, so I can't just nerf it and leave it like that. I wanted to do something to partially alleviate the 
+   weapon's weaknesses without compromising its identity, and make the Mini-Crit more relevant.
+  </p>
+</td>
+</tr>
+<tr>
+ <td colspan="1">
+  <ul>
+  <li class="stat neutral"><b>Goal:</b> Remove the potential for one-shot kills and rebalance the weapon to compensate
+  </li>
+  <li class="stat neutral"><b>Changes:</b>
+	  <ul><li class="stat upside">
+		(+) Added: On impact, projectiles create a shockwave that pushes enemies away
+	    <ul></li><li class="stat upside2"><i>
+		  The shockwave is harmless, and has 66% of the radius and push force of a stock rocket's explosion
+		</ul></li></i>
+		<ul><li class="stat upside2"><i>
+		  Enemies launched airborne by the shockwave can be Mini-Crit airshot
+		</ul></li></i>
+		<ul><li class="stat upside2"><i>
+		  The push force of the shockwave does not stack with the actual damaging explosion (so shooting people in the feet does not send them into space)
+		</ul></li></i>
+	  </ul>
+	  <ul><li class="stat downside">
+		(-) Only Mini-Crits targets launched by the user’s explosives
+	  </li></ul>
+	  <ul><li class="stat downside">
+		(-) Ramp-up reduced to 110%
+	    <ul></li><li class="stat downside2"><i>
+	  	  Max damage of 124
+	    </ul></li></i>
+	  </ul>
+	  <ul><li class="stat downside">
+		(-) Damage bonus only applies against players
+	  </li></ul>
+   </li>
+	</ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/soldier/Direct Hit.png" alt="Direct Hit" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Direct Hit</h3>
+          <p class="stat subtle">
+            Rocket Launcher
+          </p>
+		<p class="stat upside">
+            25% damage bonus against players
+          </p>
+		<p class="stat upside">
+            +80% projectile speed
+          </p>
+		<p class="stat upside">
+            Rockets create a shockwave that pushes enemies away
+          </p>
+		<p class="stat upside">
+            Mini-Crits players launched airborne by your own explosives
+          </p>
+		<p class="stat downside">
+            -70% explosion radius
+          </p>
+		<p class="stat downside">
+            60% less close-range damage ramp-up
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>	
+ </tr>
+ 
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+<td colspan="2">
+  <h2>
+    Mantreads
+  </h2>
+  <p>
+   The Mantreads require a lot of setup to use, and even then are less lethal than the Market Gardener. To make them properly worth the secondary slot, I'm
+   adding a new mechanic that should increase the weapon's power, usability and versatility, while also being a lot of fun.
+  </p>
+</td>
+</tr>
+<tr>
+ <td colspan="1">
+  <ul>
+  <li class="stat neutral"><b>Goal:</b> Increase the lethality and useability of the stomp
+  </li>
+  <li class="stat neutral"><b>Changes:</b>
+	  <ul><li class="stat upside">
+		(+) Added: While airborne, hold jump to perform a slam, increasing your gravity and creating an explosion upon landing
+	    <ul></li><li class="stat upside2"><i>
+		  Jump must be held for 1 second to activate, and then the slam cannot be canceled out of
+		</ul></li></i>
+		<ul><li class="stat upside2"><i>
+		  The explosion deals double your fall damage at base in an area the size of a rocket explosion (which also damages any enemies you land directly on)
+		</ul></li></i>
+		<ul><li class="stat upside2"><i>
+		  Increased gravity increases your fall damage, and you can only avoid fall damage when landing on an enemy, so be careful!
+		</ul></li></i>
+	  </ul>
+	  <ul><li class="stat downside">
+		(-) Knockback resistance only applies when grounded
+	  </li></ul>
+	  <ul><li class="stat downside">
+		(-) Removed: 300% increased air control on wearer
+	  </li></ul>
+   </li>
+	</ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/soldier/Mantreads.png" alt="Mantreads" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Mantreads</h3>
+          <p class="stat subtle">
+            Boots
+          </p>
+		<p class="stat upside">
+            While airborne, hold Jump to slam down, creating an explosion on landing (force and damage scales with velocity)
+          </p>
+		<p class="stat upside">
+            Deals 3x falling damage to the player you land on
+          </p>
+		<p class="stat upside">
+            75% reduction in knockback while grounded
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>	
+ </tr>
+ 
+ <tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+
+<tr>
+  <td colspan="2">
+	<h2>Shovel</h2>
+	<p>
+	  Soldier's base melee attack rarely sees use because his other weapons do more damage and are already quite reliable up close. One of my goals is to
+	  alleviate utility melee power creep, so making the base melee more useful makes it easier to design meaningful alternatives to it.
+	</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+	<ul>
+	  <li class="stat neutral"><b>Changes:</b></li>
+	  <ul><li class="stat upside">
+		(+) Damage increased to 80
+	  </ul></li>
+	</ul>
+  </td>
+<td colspan="1">
+<div class="container">
+  <div class="rounded-rectangle">
+	<div class="column image">
+	  <img src="../weapons/soldier/Shovel.png" alt="Shovel" />
+	</div>
+	<div class="column text">
+	  <h3>Shovel</h3>
+	  <p class="stat subtle2">
+		Shovel
+	  </p>
+	</div>
+  </div>
+</div>
+</td>
+</tr>
+ 
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+</table>
 </html>

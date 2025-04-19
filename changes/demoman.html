@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 
+<a href="../index.html" class="home-button">
+  <div class="image-container">
+    <img src="../resources/Home.png" class="normal" alt="Home"/>
+    <img src="../resources/Scout_inv.png" class="hover" alt="Home"/>
+  </div>
+</a>
+
 <head>
   <title>
     Home
@@ -13,25 +20,70 @@
 </h1>
 
 <table>
-  <tr id="hitscan">
+<td colspan="2">
     <h2>
       Loch-n-Load
     </h2>
-    <p>
-      TBD 
-    </p>
-    <td>
-      <p>
-        <span class="stat upside">
-          TBD
-      </p>
-    </td>
-    <td>
-	
-    </td>
-  </tr>
+  <p>
+   It's not a terrible weapon, but I've never particularly cared for the Loch-n-Load's design. It's not as interesing as the Direct Hit because grenades already
+   require you to land direct hits. In practice, this is an easier-to-use Grenade Launcher, and I think it can be much cooler than that.
+  </p>
+  <p>
+   I decided to look back at the original design and try to come up with alternate ways to do burst damage without feeling like a simpler Loose Cannon.
+  </p>
+</td>
+<tr>
+<td colspan="1">
+  <ul>
+  <li class="stat neutral"><b>New Design -- </b>
+	  <ul><li class="stat upside">
+		(+) On impact, grenades prime your stickybombs to explode with Mini-Crit damage
+	  </li><ul><li class="stat upside2"><i>
+		Stickies charge up over 0.3 seconds, and then explode; stickies outside the radius of the bomb are left untouched
+		</ul></li></i>
+		<ul><li class="stat upside2"><i>
+		Stickies can be detonated before their arm time is finished, but doing so imposes a 25% damage penalty, which cancels out the Mini-Crit damage bonus
+		</ul></li></i>
+	  </ul>
+	  <ul><li class="stat downside">
+		(-) -50% clip size penalty
+	  </li></ul>
+	  <ul><li class="stat downside">
+		(-) Grenades shatter on impact
+	  </li></ul>
+   </li>
+   </ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/demoman/Loch-N-Load.png" alt="Loch-n-Load" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Loch-n-Load</h3>
+          <p class="stat subtle">
+            Grenade Launcher
+          </p>
+		<p class="stat upside">
+            On impact, grenades prime your stickybombs to explode with Mini-Crit damage
+          </p>
+		<p class="stat downside">
+            -50% clip size penalty
+          </p>
+		<p class="stat downside">
+            Grenades shatter on impact
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
   
-  <tr>
+<tr>
   <td colspan="2">
     <hr>
   </td>
@@ -137,7 +189,7 @@
 		</ul></li></i>
 	  </ul>
 	  <ul><li class="stat neutral">
-		(~) No longer detonates stickybombs under the user's feet
+		(~) No longer automatically detonates stickybombs under the user's feet
 	  </li></ul>
 	  <ul><li class="stat downside">
 		(-) Removed: Explosions destroy enemy stickybombs (now intrinsic to all explosives)
@@ -172,7 +224,7 @@
             Charging prepares up to 3 additional stickies at once
           </p>
 		<p class="stat upside">
-            This weapon reloads when not active
+            This weapon is slowly reloaded when not active
           </p>
 		<p class="stat downside">
             0.8 sec slower bomb arm time
@@ -198,16 +250,16 @@
     Quickiebomb Launcher
   </h2>
   <p>
-   The Quickie Launcher’s focus on charge shots is quite fun in my opinion, but the weapon lacks somewhat in power. I’m trying to remedy this by
-   focusing more on the precise delivery of powerful burst damage (so it’s analogous to the Direct Hit, and people like the Direct Hit so hopefully
-   this has the same appeal).
+   The Quickie Launcher’s focus on charge shots is quite fun in my opinion, but the weapon lacks a bit in power compared to stock. I’m trying
+   to remedy this by focusing more on the precise delivery of powerful burst damage (so it’s analogous to the Direct Hit, and people like the 
+   Direct Hit so hopefully this has the same appeal).
   </p>
 </td>
 </tr>
 <tr>
  <td colspan="1">
   <ul>
-  <li class="stat neutral"><b>Goal:</b> Make the weapon faster
+  <li class="stat neutral"><b>Goal:</b> 
   </li>
   <li class="stat neutral"><b>Changes:</b>
 	  <ul><li class="stat upside">

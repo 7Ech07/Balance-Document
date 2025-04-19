@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 
+<a href="../index.html" class="home-button">
+  <div class="image-container">
+    <img src="../resources/Home.png" class="normal" alt="Home"/>
+    <img src="../resources/Scout_inv.png" class="hover" alt="Home"/>
+  </div>
+</a>
+
 <head>
   <title>
     Home
@@ -53,6 +60,9 @@
 	  <ul><li class="stat upside">
 		(+) Projectile velocity increased to 1300 HU/s
 	  </li></ul>
+	  <ul><li class="stat upside">
+		(+) Syringes no longer have projectile deviation
+	  </li></ul>
 	  <ul><li class="stat downside">
 		(-) Clip reduced to 30
 	  </li></ul>
@@ -74,7 +84,7 @@
            Syringe Gun
           </p>
 		<p class="stat neutral">
-            Alt-fire: Spend 25 ammo to fire a special syringe that heals allies based on distance travelled and applies temporary health regeneration.
+            Alt-fire: Spend 30 ammo to fire a special syringe that heals allies based on distance travelled and applies temporary health regeneration.
           </p>
 		<p class="stat neutral">
             This weapon reloads while not active.
@@ -90,12 +100,124 @@
     <hr>
   </td>
 </tr>
-    <tbody>  <!-- Secondary changes -->
-      <p>
-        <span class="positive">
-			
-        </span>
-      </p>
-    </tbody>
+
+ <tr>
+<td colspan="2">
+  <h2>
+    Crusader's Crossbow
+  </h2>
+  <p>
+   The Syringe Gun changes demand that the Crossbow's identity be re-examined. Instead of damage for healing, I want the trade-off to be short-range
+   self-defence for mid-range offensive burst. With neither weapon being obviously better at doing Medic things, I hope there isn't any obligation to
+   pick one or the other.
+  </p>
+</td>
+</tr>
+<tr>
+ <td colspan="1">
+  <ul>
+  <li class="stat neutral"><b>Goal:</b> Bring the Crossbow to the level of the new Syringe Gun
+  </li>
+  <li class="stat neutral"><b>Changes:</b>
+	  <ul><li class="stat upside">
+		(+) On hit: Reveals enemy health to teammates for 2 seconds
+	  </li><li class="stat upside2"><i>
+		The alt-fire requires and consumes an entire clip
+		</li></i>
+	  </ul>
+	  <ul><li class="stat downside">
+		(-) Healing reduced to 25-50 health on hit (inversely proportional to distance) with a 2 second 25 HP/s regeneration buff
+	  </li></ul>
+	  <ul><li class="stat downside">
+		(-) Max ammo reduced to 10
+	  </li></ul>
+   </li>
+	</ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/medic/Syringe Gun.png" alt="Syringe Gun" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Crusader's Crossbow</h3>
+          <p class="stat subtle">
+           Crossbow
+          </p>
+		<p class="stat neutral">
+            Fires special bolts that heal teammates and deals damage based on distance traveled.
+          </p>
+		<p class="stat neutral">
+            This weapon will reload automatically when not active.
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>	
+ </tr>
+ 
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+<td colspan="2">
+  <h2>
+    Medi-Gun
+  </h2>
+  <p>
+   Given the changes to the Syringe Gun, I can't just leave the Medi-Gun as it is. I want to reduce its output to compensate for the primary healing, so
+   the Medic isn't putting out too much healing overall. The ability to keep multiple people overhealed at a time also outdoes what most classes are able to
+   bring to their team, and I think restricting overheal mainly to one person at a time would be 
+  </p>
+</td>
+</tr>
+<tr>
+ <td colspan="1">
+  <ul>
+  <li class="stat neutral"><b>Goal:</b> Make the Medic more active, and encourage flow between healing and hurting
+  </li>
+  <li class="stat neutral"><b>Changes:</b>
+	  <ul><li class="stat downside">
+		(-) Heal rate reduced to 18 HP/sec (was 24)
+	  </li></ul>
+	  <ul><li class="stat downside">
+		(-) Overheal depletes three times as fast when not actively being healed
+	  </li></ul>
+   </li>
+	</ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/medic/Syringe Gun.png" alt="Medi-Gun" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Medi-Gun</h3>
+          <p class="stat subtle">
+           Medi-Gun
+          </p>
+		<p class="stat neutral">
+            Alt-fire: Spend 25 ammo to fire a special syringe that heals allies based on distance travelled and applies temporary health regeneration.
+          </p>
+		<p class="stat neutral">
+            This weapon reloads while not active.
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>	
+ </tr>
+
   </table>
 </html>
