@@ -4,7 +4,7 @@
 <a href="../index.html" class="home-button">
   <div class="image-container">
     <img src="../resources/Home.png" class="normal" alt="Home"/>
-    <img src="../resources/Scout_inv.png" class="hover" alt="Home"/>
+    <img src="../resources/Home_inv.png" class="hover" alt="Home"/>
   </div>
 </a>
 
@@ -21,42 +21,595 @@
 
 <table>
 
+<tr>  <!-- Core Class -->
+  <td colspan="2">
+    <h2>
+      Core class
+    </h2>
+    <p>
+      Heavy being marginally slower than Soldier doesn't achieve anything. The very different properties of their respective primary weapons create a dramatic difference in mobility anyway. Letting Heavy have a ~4.3% increase in movement speed allows him to get around slightly faster without needing a Teleporter and chase people with a Shotgun or melee slightly more easily.
+    </p>
+  </td>
+</tr>
 <tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b>
+        <ul>
+          <li class="stat upside">
+            (+) Movement speed increased to 240 HU/s, matching Soldier (was 230)
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">      
+    <div class="container">
+
+    </div>
+  </td> 
+</tr> 
+
+<tr> <!-- Minigun -->
+  <td colspan="2">
+    <h2>
+      Minigun
+    </h2>
+    <p>
+      Heavy is one of the least-played classes in the game. I suspect the two main reasons for this are the lack of playstyle diversity, and the lack of dynamic gameplay. Playstyle diversity will mostly be handled by unlock changes, but I think making the Shotgun a more relevant part of Heavy gameplay would also help, alongside making Heavy more dynamic and increasing his skill cap.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> 
+      </li>
+      <li class="stat neutral"><b>Changes:</b>
+    	  <ul>
+          <li class="stat upside">
+    		    (+) Heavy can now holster the Minigun while revved
+    	    </li>
+        </ul>
+    	  <ul>
+          <li class="stat upside">
+    		    (+) The Minigun no longer secretly deals reduced damage to leveled Sentry Guns
+    	    </li>
+        </ul>
+    	  <ul>
+          <li class="stat neutral">
+    		    (~) The Minigun's damage is now split between 16 bullets per shot rather than 4
+    	    </li>
+          <ul>
+            <li class="stat neutral2">
+    		      <i>The bullets are distributed in a fixed spread pattern as follows — 1 in the centre and three rings of 5 each, each layer of the pattern equidistant from the neighbouring ones</i>
+    		    </li>
+          </ul>
+    	  </ul>
+    	  <ul>
+          <li class="stat downside">
+    		    (-) Damage lowered by 11% (max of 32 damage per burst, from 36)
+    	    </li>
+        </ul>
+      </li>
+  	</ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/heavy/Minigun.png" alt="Minigun" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Minigun</h3>
+          <p class="stat subtle">
+           Minigun
+          </p>
+		      <p class="stat neutral">
+            Must rev up before firing. Has reduced accuracy and damage output for 1 second after revving up.
+          </p>
+		      <p class="stat neutral">
+            Alt-fire: Rev up the weapon without firing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>	
+</tr>
+ 
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr> <!-- Tomislav -->
+  <td colspan="2">
+    <h2>
+      Tomislav
+    </h2>
+    <p>
+      This weapon suffers from being much too close to stock, such that choosing between this and stock is less an interesting decision to make and more mathematical optimisation. Its original identity involved using Silent Killer and faster spin-up (presumably) to ambush people, but with anything close to the Minigun's damage output this ends up being extremely unfair. The weapon was since watered down into what we have now. I want to take the ideas from various iterations of this weapon and implement them in a way that is interesting and creates a weapon with distinct strengths and weaknesses.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>New Design -</b> LMG-esque weapon that makes the Heavy less heavy and shifts some emphasis from planning and positioning to aim and movement 
+        <ul>
+          <li class="stat upside">
+            (+) 75% faster spin-up time
+          </li>
+        </ul>
+        <ul>
+          <li class="stat upside">
+            (+) Silent Killer: No barrel spin sound
+          </li>
+        </ul>
+        <ul>
+          <li class="stat upside">
+            (+) Does not deal reduced damage for the first second of being revved
+          </li>
+        </ul>
+        <ul>
+          <li class="stat neutral">
+            (~) Uses a different spread pattern with one pellet in the centre, five pellets in the inner ring and five in the outer ring
+          </li>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) -50 max health on wearer
+          </li>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) -31% fewer bullets per shot (11 bullets, down from 16)
+          </li>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) Cone of fire starts the same size as the Minigun and becomes more accurate as it fires, gradually becoming less accurate again after stopping
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/heavy/Tomislav.png" alt="Tomislav" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Tomislav</h3>
+          <p class="stat subtle">
+            Light Machine Gun
+          </p>
+          <p class="stat upside">
+            75% faster spin-up
+          </p>
+          <p class="stat upside">
+            Silent Killer: No barrel spin sound
+          </p>
+          <p class="stat downside">
+            -50 max health on wearer
+          </p>
+          <p class="stat downside">
+            -31% fewer bullets per shot
+          </p>
+          <p class="stat downside">
+            -20% slower firing speed
+          </p>
+          <p class="stat neutral">
+            Does not have reduced damage immediately after revving up. Accuracy increases when continuously firing.
+          </p>
+        </div>
+      </div>
+    </div>
+  </td> 
+</tr>
+ 
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr> <!-- Huo-Long Heater -->
+  <td colspan="2">
+    <h2>
+      Huo-Long Heater
+    </h2>
+    <p>
+      The flame ring from this item is difficult to take advantage of and, when it does work, the extra damage is complete overkill at a range where the Minigun intrinsically does 400-500 DPS. Additionally, its other main gimmick relies on the mechanic of another class. This item is fundamentally flawed and in need of a rework.
+    </p>
+    <p>
+      The goal of this rework is to give Heavy something new. Projectiles on Heavy are a simple but rather interesting concept. A (relatively) fast-firing projectile weapon could be close enough to the Miniguns to feel like it fits the class, but different enough to have its own distinct strengths and weaknesses.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>New Design – </b> Projectile-based Firework Launcher
+        <ul>
+          <li class="stat neutral">
+            (~) Shoots firework rockets instead of bullets
+          </li>
+          <ul>
+            <li class="stat neutral2">
+              <i>Fireworks have a base of 70 damage with 120% damage ramp-up and normal (50%) damage fall-off</i>
+            </li>
+            <li class="stat neutral2">
+              <i>Fireworks have a 0.45 second attack interval</i>
+            </li>
+          </ul>
+          <ul>
+            <li class="stat neutral2">
+              <i>Fireworks explode on impact with a blast radius the same size as that of the Detonator, but the explosion will not push the Heavy himself</i>
+            </li>
+          </ul>
+          <ul>
+            <li class="stat neutral2">
+              <i>Fireworks travel at 1500 HU/s (Liberty Launcher speed), have the same size and hitbox size as flares, and fizzle after travelling 1000 HU (0.67 seconds in-flight)</i>
+            </li>
+          </ul>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) -60% primary ammo on wearer
+          </li>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) 50% damage penalty against buildings
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/heavy/Huo_Long_Heater.png" alt="Huo-Long Heater"/>
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Huo-Long Heater</h3>
+          <p class="stat subtle">
+            Firework Launcher
+          </p>
+          <p class="stat neutral">
+            Shoots explosive firework projectiles
+          </p>
+          <p class="stat downside">
+            -60% primary ammo on wearer
+          </p>
+          <p class="stat downside">
+            50% damage penalty against buildings
+          </p>
+        </div>
+      </div>
+    </div>
+  </td> 
+</tr>
+ 
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr> <!-- Lunchboxes -->
+  <td colspan="2">
+    <h2>
+      All Lunchbox items
+    </h2>
+    <p>
+      The Lunchbox items are very strong. Arguably the main reason is not what they do for the Heavy himself but because they allow him to heal other people (particularly Medic). I want to redistribute some power from the Medic pairing into Heavy's base kit and I also want to make the Shotguns a more appealing choice, so I think Heavy can do without an easily-replenishable supply of extra health kits for his Medic.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b>
+        <ul>
+          <li class="stat neutral">
+            (~) If the Heavy dies holding a Lunchbox, it is dropped as a health kit alongside the ammo box
+          </li>
+          <ul>
+            <li class="stat neutral2">
+              <i>Currently, the dropped ammo box restores 50 health (or 75 to Scout) instead of ammo</i>
+            </li>
+          </ul>
+          <ul>
+            <li class="stat neutral2">
+              <i>This is because ammo was obtained from dropped weapons once upon a time, and Valve thought it made more sense for the Sandvich to give health instead, but this carried over even after the switch to players dropping proper ammo boxes on death</i>
+            </li>
+          </ul>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) Lunchboxes now heal a percentage of the Heavy's max health rather than a flat amount
+          </li>
+          <ul>
+            <li class="stat downside2">
+              <i>This prevents effects that reduce the Heavy's max health from enabling foods with reduced healing amounts being able to heal the Heavy to full more easily</i>
+            </li>
+          </ul>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) Lunchboxes can no longer be recharged by collecting health packs
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/heavy/Sandvich.png" alt="Sandvich"/>
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>The Sandvich</h3>
+          <p class="stat subtle">
+            Edible Device
+          </p>
+          <p class="stat neutral">
+            Eat to regain up to 100% max health
+          </p>
+          <p class="stat neutral">
+            Alt-fire: Share Sandvich with a friend (Medium Health Kit)
+          </p>
+        </div>
+      </div>
+    </div>
+  </td> 
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr> <!-- Dalokohs Bar -->
+  <td colspan="2">
+    <h2>
+      Dalokohs Bar
+    </h2>
+    <p>
+      The Dalokohs Bar has been largely outclassed by the Sandvich since it came out, and is now even more outclassed by the Second Banana. It's rather inconvenient for something that's meant to be consumed pre-emptively before a fight, and as a post-fight heal it's strictly worse than its alternatives. Additionally, the buff has no visual effect. The buff could be converted to overheal, which <i>does</i> have a visual and is a lot more intuitive, so we’ll do that as well.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b>
+        <ul>
+          <li class="stat upside">
+            (+) Added: 50% shorter eating animation
+          </li>
+          <ul>
+            <li class="stat upside2">
+              <i>Healing rate doubled so the item still restores 33% health total over its duration</i>
+            </li>
+          </ul>
+        </ul>
+        <ul>
+          <li class="stat neutral">
+            (+) Changed: Instead of a max health increase, health from this item overheals
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/heavy/Dalokohs_Bar.png" alt="Dalokohs Bar"/>
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Dalokohs Bar</h3>
+          <p class="stat subtle">
+            Edible Device
+          </p>
+          <p class="stat upside">
+            100% faster consumption speed
+          </p>
+          <p class="stat upside">
+            200% faster recharge rate
+          </p>
+          <p class="stat neutral">
+            Eat to gain up to 33% max health that can overheal
+          </p>
+          <p class="stat neutral">
+            Alt-fire: Share chocolate with a friend (Small Health Kit)
+          </p>
+        </div>
+      </div>
+    </div>
+  </td> 
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr> <!-- Buffalo Steak Sandvich -->
+  <td colspan="2">
+    <h2>
+      Buffalo Steak Sandvich
+    </h2>
+    <p>
+      This item is very tricky to balance. Being locked into melee combat is a huge risk, especially since the Heavy lacks any engagement tools, but giving the Heavy enough buffs to adequately make up for not having the Minigun out would be unfun to play against. The game already has a dedicated melee brawler playstyle in Demoknight (and Pyro's not far off despite not technically being melee), and both of these have entire loadouts that provide options they can take advantage of. I think making Steak Heavy comparable as a pure melee playstyle is a fool's errand, so I want to try something different.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Shift the focus of the item into being a short-duration, situational surprise option</li>
+      <li class="stat neutral"><b>Changes:</b></li>
+        <ul>
+          <li class="stat upside">
+            (+) Added: Restores up to 100% health on consumption
+          </li>
+        </ul>
+        <ul>
+          <li class="stat upside">
+            (+) Added: 200% faster recharge (10 second cooldown)
+          </li>
+        </ul>
+        <ul>
+          <li class="stat upside">
+            (+) Removed: 20% damage vulnerability after eating
+          </li>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) Duration reduced to 8 seconds (was 16)
+          </li>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) Counts as a small health kit when dropped
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/heavy/Buffalo_Steak_Sandvich.png" alt="Buffalo Steak Sandvich"/>
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Buffalo Steak Sandvich</h3>
+          <p class="stat subtle">
+            Edible Device
+          </p>
+          <p class="stat upside">
+            200% faster recharge rate
+          </p>
+          <p class="stat neutral">
+            Eat to regain up to 100% max health
+          </p>
+          <p class="stat neutral">
+            After consuming, gain Mini-Crits and increased movement speed, but become restricted to melee. Lasts 8 seconds.
+          </p>
+          <p class="stat neutral">
+            Alt-fire: Share steak with a friend (Small Health Kit)
+          </p>
+        </div>
+      </div>
+    </div>
+  </td> 
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr> <!-- Second Banana -->
+  <td colspan="2">
+    <h2>
+      Second Banana
+    </h2>
+    <p>
+      The Small Health Kit buff and Sandvich nerf are both ultimately to the Banana's benefit. It's already a very competitive option and I'm concerned it'll become the king of Lunchboxes if left untouched.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Reduce the raw efficiency of the Banana compared to the Sandvich</li>
+      <li class="stat neutral"><b>Changes:</b></li>
+        <ul>
+          <li class="stat downside">
+            (-) Healing reduced to 50% of max (was 200 HP or 66.6%)
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/heavy/Second_Banana.png" alt="Second Banana"/>
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Second Banana</h3>
+          <p class="stat subtle">
+            Edible Device
+          </p>
+          <p class="stat upside">
+            200% faster recharge rate
+          </p>
+          <p class="stat neutral">
+            Eat to regain up to 50% max health
+          </p>
+        </div>
+      </div>
+    </div>
+  </td> 
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr> <!-- Fists -->
 <td colspan="2">
   <h2>
-    Minigun
+    Fists
   </h2>
   <p>
-   Heavy is one of the least-played classes in the game. I suspect the two main reasons for this are the lack of playstyle diversity, and the
-   lack of dynamic gameplay. Playstyle diversity will mostly be handled by unlock changes, but I think making the Shotgun a more relevant part
-   of Heavy gameplay would also help, alongside making Heavy more dynamic and increasing his skill cap.
+    Heavy is probably the biggest offender when it comes to underwhelming stock melees. He's too slow and his primary too cumbersome to go for punches, and enemies have little reason to engage <i>him</i> at melee range because that's where his ranged weapons are already most effective. I expect the other stock Heavy changes to help out with this, but the Fists themselves could do with an improvement to make them more of an actual option.
   </p>
 </td>
 </tr>
 <tr>
  <td colspan="1">
-  <ul>
-  <li class="stat neutral"><b>Goal:</b> Bring the Crossbow to the level of the new Syringe Gun
-  </li>
   <li class="stat neutral"><b>Changes:</b>
 	  <ul><li class="stat upside">
-		(+) Heavy can now swap weapons while revved
-	  </li></ul>
-	  <ul><li class="stat upside">
-		(+) Accuracy is no longer reduced for the first second after revving up
-	  </li></ul>
-	  <ul><li class="stat upside">
-		(+) The Minigun no longer deals reduced damage to leveled Sentry Guns
-	  </li></ul>
-	  <ul><li class="stat neutral">
-		(~) The Minigun's damage is now split between 12 bullets per shot rather than 4
-	  </li><li class="stat neutral2"><i>
-		The bullets are distributed in a fixed spread pattern as follows -- 1 in the centre, 5 in a small ring around it, and 6 in a larger ring around that
-		</li></i>
-	  </li>
-	  </ul>
-	  <ul><li class="stat downside">
-		(-) Damage lowered by 11% (max of 32 damage per burst, from 36)
+		  (+) Damage increased to 80
 	  </li></ul>
    </li>
 	</ul>
@@ -67,19 +620,13 @@
       <div class="rounded-rectangle">
         <!-- Left column -->
         <div class="column image">
-          <img src="../weapons/medic/Syringe Gun.png" alt="Syringe Gun" />
+          <img src="../weapons/heavy/Fists.png" alt="Fists"/>
         </div>
         <!-- Right column -->
         <div class="column text">
-          <h3>Minigun</h3>
+          <h3stock>Fists</h3stock>
           <p class="stat subtle">
-           Minigun
-          </p>
-		<p class="stat neutral">
-            Must rev up before firing.
-          </p>
-		<p class="stat neutral">
-            Alt-fire: Rev up the weapon without firing to prepare for incoming enemies.
+            Fists
           </p>
         </div>
       </div>
@@ -87,6 +634,366 @@
   </td>	
  </tr>
  
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr> <!-- Killing Gloves of Boxing -->
+  <td colspan="2">
+    <h2>
+      Killing Gloves of Boxing
+    </h2>
+    <p>
+      The KGB is largely a direct upgrade to stock. However, this means little in practice because the KGB's upside is also tremendously situational. I run this weapon full-time and yet in the majority of my games it contributes nothing. I have an idea for an attribute that can hopefully address both.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Change the downside to one that's more meaningful but can help bait enemies into melee</li>
+      <li class="stat neutral"><b>Changes:</b></li>
+      <ul>
+        <li class="stat upside">
+          (+) Removed: 20% slower firing speed
+        </li>
+      </ul>
+      <ul>
+        <li class="stat downside">
+          (-) Added: While deployed, incoming melee attacks will Crit
+        </li>
+        <ul>
+          <li class="stat downside2">
+            This effect will not wear off until you have another weapon fully deployed
+          </li>
+        </ul>
+      </ul>
+  	</ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/heavy/Killing_Gloves_of_Boxing.png" alt="Killing Gloves of Boxing" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Killing Gloves of Boxing</h3>
+          <p class="stat subtle">
+            Boxing Gloves
+          </p>
+		      <p class="stat upside">
+            On kill: Gain 5 seconds of Critical Hits
+          </p>
+		      <p class="stat downside">
+            While deployed: Incoming melee attacks will deal Critical damage
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>	
+</tr>
+ 
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr> <!-- Gloves of Running Urgently -->
+  <td colspan="2">
+    <h2>
+      Gloves of Running Urgently
+    </h2>
+    <p>
+      The current version of the GRU is quite elegant and adds a fair cost to the bursts of speed it gives you. However, it remains arguably second-best-in-slot because there's not much of an actual downside to choosing to <i>equip</i> this item over one of the combat-focused ones. In the context of Heavy's base melee attack sometimes being a viable option, it is fair for this weapon to take that option away as a downside.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b></li>
+      <ul>
+        <li class="stat downside">
+          (-) Added: 50% damage penalty (40 damage)
+        </li>
+      </ul>
+    </ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/heavy/Gloves_of_Running_Urgently.png" alt="Gloves of Running Urgently" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Gloves of Running Urgently</h3>
+          <p class="stat subtle">
+            Boxing Gloves
+          </p>
+          <p class="stat upside">
+            +30% faster move speed on wearer
+          </p>
+          <p class="stat downside">
+            50% damage penalty
+          </p>
+          <p class="stat downside">
+            This weapon holsters 50% slower
+          </p>
+          <p class="stat downside">
+            Maximum health is drained while item is active
+          </p>
+        </div>
+      </div>
+    </div>
+  </td> 
+</tr>
+ 
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr> <!-- Warrior's Spirit -->
+  <td colspan="2">
+    <h2>
+      Warrior's Spirit
+    </h2>
+    <p>
+      This weapon has a reputation for being worst-in-slot and one of the worst in the game. While I think that reputation is not <i>entirely</i> deserved, it still doesn't bring that much to the table for people interested in a more melee-focused playstyle. It also cannot be allowed to retain its existing damage bonus else it would one-shot people when paired with the Steak, so it needs compensation.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b></li>
+        <ul>
+          <li class="stat upside">
+            (+) Health on kill increased to 150
+          </li>
+        </ul>
+        <ul>
+          <li class="stat upside">
+            (+) Removed: 30% damage vulnerability while active
+          </li>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) Damage bonus reduced to 15% (92 damage; was 85)
+          </li>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) Added: Honorbound: Stowing this weapon deals 100 damage to yourself unless it kills
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/heavy/Warriors_Spirit.png" alt="Warrior's Spirit"/>
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Warrior's Spirit</h3>
+          <p class="stat subtle">
+            Bear Hands
+          </p>
+          <p class="stat upside">
+            15% damage bonus
+          </p>
+          <p class="stat upside">
+            +150 health restored on kill
+          </p>
+          <p class="stat downside">
+            Honorbound: Stowing this weapon deals 100 damage to yourself unless it kills
+          </p>
+        </div>
+      </div>
+    </div>
+  </td> 
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr> <!-- Fists of Steel -->
+  <td colspan="2">
+    <h2>
+      Fists of Steel
+    </h2>
+    <p>
+      Valve’s last nerf to this item only does anything in specific scenarios, and the Fists of Steel still allow you to tank "unreasonably large" amounts of damage at very little cost.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b></li>
+        <ul>
+          <li class="stat upside">
+            (+) Health on kill increased to 150
+          </li>
+        </ul>
+        <ul>
+          <li class="stat upside">
+            (+) Removed: 30% damage vulnerability while active
+          </li>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) Damage bonus reduced to 15% (92 damage; was 85)
+          </li>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) Added: Honorbound: Stowing this weapon deals 100 damage to yourself unless it kills
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/heavy/Warriors_Spirit.png" alt="Warrior's Spirit"/>
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Warrior's Spirit</h3>
+          <p class="stat subtle">
+            Bear Hands
+          </p>
+          <p class="stat upside">
+            15% damage bonus
+          </p>
+          <p class="stat upside">
+            +150 health restored on kill
+          </p>
+          <p class="stat downside">
+            Honorbound: Stowing this weapon deals 100 damage to yourself unless it kills
+          </p>
+        </div>
+      </div>
+    </div>
+  </td> 
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <h2>
+      Eviction Notice
+    </h2>
+    <p>
+      This weapon is underused compared to the GRU because it fills the same purpose, only worse. It's simply never going to work as long as it shares the GRU's identity, so I'm going to give it a unique one by leaning into the speed on hit.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>New Design – </b>Opener and combo tool for aggressive, Shotgun-wielding Heavies</li>
+        <ul>
+          <li class="stat upside">
+            (+) On deploy: Gain a speed boost for 3 seconds
+          </li>
+        </ul>
+        <ul>
+          <li class="stat upside">
+            (+) On hit: Gain a speed boost for 3 seconds
+          </li>
+        </ul>
+        <ul>
+          <li class="stat upside">
+            (+) On hit: Inflict Bleed for 5 seconds
+          </li>
+          <ul>
+            <li class="stat upside2">
+              <i>The Bleed will not re-proc the speed</i>
+            </li>
+          </ul>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) Mafiabound: When holstered or when a speed boost effect wears off, become stunned for 2 seconds if you did not land a hit
+          </li>
+          <ul>
+            <li class="stat downside2">
+              <i>The 'stun' is a 50% slow combined with the debuff the current Razorback applies when broken</i>
+            </li>
+          </ul>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) -50% damage penalty (40 damage)
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/heavy/Eviction_Notice.png" alt="Eviction Notice"/>
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Eviction Notice</h3>
+          <p class="stat subtle">
+            Brass Knuckles
+          </p>
+          <p class="stat upside">
+            On deploy: Gain a speed boost for 3 seconds
+          </p>
+          <p class="stat upside">
+            On hit: Gain a speed boost for 3 seconds
+          </p>
+          <p class="stat upside">
+            On hit: Inflict Bleed for 5 seconds
+          </p>
+          <p class="stat downside">
+            Mafiabound: When holstered or when a speed boost effect wears off, become stunned for 2 seconds if you did not land a hit
+          </p>
+          <p class="stat downside">
+            -50% damage penalty
+          </p>
+        </div>
+      </div>
+    </div>
+  </td> 
+</tr>
+
 <tr>
   <td colspan="2">
     <hr>

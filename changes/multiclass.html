@@ -4,7 +4,7 @@
 <a href="../index.html" class="home-button">
   <div class="image-container">
     <img src="../resources/Home.png" class="normal" alt="Home"/>
-    <img src="../resources/Scout_inv.png" class="hover" alt="Home"/>
+    <img src="../resources/Home_inv.png" class="hover" alt="Home"/>
   </div>
 </a>
 
@@ -18,85 +18,151 @@
     Multi-Class
   </h1>
 
-  <table>
-     <tr>
-      <td colspan="2">
-        <h2>Server Settings</h2>
-        <p>
-          I think most people who take interest in the game's balance already agree on these points, but I'm going
-		  to explain anyway. Random Crits are disruptive to gameplay because they cause engagements to end abruptly in
-		  unsatisfying ways, and they aren't effective at breaking stalemates. Random shotgun spread makes weapons behave
-		  somewhat unreliably at mid-close range. Fixed spread being a buff is only true in that particularly high-deviation
-		  shots being impossible means you stand slightly further back and still be confident you won't lose damage purely due to spread.
-		  I'm fine with this in the case of the Shotgun, and a random chance to do less damage isn't a sensible way of trying to keep
-		  Scout in check or whatever. Random fall damage also adds inconsistency and does not have a <i> single </i> redeeming quality.
-        </p>
-      </td>
-	</tr>
-	<tr>
-      <td colspan="1">
-        <ul>
-          <li class="stat neutral"><b>Changes:</b></li>
-          <ul><li class="stat neutral">(~)
-            Random Crits, random bullet spread on shotgun-type weapons and random fall damage are disabled by default (including in official servers)
-          </ul></li>
-        </ul>
-      </td>
-<tr>
+<table>
+
+<tr>  <!-- Server Settings -->
   <td colspan="2">
-    <hr>
+	<h2>Server Settings</h2>
+	<p>
+	  I think most people who take interest in the game's balance already agree on these points, but I'm going
+	  to explain anyway. Random Crits are disruptive to gameplay because they cause engagements to end abruptly in
+	  unsatisfying ways, and they aren't effective at breaking stalemates. Random shotgun spread makes weapons behave
+	  somewhat unreliably at mid-close range. Fixed spread being a buff is only true in that particularly high-deviation
+	  shots being impossible means you stand slightly further back and still be confident you won't lose damage purely due to spread.
+	  I'm fine with this in the case of the Shotgun, and a random chance to do less damage isn't a sensible way of trying to keep
+	  Scout in check or whatever. Random fall damage also adds inconsistency and does not have a <i>single</i> redeeming quality in my eyes.
+	</p>
   </td>
 </tr>
-  
-    <tr>
-      <td colspan="2">
-        <h2>Hitscan Weapons</h2>
-        <p>
-          Most hitscan weapons have a 1.25 second cooldown after firing before the weapon becomes perfectly accurate
-          again (Shotguns and Miniguns have a 0.25 second cooldown instead). For some reason, the accuracy stays bad for
-          the entire 1.25 seconds and suddenly becomes perfect again, instead of gradually becoming more accurate as you
-          would intuitively expect.
-        </p>
-        <p>
-          This is mostly just relevant to the Revolvers (except the Ambassador, which already has this). The other
-          weapons are getting it for the sake of consistency.
-        </p>
-      </td>
-	</tr>
-	<tr>
-      <td colspan="1">
-        <ul>
-          <li class="stat neutral"><b>Changes:</b></li>
-          <ul><li class="stat upside">(+)
-            Accuracy on hitscan weapons steadily improves the longer you wait between shots, reaching perfect accuracy
-            after 1.0 seconds.
-          </ul></li>
-        </ul>
-      </td>
-	</tr>
+<tr>
+  <td colspan="1">
+	<ul>
+	  <li class="stat neutral"><b>Changes:</b></li>
+	  <ul><li class="stat neutral">
+	  (~) Random Crits, random bullet spread on shotgun-type weapons and random fall damage are disabled by default (including in official servers)
+	  </ul></li>
+	</ul>
+  </td>
+</tr>
+
 <tr>
   <td colspan="2">
     <hr>
   </td>
 </tr>
 
-    <tr>
-      <td colspan="2">
-        <h2>Shotgun</h2>
-        <p>
-          For some bizarre reason, there are four (technically five) variants of the stock Shotgun in the game’s code,
-          and some of them have slightly different stats. Soldier and Pyro have a slightly slower reload on their stock
-          Shotguns than Heavy and Engineer. None of their reload speeds also align correctly with the reload speeds of
-          any of the unlocks (according to the Wiki, at least). It’s minor, but there’s no reason for this to be a thing.
-        </p>
-      </td>
-	</tr>
+<tr>  <!-- Scoreboard -->
+  <td colspan="2">
+    <h2>
+      Scoreboard
+    </h2>
+    <p>
+     The Scoreboard is a little janky and a bit inconsistent in how it allocates points sometimes. It doesn't reward everything I think it should, and some things
+     get rewarded more heavily than I think is reasonable. While this technically isn't related to the balance of the game, I wanted to comment on it anyway since 
+     it's something that's always annoyed me.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Make Support points more intuitive, and make the Scoreboard a more accurate reflection of value
+      </li>
+      <li class="stat neutral"><b>Changes:</b>
+    	  <ul><li class="stat neutral">
+    		  (~) Sources of Healing no longer give additional Support points, and sources of Support points no longer give additional Bonus points
+    	  </li></ul>
+    	  <ul><li class="stat neutral">
+    		  (~) Every 250 Support points increases your score by 1
+    	  </li></ul>
+    	  <ul><li class="stat neutral">
+    		  (~) Damage blocked by ÜberCharge or the Battalion's Backup grants Support points (1 per 4 damage blocked)
+    	  </li></ul>
+    	  <ul><li class="stat neutral">
+    		  (~) Increased damage dealt by teammates under the effects of the Kritzkreig grants Support points to the Medic (1 per 4 critical damage dealt)
+    	  </li></ul>
+    	  <ul><li class="stat neutral">
+    		  (~) Reflecting a projectile grants Support points equal to its base damage (debuffing jar projectiles will instead give 50 Support)
+    	  </li></ul>
+    	  <ul><li class="stat neutral">
+    		  (~) Extinguishing a teammate gives Support points based on the remaining duration of Afterburn (scaling from 0 to 100; was always 250)
+    	  </li></ul>
+    	  <ul><li class="stat neutral">
+    		  (~) Destroying a Stickybomb grants 25 Support points, or 75 if it's a Crit Sticky
+    	  </li></ul>
+    	  <ul><li class="stat neutral">
+    		  (~) Teammate healing from thrown Lunchboxes is credited to the healer's Healing score rather than Support score
+    	  </li></ul>
+    	  <ul><li class="stat neutral">
+    		  (~) Dispensing ammo grants 25 Support points per tick of ammo dispensed per teammate
+    	  </li></ul>
+    	  <ul><li class="stat neutral">
+    		  (~) Killing a Medic grants Support points equal to 5 times the Medic's Über percentage (was 500 when dropping a whole Über and 0 otherwise)
+    	  </li></ul>
+    	  <ul><li class="stat neutral">
+    		  (~) Huntsman headshot kills no longer grant Bonus or Support points
+    	  </li></ul>
+    	  <ul><li class="stat neutral">
+    		  (~) Damage dealt to Sapped Sentries by teammates grants Support points to the Spy (1 per 1 damage dealt)
+    	  </li></ul>
+      </li>
+	  </ul>
+  </td>
+</tr>
+ 
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+  
+<tr>  <!-- Hitscan Weapons -->
+  <td colspan="2">
+	<h2>Hitscan Weapons</h2>
+	<p>
+	  Most hitscan weapons have a 1.25 second cooldown after firing before the weapon becomes perfectly accurate
+	  again (Shotguns and Miniguns have a 0.25 second cooldown instead). For some reason, the accuracy stays equally bad for
+	  the entire 1.25 seconds and suddenly becomes perfect again, instead of gradually becoming more accurate as you
+	  would intuitively expect.
+	</p>
+	<p>
+	  This is mostly just relevant to the Revolvers (except the Ambassador, which already has this). The other
+	  weapons are getting it for the sake of consistency.
+	</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+	<ul>
+	  <li class="stat neutral"><b>Changes:</b></li>
+	  <ul><li class="stat upside">
+	  (+) Accuracy on hitscan weapons steadily improves the longer you wait between shots, reaching perfect accuracy
+		after 1.0 seconds.
+	  </ul></li>
+	</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Shotgun -->
+  <td colspan="2">
+    <h2>Shotgun</h2>
+    <p>
+      For some bizarre reason, there are four (technically five counting the one used for Strange/Unique) variants of the stock Shotgun in the game’s code, and some of them have slightly different stats. Soldier and Pyro have a slightly slower reload on their stock Shotguns than Heavy and Engineer. None of their reload speeds also align correctly with the reload speeds of any of the unlocks (according to the Wiki, at least). It’s minor, but there’s no reason for this to be a thing.
+    </p>
+  </td>
+</tr>
 	<tr>
       <td colspan="1">
         <ul>
           <li class="stat neutral"><b>Changes:</b></li>
-          <ul><li class="stat neutral">(~)
-            Reload speed for the first shell of all variants standardised at 1.0 seconds.
+          <ul><li class="stat neutral">
+		        (~) Reload speed for the first shell of all variants standardised at 1.0 seconds.
           </ul></li>
         </ul>
       </td>
@@ -110,15 +176,15 @@
         </div>
         <!-- Right column -->
         <div class="column text">
-          <h3>Shotgun</h3>
-          <p class="stat subtle2">
+          <h3stock>Shotgun</h3stock>
+          <p class="stat subtle">
             Shotgun
           </p>
         </div>
       </div>
     </div>
   </td>
-	</tr>
+</tr>
 	
 <tr>
   <td colspan="2">
@@ -127,28 +193,26 @@
 </tr>
 
 
-	<tr>
-      <td colspan="2">
-        <h2>Pistol</h2>
-        <p>
-          This is much more commonly known, but Engineer’s Pistol also has different stats to Scout’s. 
-		 This also has no reason to be a thing. 
-        </p>
-      </td>
-	</tr>
-	<tr>
-      <td colspan="1">
-        <ul>
-          <li class="stat neutral"><b>Changes:</b></li>
-          <ul><li class="stat upside">(+)
-            Reload speed standardised at 1.005 seconds (buff to Engineer, no change to Scout)
-          </ul></li>
-		<ul><li class="stat neutral">(~)
-            Reserve ammo standardised at 48 (big nerf to Engineer, Scout gets an extra mag, and a few more 
-			bullets from ammo sources)
-          </ul></li>
-        </ul>
-      </td>
+<tr>  <!-- Pistol -->
+    <td colspan="2">
+      <h2>Pistol</h2>
+      <p>
+        This is much more commonly known, but Engineer’s Pistol also has different stats to Scout’s. This also has no reason to be a thing. 
+      </p>
+    </td>
+</tr>
+<tr>
+    <td colspan="1">
+      <ul>
+        <li class="stat neutral"><b>Changes:</b></li>
+        <ul><li class="stat upside">
+          (+) Reload speed standardised at 1.005 seconds (buff to Engineer, no change to Scout)
+        </ul></li>
+	      <ul><li class="stat downside">
+          (-) Reserve ammo standardised at 36 (big nerf to Engineer, no change to Scout)
+        </ul></li>
+      </ul>
+    </td>
   <td colspan="1">
     <!-- Stat card -->
     <div class="container">
@@ -159,15 +223,15 @@
         </div>
         <!-- Right column -->
         <div class="column text">
-          <h3>Pistol</h3>
-          <p class="stat subtle2">
+          <h3stock>Pistol</h3stock>
+          <p class="stat subtle">
             Pistol
           </p>
         </div>
       </div>
     </div>
   </td>
-	</tr>
+</tr>
 	
 <tr>
   <td colspan="2">
@@ -175,27 +239,28 @@
   </td>
 </tr>
 
-    <tr>
-      <td colspan="2">
-        <h2>Projectile Weapons</h2>
-        <p>
-          This is maybe a bit petty, but it’s always annoyed me how projectile weapons have a left/right bias that you
-          need to compensate for up close. Making projectiles always fire from the centre would be ugly and make it
-          harder to shoot around corners, so I came up with this as a compromise that is hopefully minimally obtrusive.
-          I chose 200 HU since it’s the minimum distance at which <a href="https://www.youtube.com/watch?v=AUPBC5W1KHo&t=0s" target="_blank" title="Shounic's video on this topic">projectile aim correction</a> works.
-        </p>
-      </td>
-	</tr>
-	<tr>
-      <td colspan="1">
-        <ul>
-          <li class="stat neutral"><b>Changes:</b></li>
-          <ul><li class="stat neutral">(~)
-            When firing at a player within 200 HU, the projectile will be spawned out of the centre of the screen,
-            regardless of weapon or viewmodel location.
-          </ul></li>
-        </ul>
-      </td>
+<tr>  <!-- Projectile Weapons -->
+  <td colspan="2">
+    <h2>Projectile Weapons</h2>
+    <p>
+      This is maybe a bit petty, but it’s always annoyed me how projectile weapons have a left/right bias that you
+      need to compensate for up close. Making projectiles always fire from the centre would be ugly and make it
+      harder to shoot around corners, so I came up with this as a compromise that is hopefully minimally obtrusive.
+      I chose 200 HU since it’s the minimum distance at which <a href="https://www.youtube.com/watch?v=AUPBC5W1KHo&t=0s" target="_blank" title="Shounic's video on this topic">projectile aim correction</a> works.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b></li>
+      <ul><li class="stat neutral">(~)
+        When firing at a player within 200 HU, the projectile will be spawned out of the centre of the screen,
+        regardless of weapon or viewmodel location.
+      </ul></li>
+    </ul>
+  </td>
+</tr>
 	  
 <tr>
   <td colspan="2">
@@ -203,27 +268,24 @@
   </td>
 </tr>
 
-    <tr>
-      <td colspan="2">
-        <h2>Explosives</h2>
-        <p>
-          I've experimented with other people's suggestions to reduce the power of explosive weapons previously, and the results have usually
-		  been fun. This change aims to reduce the margin of error the explosive classes have when fighting less durable opponents. Direct 
-		  hits will be as rewarded as they are now and explosives will still be useful for controlling space and punishing grouping up, but 
-		  damage falling off faster increases the margain of error for an opponent’s movement in a 1v1. On Soldier, this should discourage 
-		  exclusively trying to shoot the floor in 1v1s, and on Demo, it should force him to put a bit more effort into sticky spam to do the same damage.
-        </p>
-      </td>
-	</tr>
-	<tr>
-      <td colspan="1">
-        <ul>
-          <li class="stat neutral"><b>Changes:</b></li>
-          <ul><li class="stat neutral">(-)
-            Splash damage now falls off quadratically with distance rather than linearly (see graph)
-          </ul></li>
-        </ul>
-      </td>
+<tr>  <!-- Explosives -->
+  <td colspan="2">
+    <h2>Explosives</h2>
+    <p>
+      I've experimented with other people's suggestions to reduce the power of explosive weapons previously, and the results have usually been fun. This change aims to reduce the margin of error the explosive classes have when fighting less durable opponents. Direct hits will be as rewarded as they are now and explosives will still be useful for controlling space and punishing grouping up, but damage falling off faster increases the margain of error for an opponent’s movement in a 1v1. On Soldier, this should discourage exclusively trying to shoot the floor in 1v1s, and on Demo, it should force him to put a bit more effort into sticky spam to do the same damage.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b></li>
+      <ul><li class="stat neutral">(-)
+        Splash damage now falls off quadratically with distance rather than linearly (see graph)
+      </ul></li>
+    </ul>
+  </td>
+</tr>
 	  
 <tr>
   <td colspan="2">
@@ -420,39 +482,40 @@
 </tr>
 
 
-	<tr>
-      <td colspan="2">
-        <h2>Melee Combat</h2>
-        <p>
-          Users of melee complain that swings are often eaten by teammates since the game prioritises them
-		  over enemies for some reason. While we're here, I'd also like to add something to spice up melee
-		  a bit in a world without Random Crits. 
-        </p>
-      </td>
-	</tr>
-	<tr>
-      <td colspan="2">
-        <ul>
-		 <li class="stat neutral"><b>Changes:</b></li>
-          <ul><li class="stat upside">(+)
-            Added: Third successful hit in a row Crits
-          </li>
-		  <ul><li class="stat upside2"><i>
-		    The degree of forgiveness is higher than what the Gunslinger currently has (the Gunslinger has 
-			a timer of 1 second between swings, so perhaps 1.5 seconds instead)
-	       </i></li></ul>
-		</ul>
-          <ul><li class="stat upside">(+)
-            Melee attacks now penetrate players, damaging all enemies in the path of the swing even if a 
-			teammate is in the way
-          </li>
-		  <ul><li class="stat upside2"><i>
-		    Backstabs will still hit through teammates, but will only hit the enemy closest to the Spy
-	       </i></li></ul>
-		</ul>
+<tr>  <!-- Melee Combat -->
+  <td colspan="2">
+    <h2>Melee Combat</h2>
+    <p>
+      Users of melee complain that swings are often eaten by teammates since the game prioritises them over enemies for some reason. While we're here, I'd also like to add something to spice up melee a bit in a world without Random Crits. 
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b></li>
+        <ul><li class="stat upside">
+          (+) Added: Third successful hit in a row Crits
+        </li>
+          <ul><li class="stat upside2"><i>
+            The degree of forgiveness is higher than what the Gunslinger currently has (the Gunslinger has a timer of 1 second between swings, so perhaps 1.5 seconds instead)
+          </i></li></ul>
+          <ul><li class="stat upside2"><i>
+            Melees that currently have No Random Crits — including all of Spy's Knives — will instead be unable to get combo Crits from this mechanic
+          </i></li></ul>
         </ul>
-      </td>
-	</tr>
+        <ul><li class="stat upside">
+          (+) Melee attacks now penetrate players, damaging all enemies in the path of the swing, even if a teammate is in the way
+        </li>
+          <ul><li class="stat upside2"><i>
+            Backstabs will still hit through teammates, but will only hit the enemy closest to the Spy
+          </i></li>
+        </ul>
+      </ul>
+    </ul>
+  </td>
+</tr>
+
 <tr>
   <td colspan="2">
     <hr>
@@ -555,7 +618,7 @@
   </td>
 	</tr>
 	
-  </table>
+</table>
 </body>
 
 </html>

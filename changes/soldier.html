@@ -4,7 +4,7 @@
 <a href="../index.html" class="home-button">
   <div class="image-container">
     <img src="../resources/Home.png" class="normal" alt="Home"/>
-    <img src="../resources/Scout_inv.png" class="hover" alt="Home"/>
+    <img src="../resources/Home_inv.png" class="hover" alt="Home"/>
   </div>
 </a>
 
@@ -20,54 +20,82 @@
 </h1>
 
 <table>
-<tr>
-<td colspan="2">
-  <h2>
-    Direct Hit
-  </h2>
-  <p>
-   I think the extent to which the Direct Hit counters certain things is excessive. It one-shots Scout even up to the range where Scout needs four shots to
-   kill the Soldier, it deals massive damage to blast jumpers despite being already the easiest launcher to hit airshots with, and it can damage Sentries
-   from infinite range faster than they can be repaired.
-  </p>
-  <p>
-   However, the Direct Hit isn't exactly overpowered, so I can't just nerf it and leave it like that. I wanted to do something to partially alleviate the 
-   weapon's weaknesses without compromising its identity, and make the Mini-Crit more relevant.
-  </p>
-</td>
+
+<tr>  <!-- Base Stats -->
+  <td colspan="2">
+    <h2>
+      Base Stats
+    </h2>
+    <p>
+      The Gunboats are often considered Soldier’s strongest secondary overall, especially in higher-skill environments. This is because Soldier takes a high amount of damage from rocket jumping, and the Gunboats help alleviate this and let Soldier be more independent. Transferring some power from the Gunboats to the rest of Soldier would help encourage more diversity in secondary weapons.
+    </p>
+  </td>
 </tr>
 <tr>
- <td colspan="1">
-  <ul>
-  <li class="stat neutral"><b>Goal:</b> Remove the potential for one-shot kills and rebalance the weapon to compensate
-  </li>
-  <li class="stat neutral"><b>Changes:</b>
-	  <ul><li class="stat upside">
-		(+) Added: On impact, projectiles create a shockwave that pushes enemies away
-	    <ul></li><li class="stat upside2"><i>
-		  The shockwave is harmless, and has 66% of the radius and push force of a stock rocket's explosion
-		</ul></li></i>
-		<ul><li class="stat upside2"><i>
-		  Enemies launched airborne by the shockwave can be Mini-Crit airshot
-		</ul></li></i>
-		<ul><li class="stat upside2"><i>
-		  The push force of the shockwave does not stack with the actual damaging explosion (so shooting people in the feet does not send them into space)
-		</ul></li></i>
-	  </ul>
-	  <ul><li class="stat downside">
-		(-) Only Mini-Crits targets launched by the user’s explosives
-	  </li></ul>
-	  <ul><li class="stat downside">
-		(-) Ramp-up reduced to 110%
-	    <ul></li><li class="stat downside2"><i>
-	  	  Max damage of 124
-	    </ul></li></i>
-	  </ul>
-	  <ul><li class="stat downside">
-		(-) Damage bonus only applies against players
-	  </li></ul>
-   </li>
-	</ul>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b>
+        <ul><li class="stat upside">
+          (+) Changed: Self-damage resistance increased to 50% (from 40%)
+           <ul></li><li class="stat upside2"><i>
+            This will not affect rocket jump height
+        </ul></li></i>
+      </li>
+    </ul>
+  </td> 
+ </tr>
+ 
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Direct Hit -->
+  <td colspan="2">
+    <h2>
+      Direct Hit
+    </h2>
+    <p>
+      I think the extent to which the Direct Hit counters certain things is excessive. It one-shots Scout even up to the range where Scout needs four shots to kill the Soldier, it deals massive damage to blast jumpers despite being already the easiest launcher to hit airshots with, and it can damage Sentries from infinite range faster than they can be repaired.
+    </p>
+    <p>
+      However, the Direct Hit isn't exactly overpowered, so I can't just nerf it and leave it like that. I wanted to do something to partially alleviate the weapon's weaknesses without compromising its identity, and make the Mini-Crit more relevant.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Remove the potential for one-shot kills and rebalance the weapon to compensate
+      </li>
+      <li class="stat neutral"><b>Changes:</b>
+    	  <ul><li class="stat upside">
+    		  (+) Added: On impact, projectiles create a shockwave that pushes enemies away
+    	     <ul></li><li class="stat upside2"><i>
+    		    The shockwave is harmless, and has 66% of the radius and push force of a stock rocket's explosion
+    		  </ul></li></i>
+    		<ul><li class="stat upside2"><i>
+    		  Enemies launched airborne by the shockwave can be Mini-Crit airshot
+    		</ul></li></i>
+    		<ul><li class="stat upside2"><i>
+    		  The push force of the shockwave does not stack with the actual damaging explosion (so shooting people in the feet does not send them into space)
+    		</ul></li></i>
+    	  </ul>
+    	  <ul><li class="stat downside">
+    		  (-) Only Mini-Crits targets launched by the user’s explosives
+    	  </li></ul>
+    	  <ul><li class="stat downside">
+    		  (-) Ramp-up reduced to 110%
+    	    <ul></li><li class="stat downside2"><i>
+    	  	  Max damage of 124
+    	    </ul></li></i>
+    	  </ul>
+    	  <ul><li class="stat downside">
+    		  (-) Damage bonus only applies against players
+    	  </li></ul>
+      </li>
+  	</ul>
   </td>
   <td colspan="1">
     <!-- Stat card -->
@@ -83,29 +111,29 @@
           <p class="stat subtle">
             Rocket Launcher
           </p>
-		<p class="stat upside">
+	        <p class="stat upside">
             25% damage bonus against players
           </p>
-		<p class="stat upside">
+	        <p class="stat upside">
             +80% projectile speed
           </p>
-		<p class="stat upside">
+     	    <p class="stat upside">
             Rockets create a shockwave that pushes enemies away
           </p>
-		<p class="stat upside">
+     	    <p class="stat upside">
             Mini-Crits players launched airborne by your own explosives
           </p>
-		<p class="stat downside">
+	        <p class="stat downside">
             -70% explosion radius
           </p>
-		<p class="stat downside">
+	        <p class="stat downside">
             60% less close-range damage ramp-up
           </p>
         </div>
       </div>
     </div>
   </td>	
- </tr>
+</tr>
  
 <tr>
   <td colspan="2">
@@ -113,16 +141,437 @@
   </td>
 </tr>
 
+<tr>  <!-- Rocket Jumper -->
+  <td colspan="2">
+    <h2>
+      Rocket Jumper
+    </h2>
+    <p>
+      This is a quality-of-life change, both for the Soldier, and so Trolldiers don’t take packs that could be going to other people.
+    </p>
+  </td>
+</tr>
 <tr>
-<td colspan="2">
-  <h2>
-    Mantreads
-  </h2>
-  <p>
-   The Mantreads require a lot of setup to use, and even then are less lethal than the Market Gardener. To make them properly worth the secondary slot, I'm
-   adding a new mechanic that should increase the weapon's power, usability and versatility, while also being a lot of fun.
-  </p>
-</td>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b></li>
+      <ul>
+        <li class="stat upside">
+          (+) “+200% max primary ammo on wearer” replaced with “infinite reserve ammo”
+        </li>
+      <ul>
+    </ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/soldier/Rocket_Jumper.png" alt="Rocket Jumper" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Rocket Jumper</h3>
+          <p class="stat subtle">
+            Training Rocket Launcher
+          </p>
+          <p class="stat upside">
+            Infinite reserve ammo
+          </p>
+          <p class="stat upside">
+            No self inflicted blast damage taken
+          </p>
+          <p class="stat downside">
+            -100% damage penalty
+          </p>
+          <p class="stat downside">
+            Wearer cannot carry the intelligence briefcase or PASS Time JACK
+          </p>
+        </div>
+      </div>
+    </div>
+  </td> 
+</tr>
+ 
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Liberty Launcher -->
+  <td colspan="2">
+    <h2>
+      Liberty Launcher
+    </h2>
+    <p>
+      This weapon lacks a concrete identity and tries to compensate for its crippling downside with multiple random and somewhat unsynergestic upsides. The closest thing I think it has to an identity is being a primary you specifically run alongside a Shotgun, so that's the direction I'm going to push it much harder into.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>New Design</b> — Light, mid-range and utility-focused Rocket Launcher</li>
+      <ul>
+        <li class="stat upside">
+          (+) 20% increased push force
+        </li>
+        <ul>
+          <li class="stat upside2">
+            <i>This applies to both enemies and yourself</i>
+          </li>
+        </ul>
+        <li class="stat upside">
+          (+) -30% self-damage when rocket jumping
+        </li>
+        <li class="stat upside">
+          (+) 40% increased projectile speed
+        </li>
+        <li class="stat downside">
+          (-) No damage ramp-up
+        </li>
+        <li class="stat downside">
+          (-) 30% slower firing speed
+        </li>
+      </ul>
+    </ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/soldier/Liberty_Launcher.png" alt="Liberty Launcher" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Liberty Launcher</h3>
+          <p class="stat subtle">
+            Rocket Launcher
+          </p>
+          <p class="stat upside">
+            20% increased push force
+          </p>
+          <p class="stat upside">
+            -30% self-damage when rocket jumping
+          </p>
+          <p class="stat upside">
+            40% increased projectile speed
+          </p>
+          <p class="stat downside">
+            No damage ramp-up
+          </p>
+          <p class="stat downside">
+            30% slower firing speed
+          </p>
+        </div>
+      </div>
+    </div>
+  </td> 
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Cow Mangler 5000 -->
+  <td colspan="2">
+    <h2>
+      Cow Mangler 5000
+    </h2>
+    <p>
+      The closest thing the Mangler has to an identity is 'spam'. Infinite reserves grants infinite spam uptime and the charged shot is unwieldy up close but can cram the damage of multiple rockets into one when fired from a distance. In saying that, every one of its attributes is situational in its impact, so the weapon feels overly similar to the Rocket Launcher in practice.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <li class="stat neutral"><b>Goal: </b>Make the charged shot useful in direct combat while preserving its all-or-nothing identity and add a more meaningful downside to compensate</li>
+    <li class="stat neutral"><b>Changes:</b></li>
+    <ul>
+      <li class="stat upside">
+        (+) The alt-fire takes 1 second to charge (was 2)
+      </li>
+      <li class="stat upside">
+        (+) Charged shot restores ammo based on the amount of direct damage (not Afterburn) dealt to enemy players (not buildings)
+      </li>
+      <ul>
+        <li class="stat upside2">
+          <i>The first shot takes 30 damage to restore, the second a further 60, the third a further 90, and so on</i>
+        </li>
+      </ul>
+      <li class="stat upside">
+        (+) Removed: Deals only 20% damage to buildings
+      </li>
+      <li class="stat upside">
+        (+) Removed: Minicrits whenever it would normally crit
+      </li>
+      <li class="stat neutral">
+        (~) Instead of a Mini-Crit, the charged shot has +35% damage and a +35% larger blast radius
+      </li>
+      <li class="stat downside">
+        (-) Added: 20% slower firing speed
+      </li>
+      <li class="stat downside">
+        (-) Afterburn from this weapon shares the properties of Pyro's Afterburn (10 damage per tick and 3 second duration)
+      </li>
+      <li class="stat downside">
+        (-) The building disable from the charged shot lasts 3 seconds and can be removed early with a Wrench swing
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/soldier/Cow_Mangler_5000.png" alt="Cow Mangler 5000" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Cow Mangler 5000</h3>
+          <p class="stat subtle">
+            Focused Wave Projector
+          </p>
+          <p class="stat upside">
+            Infinite reserve ammo
+          </p>
+          <p class="stat upside">
+            Alt-Fire: A charged shot that has 35% increased damage and blast radius players, sets players on fire and disables buildings for 3 seconds.
+          </p>
+          <p class="stat downside">
+            20% slower firing speed
+          </p>
+        </div>
+      </div>
+    </div>
+  </td> 
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Beggar's Bazooka -->
+  <td colspan="2">
+    <h2>
+      Beggar's Bazooka
+    </h2>
+    <p>
+      The Bazooka opens up a new style of movement to Soldier that has a high skill ceiling and offers what I consider fair rewards for it. However, other uses of this weapon — using the fast reload speed to continuously spew rockets or dealing massive burst damage when playing around a corner — can be frustrating to play against. The random nature of the projectiles is also frustrating to play <i>with</i> in direct combat.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <li class="stat neutral"><b>Goal: </b>Replace the projectile deviation with downsides that do not inhibit the user's ability to aim and which push the weapon away from spam</li>
+    <li class="stat neutral"><b>Changes:</b></li>
+    <ul>
+      <li class="stat upside">
+        (+) Added: +200% damage ramp-up at close range
+      </li>
+      <li class="stat upside">
+        (+) Removed: +3 degrees random projectile deviation
+      </li>
+      <li class="stat upside">
+        (+) Removed: No ammo from Dispensers while active
+      </li>
+      <li class="stat downside">
+        (-) Loading a rocket plays a sound that is audible to other players, with the pitch rising the more rockets are loaded
+      </li>
+      <li class="stat downside">
+        (-) Added: 25% damage penalty
+      </li>
+      <li class="stat downside">
+        (-) Added: -40% max primary ammo on wearer
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/soldier/Beggars_Bazooka.png" alt="Beggar's Bazooka" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Beggar's Bazooka</h3>
+          <p class="stat subtle">
+            Rocket Launcher
+          </p>
+          <p class="stat neutral">
+            Hold Fire to load up to three rockets. Release Fire to unleash the barrage!
+          </p>
+          <p class="stat neutral">
+            Overloading the chamber will cause a misfire
+          </p>
+          <p class="stat downside">
+            25% damage penalty
+          </p>
+          <p class="stat downside">
+            -20% explosion radius
+          </p>
+          <p class="stat downside">
+            -40% max primary ammo on wearer
+          </p>
+        </div>
+      </div>
+    </div>
+  </td> 
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Air Strike -->
+  <td colspan="2">
+    <h2>
+      Air Strike
+    </h2>
+    <p>
+      The Air Strike employs a hard snowball mechanic, which I think are prone to unfairness and bad gameplay, so I will be getting rid of it. I suspect the reason the weapon even has a head-taking mechanic is because it needs to have a lot of rockets to fulful its fantasy, but intrinsically having a doubled clip size would be too powerful. I want to find a different way to satisfy that goal.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <li class="stat neutral"><b>Goal: </b></li>
+    <li class="stat neutral"><b>Changes:</b></li>
+    <ul>
+      <li class="stat upside">
+        (+) Removed: Blast radius is reduced while blast jumping
+      </li>
+      <li class="stat neutral">
+        (~) Added: While blast jumping, rockets split into three mini-rockets 
+      </li>
+      <ul>
+        <li class="stat neutral2">
+          <i>Each mini-rocket deals half the damage of a regular one</i>
+        </li>
+        <li class="stat neutral2">
+          <i>One rocket will always go straight down the crosshair, but the other two have up to two degrees of random deviation</i>
+        </li>
+      </ul>
+      <li class="stat downside">
+        (-) Removed: Clip size increases on kill
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/soldier/Air_Strike.png" alt="Air Strike" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Air Strike</h3>
+          <p class="stat subtle">
+            Rocket Launcher
+          </p>
+          <p class="stat neutral">
+            Hold Fire to load up to three rockets. Release Fire to unleash the barrage!
+          </p>
+          <p class="stat neutral">
+            Overloading the chamber will cause a misfire
+          </p>
+          <p class="stat downside">
+            25% damage penalty
+          </p>
+          <p class="stat downside">
+            -20% explosion radius
+          </p>
+          <p class="stat downside">
+            -40% max primary ammo on wearer
+          </p>
+        </div>
+      </div>
+    </div>
+  </td> 
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Gunboats -->
+  <td colspan="2">
+    <h2>
+      Gunboats
+    </h2>
+    <p>
+      This is meant to compensate for the buff to base Soldier, to avoid buffing Gunboats Soldier too.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b>
+        <ul><li class="stat downside">
+          (-) Damage resistance reduced to 50%
+            <ul></li><li class='stat downside2'><i>
+              Rocket jumps will still take the same amount of health with the Gunboats equipped
+            </li></ul></i>
+          </li>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/soldier/Gunboats.png" alt="Gunboats" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Gunboats</h3>
+          <p class="stat subtle">
+            Boots
+          </p>
+          <p class="stat upside">
+            -50% blast damage taken from rocket jumps
+          </p>
+        </div>
+      </div>
+    </div>
+  </td> 
+</tr>
+ 
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>   <!-- Mantreads -->
+  <td colspan="2">
+    <h2>
+      Mantreads
+    </h2>
+    <p>
+     The Mantreads require a lot of setup to use, and even then are less lethal than the Market Gardener. To make them properly worth the secondary slot, I'm adding a new mechanic that should increase the weapon's power, usability and versatility, while also being a lot of fun.
+    </p>
+  </td>
 </tr>
 <tr>
  <td colspan="1">
@@ -139,7 +588,7 @@
 		  The explosion deals double your fall damage at base in an area the size of a rocket explosion (which also damages any enemies you land directly on)
 		</ul></li></i>
 		<ul><li class="stat upside2"><i>
-		  Increased gravity increases your fall damage, and you can only avoid fall damage when landing on an enemy, so be careful!
+		  Increased gravity increases your fall damage, and you can only avoid fall damage by landing on an enemy, so be careful!
 		</ul></li></i>
 	  </ul>
 	  <ul><li class="stat downside">
@@ -169,7 +618,7 @@
             While airborne, hold Jump to slam down, creating an explosion on landing (force and damage scales with velocity)
           </p>
 		<p class="stat upside">
-            Deals 3x falling damage to the player you land on
+            Deals 3× falling damage to the player you land on
           </p>
 		<p class="stat upside">
             75% reduction in knockback while grounded
@@ -186,40 +635,173 @@
   </td>
 </tr>
 
-
-<tr>
+<tr>   <!-- Shovel -->
   <td colspan="2">
-	<h2>Shovel</h2>
-	<p>
-	  Soldier's base melee attack rarely sees use because his other weapons do more damage and are already quite reliable up close. One of my goals is to
-	  alleviate utility melee power creep, so making the base melee more useful makes it easier to design meaningful alternatives to it.
-	</p>
+    <h2>Shovel</h2>
+  	<p>
+  	  Soldier's base melee attack rarely sees use because his other weapons do more damage and are already quite reliable up close. One of my goals is to alleviate utility melee power creep, so making the base melee more useful makes it easier to design meaningful alternatives to it.
+  	</p>
   </td>
 </tr>
 <tr>
   <td colspan="1">
-	<ul>
-	  <li class="stat neutral"><b>Changes:</b></li>
-	  <ul><li class="stat upside">
-		(+) Damage increased to 80
-	  </ul></li>
-	</ul>
+    <ul>
+      <li class="stat neutral"><b>Changes:</b></li>
+        <ul><li class="stat upside">
+		      (+) Damage increased to 80
+        </ul></li>
+    </ul>
   </td>
-<td colspan="1">
-<div class="container">
-  <div class="rounded-rectangle">
-	<div class="column image">
-	  <img src="../weapons/soldier/Shovel.png" alt="Shovel" />
-	</div>
-	<div class="column text">
-	  <h3>Shovel</h3>
-	  <p class="stat subtle2">
-		Shovel
-	  </p>
-	</div>
-  </div>
-</div>
-</td>
+  <td colspan="1">
+    <div class="container">
+      <div class="rounded-rectangle">
+        <div class="column image">
+    	   <img src="../weapons/soldier/Shovel.png" alt="Shovel" />
+        </div>
+    	  <div class="column text">
+    	    <h3stock>Shovel</h3stock>
+      	  <p class="stat subtle">
+      		  Shovel
+      	  </p>
+    	  </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>   <!-- Disciplinary Action -->
+  <td colspan="2">
+    <h2>
+      Disciplinary Action
+    </h2>
+    <p>
+      This weapon is really strong in the right circumstances. It excels at helping support classes or slower combat classes rotate around the map. It's held back moreso by limitations on the upside than by its downside. The result is a weapon that generally outclasses the Shovel, but which I find awkward to actually get value from sometimes.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Make the weapon better at offering spikes of power but worse at whipping specific people around the map, and give it a stronger downside
+      </li>
+      <li class="stat neutral"><b>Changes:</b>
+        <ul><li class="stat upside">
+          (+) On use: Boosts all teammates within 200 Hu
+        </li></ul>
+        <ul><li class="stat upside">
+          (+) Speed boost on teammates increased to 3 seconds
+        </li></ul>
+        <ul><li class="stat downside">
+          (-) Melee hitbox size increase only applies to teammates
+        </li></ul>
+        <ul><li class="stat downside">
+          (-) Effect now has a 15 second cooldown that is triggered when hitting a teammate and starts on cooldown
+        </li></ul>
+        <ul><li class="stat downside">
+          (-) Damage penalty increased to 50% (40 damage)
+        </li></ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/soldier/Disciplinary_Action.png" alt="Disciplinary Action" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Disciplinary Action</h3>
+          <p class="stat subtle">
+            Riding Crop
+          </p>
+          <p class="stat upside">
+            When charged, hit a teammate to grant all nearby teammates a speed boost
+          </p>
+          <p class="stat downside">
+            50% damage penalty
+          </p>
+        </div>
+      </div>
+    </div>
+  </td> 
+</tr>
+ 
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>   <!-- Market Gardener -->
+  <td colspan="2">
+    <h2>
+      Market Gardener
+    </h2>
+    <p>
+      This weapon grants a powerful ability for no real downside compared to the stock Shovel.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Increase counterplay to Gardener users for classes without burst mobility
+      </li>
+      <li class="stat neutral"><b>Changes:</b>
+        <ul><li class="stat upside">
+          (+) Removed: 20% slower firing speed
+        </li></ul>
+        <ul><li class="stat downside">
+          (-) Added: 20% increased push force from enemies while blast jumping on wearer
+        </li></ul>
+        <ul><li class="stat downside">
+          (-) Added: 20% damage penalty (64 damage)
+        </li></ul>
+        <ul><li class="stat neutral">
+          (!) Visual: This weapon has a Crit glow while blast jumping
+        </li></ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">
+    <!-- Stat card -->
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/soldier/Shovel.png" alt="Market Gardener" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Market Gardener</h3>
+          <p class="stat subtle">
+            Shovel
+          </p>
+          <p class="stat upside">
+            Deals Crits while blast jumping
+          </p>
+          <p class="stat downside">
+            20% damage penalty
+          </p>
+          <p class="stat downside">
+            On wearer: 20% increased push force from enemies while blast jumping
+          </p>
+          <p class="stat downside">
+            No melee combo
+          </p>
+        </div>
+      </div>
+    </div>
+  </td> 
 </tr>
  
 <tr>

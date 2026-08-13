@@ -4,7 +4,7 @@
 <a href="../index.html" class="home-button">
   <div class="image-container">
     <img src="../resources/Home.png" class="normal" alt="Home"/>
-    <img src="../resources/Scout_inv.png" class="hover" alt="Home"/>
+    <img src="../resources/Home_inv.png" class="hover" alt="Home"/>
   </div>
 </a>
 
@@ -20,30 +20,1084 @@
 </h1>
 
 <table>
-  <tr id="hitscan">
+
+<tr>  <!-- Afterburn -->
+  <td colspan="2">
+    <h2>
+      Afterburn
+    </h2>
+    <p>
+      In many cases, Afterburn is regarded as an annoyance rather than a threat. Locking a portion of Pyro's damage behind a slow DoT is one of the many things holding the class back, and is rarely fun or engaging to play against. If it were faster, it would give Pyro a bigger impact in fights, particularly if they can keep multiple people lit, while also not forcing opponents to endure it for as long.
+    </p>
+    <p>
+      This is a change to the fundamental nature of Afterburn. It is focused less on scaring enemies into retreating for health and more on being a small but important source of direct-combat DPS that rewards the Pyro for juggling keeping crowds ignited and dealing direct weapon DPS. Note also that there is a trend in this document of making Afterburn harder to apply to justify its greater power.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b></li>
+      <ul>
+        <li class="stat neutral">
+          (~) Afterburn now deals 10 damage per tick for 3 seconds
+        </li>
+        <ul>
+          <li class="stat neutral2">
+            <i>Almost all Afterburn sources will apply the max duration of Afterburn on hit, and it can never be extended beyond this duration (at least not in PvP)</i>
+          </li>
+        </ul>
+        <li class="stat neutral">
+          (~) Applying Afterburn to a Pyro or other fireproof player target will make them count as being on fire for 0.75 seconds, but they will not take any damage from this
+        </li>
+      </ul>
+    </ul>
+  </td>
+  <td colspan="1">      
+    <div class="container">
+
+    </div>
+  </td> 
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Core Class -->
+  <td colspan="2">
+    <h2>
+      Core class
+    </h2>
+    <p>
+      Pyro struggles to stand up to the other combat classes. One of the reasons for this is that having a short range, stream damage primary forces them to have to expose themself to a lot of incoming damage in order to use it. 
+    </p>
+    <p>
+      I don't expect or want this change to make it viable to just hold W at people. The aim is to make Pyro a bit less succeptible to chip damage, and help even the odds versus Scout and Heavy.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b>
+        <ul>
+          <li class="stat upside">
+            (+) Max health increased to 200
+          </li>
+        </ul>
+    </ul>
+  </td>
+  <td colspan="1">      
+    <div class="container">
+
+    </div>
+  </td> 
+</tr> 
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Flamethrower -->
+  <td colspan="2">
     <h2>
       Flamethrower
     </h2>
     <p>
-      TBD 
+      In addition to being laden with jank, the Flamethrower has some fundamental flaws. Its ease-of-use significantly reduces the importance of the Pyro's aim and by extension the victim's movement, which leads to less interesting engagements. To account for this, the damage of the current version is rather lacking, with little room for the user's mechanical skill to improve it. Between this and their lack of mobility, Pyro struggles to get value from being proactive against better opponents and is often forced to sit and wait for the opponent to make a positioning mistake. I don't want Pyro to become so mobile they overlap with Scout, without any intrinsic mobility I feel they overlap with Heavy instead. 
     </p>
-    <td>
-      <p>
-        <span class="stat upside">
-          TBD
-        </span>
-      </p>
-    </td>
-    <td>
-	
-    </td>
-  </tr>
-    <tbody>  <!-- Secondary changes -->
-      <p>
-        <span class="positive">
-			
-        </span>
-      </p>
-    </tbody>
-  </table>
+    <p>
+      Pyro needs another rework; a good one this time! This section is rather long, and that's before even getting into Airblast specifically. You have been warned.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Increase the depth and skill requirement of the Flamethrower, and make it more fun and fair to fight</li>
+      <li class="stat neutral"><b>Changes (flames):</b></li>
+      <ul>
+        <li class="stat upside">
+          (+) Instead of being dependent on particle age, Flamethrower damage now has damage fall-off, linearly decreasing from 100% to 66% over 340 Hu
+        </li>
+        <ul>
+          <li class="stat upside2">
+            <i>Because this is considered normal fall-off, buildings aren't affected by it and Crit damage bypasses it</i>
+          </li>
+        </ul>
+        <li class="stat neutral"> 
+          (~) Flame damage now scales with the density of flame particles touching the victim rather than ramping up over time with sustained contact
+        </li>
+        <li class="stat downside">
+          (-) Max Flamethrower DPS reduced to 150 (was ~180)
+        </li>
+        <li class="stat downside">
+          (-) Targets will only become ignited after dealing 30 damage to them in 0.5 seconds or less
+        </li>
+        <ul>
+          <li class="stat downside2">
+            Any <i>damage dealt to an already-burning target will reset the Afterburn duration to max</i>
+          </li>
+          <li class="stat downside2">
+            <i>When a target is ignited, it will be accompanied by a particle and sound cue (like what the Dragon's Fury does on consecutive hits)</i>
+          </li>
+          <li class="stat downside2">
+            <i>Spy's debuff resistance from cloak also increases this threshold, so he requires 45 damage in 0.5 seconds to be ignited</i>
+          </li>
+        </ul>
+      </ul>
+      <li class="stat neutral"><b>Changes (alt-fire):</b>
+        <ul>
+          <li class="stat neutral">
+            (-) The Flamethrower has a Pressure meter with two charges; these act as a cooldown for Airblast and a new secondary attack
+          </li>
+          <ul>
+            <li class="stat neutral2">
+              <i>There is a 0.75 sec regen delay after using alt-fire, after which Pressure will start regenerating at a rate of 1 charge per 0.75 sec</i>
+            </li>
+          </ul>
+        </ul>
+        <ul>  
+          <li class="stat upside"> 
+            (+) Added: Flame Blast attack – Hold M2 to charge a fireball and release to fire it, launching yourself backwards if airborne. Flame Burst requires and consumes a Pressure charge as well as the same ammo as an Airblast
+          </li>
+          <ul>
+            <li class="stat upside2">
+              <i>The fireball takes 1.5 seconds to charge, and can be held for another 0.5 seconds before automatically discharging</i>
+            </li>
+          </ul>
+          <ul>
+            <li class="stat upside2">
+              <i>Projectile speed scales from 950 to 2000 Hu/s and knockback scales from 50 to 250 Hu/s with charge</i>
+            </li>
+          </ul>
+          <ul>
+            <li class="stat upside2">
+              <i>On hit, the fireball deals 20 damage and instantly applies Afterburn, and also destroys stickies in a small radius on surface hits</i>
+            </li>
+          </ul>
+          <ul>
+            <li class="stat upside2">
+              <i>Pressure is consumed on discharge instead of while charging, but Pressure will not regenerate while charging</i>
+            </li>
+          </ul>
+          <ul>
+            <li class="stat upside2">
+              <i>If M2 is held for 0.2 seconds or less, it will Airblast on release; else, it will trigger a Flame Blast instead</i>
+            </li>
+          </ul>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">      
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/pyro/Flamethrower.png" alt="Flamethrower" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3stock>Flamethrower</h3stock>
+          <p class="stat subtle">
+            Flamethrower
+          </p>
+          <p class="stat neutral">
+            Sustained damage to flammable enemies applies Afterburn, which deals additional damage over time.
+          </p>
+          <p class="stat neutral">
+            Alt-fire tap: Discharge a blast of air that pushes enemies and deflects projectiles.
+          </p>
+          <p class="stat neutral">
+            Alt-fire hold: Charge a damaging blast of flame. Release to discharge, knocking you backwards if you are airborne. Projectile speed and knockback force increase the longer Flame Blast is charged.
+          </p>
+          <p class="stat neutral">
+            Alt-fire requires Pressure, which recharges over time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </td> 
+</tr>
+ 
+<tr>  <!-- Airblast -->
+  <td colspan="2">
+    <h2>
+      Airblast
+    </h2>
+    <p>
+      The primary fire is only half the problem with the Flamethrower. Airblast is the other half.
+    </p>
+    <p>
+      While it gives Pyro something unique and situationally powerful, Airblast is almost a completely reactionary tool which doubles down on Pyro being a passive class. Pyro contributes a lot to defensive stacks (which I think are already too effective in Casual) but contributes little when playing against them. The use of reflects as Pyro’s main form of survivability and ability to gap close also leaves their matchup against Soldier very swingy and contribute nothing against the hitscan classes. For flames to be better, we need to redistribute some power away from Airblast.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Reduce the effectiveness of Airblast and Airblast-centric playstyles in favour of offensive play
+      <li class="stat neutral"><b>Changes:</b>
+        <ul>
+          <li class="stat upside">
+            (+) Reflected projectiles use their own base damage when calculating self-damage rather than the Flamethrower's, and the Pyro has 50% damage resistance to their own reflected projectile explosions if no enemy is hit
+          </li>
+        </ul>
+        <ul>  
+          <li class="stat upside"> 
+            (+) Reflected <i>airborne<i> stickies are converted to the Pyro's team affiliation, have their arm times reset and immediately detonate when armed, reflected <i>stuck<i> stickies are unable to be detonated while rolling, and other reflected projectiles have their fuses and lifetimes reset where applicable
+          </li>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) Airblast requires and consumes a Pressure charge
+          </li>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) Airblast knockback is 33% lower, and now respects knockback resistances and immunities
+          </li>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) Removed: Airblast reduces targets' air control
+          </li>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) Removed: Airblast extinguishes teammates
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Backburner -->
+  <td colspan="2">
+    <h2>
+      Backburner
+    </h2>
+    <p>
+      The current Backburner is allowed to have guaranteed Crits — something that would be unfair on any other primary weapon archetype — because of the current Flamethrower's impotence as a weapon. Making the Flamethrower stronger and making Pyro more able to get into flanking positions without needing specific secondaries necessitates the Backburner's damage potential be brought down.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> 
+      </li>
+      <li class="stat neutral"><b>Changes:</b>
+        <ul>
+          <li class="stat upside">
+            (+) Back hit detection angle increased to 120° (was 90°)
+          </li>
+          <li class="stat upside"> 
+            (+) Removed: +250% increased Airblast cost
+          </li>
+          <li class="stat downside"> 
+            (-) Added: -60% max primary ammo on wearer
+          </li>
+          <li class="stat downside"> 
+            (-) Replaced Crits on back hits with Mini-Crits
+          </li>
+          <li class="stat neutral"> 
+            (i) Visual: This weapon uses unique flame effects that are darker and smokier
+          </li>
+        </ul>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">      
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/pyro/Backburner.png" alt="Backburner"/>
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Backburner</h3>
+          <p class="stat subtle">
+            Flamethrower
+          </p>
+          <p class="stat upside">
+            Deals Mini-Crits when attacking from behind
+          </p>
+          <p class="stat downside">
+            -60% max primary ammo on wearer
+          </p>
+        </div>
+      </div>
+    </div>
+  </td> 
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Dragon's Fury -->
+  <td colspan="2">
+    <h2>
+      Dragon's Fury
+    </h2>
+    <p>
+      Players sometimes complain about how this weapon feels inconsistent to use due to the variable repressurisation speed and need to hit with the centre of the projectile. As someone who spends perhaps an unhealthy amount of time using the weapon, I think the way it works now is entirely fine and even rather elegant. I don't want to compromise its strengths to make it easier to use or more like other weapons as quite a few people apparantly do.
+    </p>
+    <p>
+      What I think the weapon <i>would</i> benefit from is to hit important damage thresholds more reliably so it can better stand up to the other power classes even at higher levels of play. It could also do with minor tweaks to the Dragon's Fury v Flamethrower interaction, so the Fury isn't completely shut down by skilled Airblast use but isn't overbearingly powerful against less-skilled Pyros.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Minorly tweak the weapon's performance in various interactions, and address how the base Flamethrower changes would otherwise impact this weapon</li>
+      <li class="stat neutral"><b>Changes:</b>
+      <ul>
+        <li class="stat upside">
+          (+) Damage to non-burning players increased to half of the damage to burning players (37.5 at base; was 25)
+        </li>
+        <li class="stat neutral">
+          (~) Afterburn from this weapon applies its full duration to fireproof targets, but they will not take any damage from it
+        </li>
+        <li class="stat neutral">
+          (~) Flame Blast on this weapon charges twice as fast but does not fire a projectile or deal damage in any way
+        </li>
+        <li class="stat downside">
+          (-) Projectile hitbox size reduced by 0.22...% (35 Hu in radius; was 45 Hu)
+        </li>
+        <li class="stat downside">
+          (-) Projectiles only apply 1 second of Afterburn, including on hits against already-burning targets
+        </li>
+        <li class="stat neutral"> 
+          (i) Visual: Fireballs use simpler visual effects that do not have a dynamic light and which are actually attached to the fireball hitbox instead of being separate and glitching out when the projectile is reflected or destroyed 
+        </li>
+        <li class="stat neutral"> 
+          (i) Visual: Fireball visuals are invisible for the first two ticks (~0.03 sec) of their lifetime 
+        </li>
+        <ul>
+          <li class="stat neutral2"> 
+            <i>The aim is to prevent the blinding flash that happens when you fire the weapon, and I suspect this is caused by spawning the large, visually noisy particle effect right inside of the user</i>
+          </li>
+        </ul>
+      </ul>
+    </ul>
+  </td>
+  <td colspan="1">      
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/pyro/Dragons_Fury.png" alt="Dragon's Fury"/>
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Dragon's Fury</h3>
+          <p class="stat subtle">
+            Flame Launcher
+          </p>
+          <p class="stat neutral">
+            This weapon uses a shared pressure tank for primary fire and alt-fire.
+          </p>
+          <p class="stat neutral">
+            Primary fire: Shoot a fireball that applies Afterburn. Hits against burning enemies with the centre of the fireball deal double damage.
+          </p>
+          <p class="stat neutral">
+            Alt-fire press: Discharge a blast of air that deflects enemies and projectiles.
+          </p>
+          <p class="stat neutral">
+            Alt-fire hold: Charge a blast that launches you backwards while airborne.
+          </p>
+          <p class="stat upside">
+            50% faster repressurisation rate on hit
+          </p>
+          <p class="stat downside">
+            50% slower repressurisation rate on Alt-fire use
+          </p>
+        </div>
+      </div>
+    </div>
+  </td> 
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Flare Gun -->
+  <td colspan="2">
+    <h2>
+      All Flare Guns
+    </h2>
+    <p>
+      I've never liked how Pyro — ostensibly a power class — can't do very much against Engineer outside of being supported by an Über. The Flare Guns get most of their damage from Crits and Afterburn... which buildings are immune to. I think addressing this weakness would help give Pyro more counterplay to Engineer without it being oppressive.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b>
+        <ul>
+          <li class="stat upside">
+            (+) Added: +100% damage to buildings
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">      
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/pyro/Flare_Gun.png" alt="All Flare Guns" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Flare Gun</h3>
+          <p class="stat subtle">
+            Flare Gun
+          </p>
+          <p class="stat upside">
+            Deals crits to burning victims
+          </p>
+          <p class="stat upside">
+            +100% damage to buildings
+          </p>
+          <p class="stat neutral">
+            This weapon will reload automatically when not active.
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr> 
+
+<tr>  <!-- Detonator -->
+  <td colspan="2">
+    <h2>
+      Detonator
+    </h2>
+    <p>
+      While often not thought of as such, it is capable of the same ranged Afterburn spam as the Scorch Shot and is arguably better at it because it doesn't even need to hit surfaces. I want to tone the spam capabilities down without hurting more skillful use of the weapon.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Reduce the effectiveness of flare spam, and buff the rest of the weapon to compensate
+      <li class="stat neutral"><b>Changes:</b>
+        <ul>
+          <li class="stat upside">
+            (+) Removed: 25% damage penalty
+          </li>  
+          <li class="stat upside"> 
+            (+) Removed: +50% damage to self
+          </li>
+          <li class="stat downside">
+            (-) Explosions do not inflict Afterburn, but will reset the Afterburn duration on already-burning targets
+          </li>
+          <li class="stat neutral">
+            (i) Other: Updated description to mention stickybomb-destroying ability
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">      
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/pyro/Detonator.png" alt="Detonator" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Detonator</h3>
+          <p class="stat subtle">
+            Flare Gun
+          </p>
+          <p class="stat upside">
+            Deals Mini-Crits to burning victims
+          </p>
+          <p class="stat upside">
+            +100% damage to buildings
+          </p>
+          <p class="stat neutral">
+            Alt-Fire: Detonate flare, creating an explosion that destroys stickybombs and extends the Afterburn duration on burning targets.
+          </p>
+          <p class="stat neutral">
+            This weapon will reload automatically when not active.
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>	
+
+<tr>  <!-- Scorch Shot -->
+  <td colspan="2">
+    <h2>
+      Scorch Shot
+    </h2>
+    <p>
+      This weapon has multiple upsides and requires little effort to utilise them. It also encourages the tactic of spamming projectiles from range in order to deal chip damage to people, which is not engaging to play or fun to fight against. The Detonator has already filled the niche of an explosive Flare Gun, so I want to take it in a slightly different direction.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>New Design</b> – Mini-traps to manipulate enemy movement
+        <ul>
+          <li class="stat upside">
+            (+) On impact, the projectile bounces off the target and creates a lingering pool of fire on its second impact
+          </li>
+          <ul>
+            <li class="stat upside2">
+              <i>This is the exact same effect Flame Blast creates on impact</i>
+            </li>
+          </ul>
+          <ul>
+            <li class="stat upside2">
+              <i>The bounce will trigger whether it hits a player, building or terrain</i>
+            </li>
+          </ul>
+        </ul>
+        <ul>  
+          <li class="stat downside"> 
+            (-) 50% reduced ammo
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">      
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/pyro/Scorch_Shot.png" alt="Scorch Shot" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Scorch Shot</h3>
+          <p class="stat subtle">
+            Flare Gun
+          </p>
+          <p class="stat upside">
+            Flare bounces on impact and lights terrain on fire when it hits the ground
+          </p>
+          <p class="stat upside">
+            +100% damage to buildings
+          </p>
+          <p class="stat downside">
+            -50% max secondary ammo on wearer
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Thermal Thruster -->
+  <td colspan="2">
+    <h2>
+      Thermal Thruster
+    </h2>
+    <p>
+      Most of the Thermal Thruster's flaws are fixed by simply making the Flamethrower a stronger and more versatile weapon. Now, Pyro still retains some form of ranged attack and enough damage to get kills without nessesarily needing a secondary for cleanup. Even beyond that, however, I think it could do with some quality-of-life and more room for skill expression.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b></li>
+        <ul>
+          <li class="stat upside">
+            (+) Deploy and holster now works like every other weapon
+          </li>
+          <li class="stat upside">
+            (+) Stomp damage multiplier increased to 5×
+          </li>
+          <li class="stat upside">
+            (+) Hidden 50% knockback vulnerability on wearer only applies while airborne from the Thruster's effect
+          </li>
+          <li class="stat upside">
+            (+) Removed: 50% reduced air control when using Thruster jumps
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">      
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/pyro/Thermal_Thruster.png" alt="Thermal Thruster" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Thermal Thruster</h3>
+          <p class="stat subtle">
+            Rocket Pack
+          </p>
+          <p class="stat neutral">
+            Death from above! Fires a short-duration blast that launches the Pyro in the direction they are aiming. Deal 5× falling damage to anyone you land on!
+          </p>
+          <p class="stat upside">
+            Push enemies back when you land (force and radius based on velocity)
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Gas Passer -->
+  <td colspan="2">
+    <h2>
+      Gas Passer
+    </h2>
+    <p>
+      In my opinion, this is the single worst item in the game. It takes more damage to charge than a Soldier banner and inflicts the worst debuff in the game while contributing nothing outside of that. Once again, making the Flamethrower better nessesarily makes the Gas Passer more usable, and being the only ranged AoE Afterburn source left does give it a niche, but I think we can go even further. 
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b></li>
+        <ul>
+          <li class="stat upside">
+            (+) Gas debuff is not removed when the victim takes damage, and can be reapplied infinitely by the cloud even if the victim is already on fire
+          </li>
+          <li class="stat upside">
+            (+) Shooting your own cloud with a Flame Burst, Phlogistinator alt-fire or Dragon's Fury projectile burns the cloud, dealing 50 damage to enemies in the radius and consuming it in the process
+          </li>
+          <li class="stat upside">
+            (+) Hitting an enemy with the thrown canister deals 30 damage
+          </li>
+          <li class="stat neutral">
+            (~) Now has a fixed 20 second cooldown that starts empty and isn't refilled by the Resupply Cabinet
+          </li>
+          <li class="stat downside">
+            (-) Gas debuff duration reduced to 2 seconds
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">      
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/pyro/Gas_Passer.png" alt="Gas Passer" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Gas Passer</h3>
+          <p class="stat subtle">
+            Gas-Like Substance
+          </p>
+          <p class="stat neutral">
+            Creates a horrific visible gas cloud that coats enemies with a flammable material, which then ignites into afterburn if they take damage (even enemy Pyros!)
+          </p>
+          <p class="stat neutral">
+            Shooting the cloud with a projectile from your primary weapon causes an explosion.
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Fire Axe -->
+  <td colspan="2">
+    <h2>
+      Fire Axe
+    </h2>
+    <p>
+      With the Flamethrower's decent close-range damage, ease of use and lack of downtime (and also the fact that Pyro has the Shotgun in their stock kit), Pyro simply has little use for a basic melee weapon. Valve gave Scout a custom base melee statline presumably to keep him from being too effective in melee with his speed, and I think Pyro would be the perfect candidate to do the opposite to.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b>
+        <ul>
+          <li class="stat upside">
+            (+) Damage increased to 100
+          </li>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (+) Attack interval increased to 1.0 seconds (was 0.8)
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">      
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/pyro/Fire_Axe.png" alt="Fire Axe" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3stock>Fire Axe</h3stock>
+          <p class="stat subtle">
+            Fire Axe
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Axtinguisher -->
+  <td colspan="2">
+    <h2>
+      Axtinguisher
+    </h2>
+    <p>
+      I feel the current version of this weapon is often not worth the effort compared to just burning targets to death. In spite of that, it is almost strictly better than the Fire Axe because it lacks a meaningful downside. The changes to Afterburn and the Fire Axe also shift the context that this weapon exists in, so it needs changes regardless.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b>
+        <ul>
+          <li class="stat upside">
+            (+) Deals Crits to burning players instead of Mini-Crits
+          </li>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) Damage penalty increased to 50% (50 damage)
+          </li>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) Removed: Damage increases based on remaining duration of Afterburn
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">      
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/pyro/Axtinguisher.png" alt="Axtinguisher" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Axtinguisher</h3>
+          <p class="stat subtle">
+            Fire Axe
+          </p>
+          <p class="stat upside">
+            Crits burning victims and extinguishes them
+          </p>
+          <p class="stat upside">
+            Killing blows on burning victims grant a speed boost
+          </p>
+          <p class="stat downside">
+            50% damage penalty
+          </p>
+          <p class="stat downside">
+            This weapon holsters 35% slower
+          </p>
+          <p class="stat downside">
+            No melee combo
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Powerjack -->
+  <td colspan="2">
+    <h2>
+      Powerjack
+    </h2>
+    <p>
+      This weapon significantly overshadows everything else in the slot because mobility with few limitations and no major downside is extremely strong, especially on Pyro. Being able to run fast is fun, but I think any mobility that comes from unlocks should come with some sort of tangible cost.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>New Design</b> – The old Gas Jockey item set, reincarnated</li>
+        <ul>
+          <li class="stat upside">
+            (+) 10% faster movement speed on wearer
+          </li>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) -35 max health on wearer (165 max health)
+          </li>
+        </ul>
+        <ul>
+          <li class="stat neutral">
+            (~) Visual: This item is visibly holstered on the user’s back
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">      
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/pyro/Powerjack.png" alt="Powerjack" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Powerjack</h3>
+          <p class="stat subtle">
+            Sledgehammer
+          </p>
+          <p class="stat upside">
+            10% faster movement speed on wearer
+          </p>
+          <p class="stat downside">
+            -35 max health on wearer
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Back Scratcher -->
+  <td colspan="2">
+    <h2>
+      Back Scratcher
+    </h2>
+    <p>
+      The Back Scratcher cannot be allowed to maintain its damage bonus in the context of the Fire Axe doing so much damage at baseline. In exchange, the upside can have a little more power behind it.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b></li>
+        <ul>
+          <li class="stat upside">
+            (+) Added: Health packs can overheal wearer
+          </li>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) Reduced healing from healers applies to all teammate sources of healing (e.g. Crossbow, Mad Milk, etc.) rather than just Medi-beams
+          </li>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) Removed: 25% damage bonus
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">      
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/pyro/Back_Scratcher.png" alt="Back Scratcher" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Back Scratcher</h3>
+          <p class="stat subtle">
+            Garden Rake
+          </p>
+          <p class="stat upside">
+            +50% health from packs on wearer
+          </p>
+          <p class="stat upside">
+            Health packs can overheal wearer
+          </p>
+          <p class="stat downside">
+            -75% health from healers on wearer
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Hot Hand -->
+  <td colspan="2">
+    <h2>
+      Hot Hand
+    </h2>
+    <p>
+      The Hot Hand is an extremely poor melee weapon. It is a unique melee archetype with a very similar statline to Scout's Bat – itself a deliberately understrength weapon – and then it has a damage penalty on top. The speed boost is too short to realistically do anything with and does not make up for the downsides.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b></li>
+        <ul>
+          <li class="stat upside">
+            (+) Added: 50% faster deploy speed
+          </li>
+        </ul>
+        <ul>
+          <li class="stat upside">
+            (+) Speed boost lasts 2 seconds, which is doubled to 4 seconds if you hit both slaps in the one combo
+          </li>
+        </ul>
+        <ul>
+          <li class="stat upside">
+            (+) Base damage of the Hot Hand's archetype raised to 50 (from 35) so the damage penalty reduces it to 40 (from 28)
+          </li>
+          <ul>
+            <li class="stat upside2">
+              Ignoring the damage penalty, it now has the same damage (across both slaps) as the Fire Axe and the same attack interval
+            </li>
+          </ul>
+        </ul>
+        <ul>
+          <li class="stat neutral2">
+            (i) Other: Description now explains the weapon's unique behaviour
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </td>
+  <td colspan="1">      
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/pyro/Hot_Hand.png" alt="Hot Hand" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Hot Hand</h3>
+          <p class="stat subtle">
+            Slap
+          </p>
+          <p class="stat upside">
+            Gain a speed boost for 2 seconds on hit. Hitting consecutive slaps gives you a speed boost for 4 seconds.
+          </p>
+          <p class="stat upside">
+            50% faster deploy speed
+          </p>
+          <p class="stat downside">
+            Each swing performs two attacks for half damage each
+          </p>
+          <p class="stat downside">
+            20% damage penalty
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+</table>
 </html>

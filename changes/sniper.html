@@ -4,7 +4,7 @@
 <a href="../index.html" class="home-button">
   <div class="image-container">
     <img src="../resources/Home.png" class="normal" alt="Home"/>
-    <img src="../resources/Scout_inv.png" class="hover" alt="Home"/>
+    <img src="../resources/Home_inv.png" class="hover" alt="Home"/>
   </div>
 </a>
 
@@ -20,30 +20,344 @@
 </h1>
 
 <table>
-  <tr id="hitscan">
-    <h2>
-      Sniper Rifle
-    </h2>
+
+<tr> <!-- Sniper Rifle -->
+  <td colspan="2">
+    <h2>Sniper Rifle</h2>
     <p>
-      TBD
+      Being a class with theoretically-infinite range and powerful burst damage, Sniper is a supreme threat once he has set up in a good spot. Counterplay to the Sniper is often difficult and frustrating as most other classes pose little threat at his effective range and have to somehow get past the rest of his team to engage with him. I don't think the Sniper class is overpowered in a vaccuum and I certainly do not think he is fundamentally unworkable, but I do think the game would benefit from making him less frustrating.
     </p>
-    <td>
-      <p>
-        <span class="stat upside">
-          TBD
-        </span>
-      </p>
-    </td>
-    <td>
-	
-    </td>
-  </tr>
-    <tbody>  <!-- Secondary changes -->
-      <p>
-        <span class="positive">
-			
-        </span>
-      </p>
-    </tbody>
-  </table>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b>Tone down Sniper’s ability to lock down chokepoints, and increase his counterplay</li>
+      <li class="stat neutral"><b>Changes:</b></li>
+        <ul>
+          <li class="stat downside">
+            (-) Added: Shots leave behind thick, faintly team-coloured smoke trails (like the TF2 Classified ones)
+          </li>
+          <li class="stat downside">
+            (-) Damage from charging rescaled from 50-150 to 150-120
+            <ul>
+              <li class="stat downside2">
+                <i>Charging takes the same amount of time, but the damage goes up by 20% less per second</i>
+              </li>
+              <li class="stat downside2">
+                <i>The delay before damage starts actually going up is also increased to 1.25 seconds (was 1.0)</i>
+              </li>
+              <li class="stat downside2">
+                <i>Because overheal has been reduced to a flat +50 HP, Heavy can still be killed in one shot even with overheal</i>
+              </li>
+            </ul>
+          </li>
+          <li class="stat downside">
+            (-) Reserve ammo reduced by 60% (10 rounds; was 25)
+          </li>
+          <li class="stat downside">
+            (-) Flinching while scoped in causes the reticle to reset in a slightly different location
+          </li>
+        </ul>
+    </ul>
+  </td>
+  <td colspan="1">
+    <div class="container">
+      <div class="rounded-rectangle">
+        <div class="column image">
+          <img src="../weapons/sniper/Sniper_Rifle.png" alt="Sniper Rifle"/>
+        </div>
+        <div class="column text">
+          <h3stock>Sniper Rifle</h3stock>
+          <p class="stat subtle">
+            Sniper Rifle
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr> <!-- Huntsman -->
+  <td colspan="2">
+    <h2>Huntsman</h2>
+    <p>
+      In my opinion, the Huntsman is a neat concept with poor execution. Encouraging the Sniper to have to engage with enemies is good, but the Huntsman’s unreliability and the vulnerability of the Sniper discourages this in practice, and the weapon does little to punish thoughtless spam down chokes.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b>Make the weapon better and more consistent at its intended, aggressive playstyle while punishing safer, more passive play</li>
+      <li class="stat neutral"><b>Changes:</b></li>
+        <ul>
+          <li class="stat upside">
+            (+) Added: +25 max health on wearer
+          </li>
+          <li class="stat upside">
+            (+) Added: This weapon reloads while not active
+          </li>
+          <li class="stat upside">
+            (+) Reload takes 25% less time (1.46 seconds; was 1.94)
+          </li>
+          <li class="stat neutral">
+            (~) Headshot hit detection now uses the system from TF2 Classified
+            <ul>
+              <li class="stat neutral2">
+                <i>On hit, the arrow will send out nine line traces in a shotgun-like cone, and the hit is a headshot if and only if at least one of the traces hits the head hitbox</i>
+              </li>
+            </ul>
+          </li>
+          <li class="stat downside">
+            (-) Max damage from charging reduced to 110 (was 120)
+          </li>
+          <li class="stat downside">
+            (-) Instead of being Crits, arrows deal double damage on headshot
+          </li>
+          <li class="stat downside">
+            (-) Added: Arrows suffer damage fall-off even on headshots
+            <ul>
+              <li class="stat downside2">
+                <i>This is a custom fall-off curve that starts at 768 Hu and ends at 1536 Hu (50% further than normal fall-off)</i>
+              </li>
+            </ul>
+          </li>
+          <li class="stat downside">
+            (-) Ammo reduced to 8 (was 12)
+          </li>
+        </ul>
+    </ul>
+  </td>
+  <td colspan="1">
+    <div class="container">
+      <div class="rounded-rectangle">
+        <div class="column image">
+          <img src="../weapons/sniper/Huntsman.png" alt="Huntsman"/>
+        </div>
+        <div class="column text">
+          <h3>Huntsman</h3>
+          <p class="stat subtle">
+            Bow
+          </p>
+          <p class="stat upside">
+            +25 max health on wearer
+          </p>
+          <p class="stat neutral">
+            Hold Fire to draw, release to shoot. Arrows deal double damage on headshot.
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr> <!-- Machina -->
+  <td colspan="2">
+    <h2>Machina</h2>
+    <p>
+      This item is rather boring, and the base Sniper Rifle changes invalidate the existing design anyway (more damage would let you bodyshot people to death again, and I specifically don't want that). To that end, I’ve decided to give it a complete rework to make it feel more like the cool sci-fi railgun it seems to want to be.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>New Design –</b> Sci-Fi Railgun with recharging battery</li>
+        <ul>
+          <li class="stat neutral">
+            (~) While scoped, hold to charge and fire a shot
+          </li>
+          <ul>
+            <li class="stat neutral2">
+              <i>A shot takes 1 second to charge and can only be held for a further 0.5 seconds before the shot automatically fires</i>
+            </li>
+          </ul>
+          <ul>
+            <li class="stat neutral2">
+              <i>Letting go of the trigger before being fully-charged will cancel the shot and instantly reset charge – only fully-charged shots can be fired</i>
+            </li>
+          </ul>
+          <ul>
+            <li class="stat neutral2">
+              <i>Shots deal 100 damage</i>
+            </li>
+          </ul>
+        </ul>
+        <ul>
+          <li class="stat neutral">
+            (~) Scoped shots drain Power; Power recharges slowly over time and from dealing damage when not scoped
+          </li>
+          <ul>
+            <li class="stat neutral2">
+              <i>The rifle has 100 Power; shots drain 40</i>
+            </li>
+          </ul>
+          <ul>
+            <li class="stat neutral2">
+              <i>Power recharges passively at a rate of 5/second except while charging a shot, and every 2 damage dealt while not scoped (with any weapon) restores 1 Power</i>
+            </li>
+          </ul>
+        </ul>
+        <ul>
+          <li class="stat upside">
+            (+) Scoped shots penetrate players
+          </li>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) Charging creates a visible laser beam
+          </li>
+        </ul>
+        <ul>
+          <li class="stat neutral">
+            (i) Power is visible above the ammo counter, and under the normal charge meter when scoped
+          </li>
+        </ul>
+        <ul>
+          <li class="stat neutral">
+            (i) This weapon retains its existing tracers as a hidden stat
+          </li>
+        </ul>
+    </ul>
+  </td>
+  <td colspan="1">
+    <div class="container">
+      <div class="rounded-rectangle">
+        <div class="column image">
+          <img src="../weapons/sniper/Machina.png" alt="Machina"/>
+        </div>
+        <div class="column text">
+          <h3>Machina</h3>
+          <p class="stat subtle">
+            Railgun
+          </p>
+          <p class="stat neutral">
+            While scoped, hold Fire to charge a piercing beam attack. Will only fire when fully charged.
+          </p>
+          <p class="stat neutral">
+            Scoped shots use a regenerating power supply that can be recharged faster by dealing damage out-of-scope
+          </p>
+          <p class="stat downside">
+            Charging creates a visible laser beam
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr> <!-- SMG -->
+  <td colspan="2">
+    <h2>SMG</h2>
+    <p>
+      The SMG is a somewhat underrated weapon already, but I think in the context of Sniper being weaker and more encouraged to get closer to his opponents, I think it could afford to be slightly stronger.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b></li>
+        <ul>
+          <li class="stat upside">
+            (+) Base damage increased to 10 (was 8)
+          </li>
+        </ul>
+        <ul>
+          <li class="stat downside">
+            (-) Damage ramp-up reduced to 20% (maximum damage unchanged)
+          </li>
+        </ul>
+    </ul>
+  </td>
+  <td colspan="1">
+    <div class="container">
+      <div class="rounded-rectangle">
+        <div class="column image">
+          <img src="../weapons/sniper/SMG.png" alt="SMG"/>
+        </div>
+        <div class="column text">
+          <h3stock>SMG</h3stock>
+          <p class="stat subtle">
+            SMG
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr> <!-- Cozy Camper -->
+  <td colspan="2">
+    <h2>Cozy Camper</h2>
+    <p>
+      In the interest of increasing counterplay to Sniper, this item’s purpose should be shifted away from flinch resistance.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>New Design – </b>Self-sufficiency at the cost of self-defence</li>
+        <ul>
+          <li class="stat upside">
+            (+) Up to 4 health regenerated per second on wearer
+          </li>
+        </ul>
+        <ul>
+          <li class="stat upside">
+            (+) +50% max primary ammo on wearer
+          </li>
+        </ul>
+    </ul>
+  </td>
+  <td colspan="1">
+    <div class="container">
+      <div class="rounded-rectangle">
+        <div class="column image">
+          <img src="../weapons/sniper/Cozy_Camper.png" alt="Cozy Camper"/>
+        </div>
+        <div class="column text">
+          <h3>Cozy Camper</h3>
+          <p class="stat subtle">
+            Backpack
+          </p>
+          <p class="stat upside">
+            Up to 4 health regenerated per second on wearer
+          </p>
+          <p class="stat upside">
+            +50% max primary ammo on wearer
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+</table>
 </html>

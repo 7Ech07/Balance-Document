@@ -1,0 +1,1693 @@
+<!DOCTYPE html>
+<html>
+
+<a href="../index.html" class="home-button">
+  <div class="image-container">
+    <img src="../resources/Home.png" class="normal" alt="Home"/>
+    <img src="../resources/Home_inv.png" class="hover" alt="Home"/>
+  </div>
+</a>
+
+<head>
+  <title>
+    Home
+  </title>
+  <link rel="stylesheet" href="../changes/style.css">
+</head>
+
+<h1>	<!-- Page title -->
+  Mann vs Machine
+</h1>
+
+<p>
+	This section exists partly because I want to address some of the impact my PvP changes would have on MvM, and partly because I think MvM could do with a few balance tweaks even outside of that. I do not have an MvM mod (yet?) so I'm not as confident in these changes as I am in the PvP ones. Nontheless, I am still reasonably confident in them.
+</p>
+<p>
+	Every class is covered on this one page. In each weapon's subsection, the version of the weapon from my document is shown as a reminder of what it does now.
+</p>
+
+<table>
+
+<!--Gamemode-->
+
+<tr id="hitscan">
+  <h2>
+    Robot properties and behaviour
+  </h2>
+  <p>
+  	
+  </p>
+  <td colspan="1">
+    <ul>
+    	<li class="stat neutral"><b>Changes:</b></li>
+    		<ul>
+        	<li class="stat neutral">
+          	(!) Robots will prioritise players that are physically obstructing their movement over everyone else except for undisguised Spies within melee range
+        	</li>
+        	<li class="stat neutral">
+          	(!) Robots will no longer prioritise a Medic healing an undisguised Spy over the Spy himself
+        	</li>
+        	<li class="stat neutral">
+          	(!) Giant Medics will react to being backstabbed and after a second or two will turn to face the Spy like other Giants
+        	</li>
+        	<li class="stat neutral">
+          	(!) Pyro Robots that are capable of Airblasting (those with Flamethrowers, an AI level above Easy and not set to always attack) will Airblast stickies out of their way, and Expert-level bots of other classes will detect and shoot stickies on the floor if they are not actively engaging a player
+        	</li>
+        	<li class="stat neutral">
+          	(!) Explosive class Giant Robots will no longer sometimes stop attacking at point-blank
+        	</li>
+        	<li class="stat neutral">
+          	(!) Giants are immune to <i>all</i> forms of knockback
+        	</li>
+        </ul>
+   		</li>
+    </ul>
+  </td>
+</tr>
+  
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr id="hitscan">
+  <h2>
+    Sentry Busters
+  </h2>
+  <p>
+  	
+  </p>
+  <td colspan="1">
+    <ul>
+    	<li class="stat neutral"><b>Changes:</b></li>
+    		<ul>
+        	<li class="stat neutral">
+          	(!) If a Sentry Buster is stuck because it physically cannot reach the target Sentry, it will try to get into explosion range of the Sentry and begin its arming sequence
+        	</li>
+        	<li class="stat neutral">
+          	(!) Sentry Busters clip through Dispensers and Teleporters instead of destroying them on contact (they already clip through players)
+        	</li>
+					<li class="stat neutral">
+          	(!) Sentry Busters no longer build Rage or trigger on-hit effects when shot
+        	</li>
+        </ul>
+   		</li>
+    </ul>
+  </td>
+</tr>
+  
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr id="hitscan">
+  <h2>
+    Credits
+  </h2>
+  <p>
+  	
+  </p>
+  <td colspan="1">
+    <ul>
+    	<li class="stat neutral"><b>Changes:</b></li>
+    		<ul>
+        	<li class="stat neutral">
+          	(!) Money in a Scout's money collection aura will be instantly collected and play a subtle animation instead of being physically vortexed into him and potentially getting stuck on geometry
+        	</li>
+        	<li class="stat neutral">
+          	(!) Melee kills drop red money
+        	</li>
+        	<ul>
+        		<li class="stat neutral2">
+	          	<i>Quality-of-life for Spy and Demoknight to make them more efficient money collectors when there isn't a Scout; I'm making this an intrinsic property of melee for the sake of consistency</i>
+	        	</li>
+	        </ul>
+	        <li class="stat neutral">
+          	(!) Red money can no longer be picked up by non-Scouts (and will simply not appear if there is no Scout)
+        	</li>
+        </ul>
+   		</li>
+    </ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr id="hitscan">
+  <h2>
+    Reanimators
+  </h2>
+  <p>
+  	This is a quality-of-life change to prevent inexperienced Medics trying to revive you in bad spots and getting both of you killed. Making revives opt-in rather than opt-out lets you easily signal to your Medic exactly when you want to be revived versus when you really don't.
+  </p>
+  <td colspan="1">
+    <ul>
+    	<li class="stat neutral"><b>Changes:</b></li>
+    		<ul>
+        	<li class="stat neutral">
+          	(!) On death, your Reanimator starts deactivated and, if you have a friendly Medic, a prompt will appear to activate it; you can be revived when and only when it is activated, and you cannot decline in-progress revive attempts
+        	</li>
+        	<ul>
+	        	<li class="stat neutral">
+	          	<i>Ideally, neither this prompt nor being revived should interrupt the use of text chat the way the current one does</i>
+	        	</li>
+        	</ul>
+        </ul>
+   		</li>
+    </ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<!--Players-->
+
+<tr>
+  <td colspan="2">
+		<h2>Canteens</h2>
+		<p>
+		  Canteens tend to warp the game's balance when used well. Crit Canteens grant tremendous spikes of power that can trivialise dangerous sub-waves while also being very cheap compared to actual damage upgrades. Über Canteens are just as strong on aggressive classes that don't need to reload like Heavy and Spy, and Building Canteens are largely on the same level of power for Engineer. Even Ammo Canteens can be straight-up more efficient than buying ammo upgrades in a lot of missions. The Recall Canteen, on the other hand, is quite bad.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+			  <ul><li class="stat upside">
+					(+) Recall (Teleport to Spawn) Canteen does not empty meters (e.g. ÜberCharge) on use and now also grants 5 seconds of Mini-Crits
+			  </ul></li>
+			  <ul><li class="stat upside">
+					(+) Crit Boost Canteen properly triples Sentry Gun fire rate (including rockets)
+			  </ul></li>
+			  <ul><li class="stat downside">
+					(-) Canteen costs increased
+			  </ul>
+				<ul><li class="stat downside2">
+				  Crit Boost Canteen increased to $200 (was $100)
+				</ul></li>
+				<ul><li class="stat downside2">
+				  ÜberCharge Canteen increased to $150 (was $75)
+				</ul></li>
+				<ul><li class="stat downside2">
+				  Building Upgrade Canteen increased to $150 (was $50)
+				</ul></li>
+				<ul><li class="stat downside2">
+				  Refil Ammo Canteen increased to $50 (was $25)
+				</ul></li>
+		  </li>
+		</ul>
+	</td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr id="hitscan">
+  <h2>
+    Jump Height
+  </h2>
+  <p>
+  	When run alongside max Movement Speed on Scout, this upgrade allows players to make themselves extremely difficult for bots to track. Nerfing the upgrade reduces Scout’s ability to effortlessly distract everything. It wouldn’t particularly hurt the other classes (except maybe Spy) because it has little utility on them anyway.
+  </p>
+  <td colspan="1">
+    <ul>
+    	<li class="stat neutral"><b>Changes:</b></li>
+    		<ul>
+        	<li class="stat downside">
+          	(-) Cost increased to $200 (was $100)
+        	</li>
+					<li class="stat downside">
+          	(-) Efficacy decreased to +10% per tick (was +20%)
+        	</li>
+        </ul>
+   		</li>
+    </ul>
+  </td>
+</tr>
+  
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+  
+<tr>
+	<td colspan="2">
+	  <h2>
+	    Health Regen
+	  </h2>
+	  <p>
+	  	This upgrade can be legitimately useful on Engineer, Medic and especially Spy, but it’s not worth the purchase on other classes. It does not provide the same value as Heal on Kill (currently the same price) on classes that are constantly in combat.
+	  </p>
+	  <p>
+	  	I could just make it half-price or something, but I figured making it really cheap and cutting the efficacy a bit would be better since that would make it easier to slot in somewhere on more classes. The ceiling of the upgrade being lower doesn't matter since I never find myself buying more than two ticks anyway.
+	  </p>
+	</td>
+</tr>
+<tr>
+	<td colspan="1">
+	  <ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) Cost decreased to $50 (was $100)
+			  </li>
+			  <li class="stat upside">
+					(+) Number of ticks increased to 6 (was 5)
+			  </li>
+			  <li class="stat downside">
+					(-) Efficacy decreased to 1/sec (was 2/sec)
+				</li>
+		  </ul>
+		</ul>
+	</td>
+</tr>
+ 
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+	<td colspan="2">
+	  <h2>
+	    Clip Size
+	  </h2>
+	  <p>
+	  	On weapons that reload their shots individually, upgrading Clip Size mathematically doesn't improve your DPS that much since larger clips mean more time spent reloading them. These are low-priority upgrades on already-expensive weapons and it doesn't make much sense for them to cost as much as Damage upgrades on these weapons. Clip Size on whole-clip-reload weapons like the Soda Popper are quite strong and those should be left untouched.
+	  </p>
+	</td>
+</tr>
+<tr>
+	<td colspan="1">
+	  <ul>
+	  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) Clip Size upgrades on lever-action Scatterguns, Rocket Launchers, Shotguns, Grenade Launchers, Stickybomb Launchers and the Crusader's Crossbow are now 50% cheaper
+				</li>
+				<ul>
+					<li class="stat upside2">
+				  	$100 on Shotguns; $200 on everything else
+					</li>
+				</ul>
+		  </ul>
+	   </li>
+		</ul>
+	</td>
+</tr>
+ 
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+  
+<tr>
+  <td colspan="2">
+		<h2>Consumables/Lunchboxes</h2>
+		<p>
+		  Consumable items that give you buffs can be annoying to have to constantly stop to reapply. This change aims to make Crit-a-Cola Scout and Delokohs Bar or Steak Heavy more fluid. The other lunchbox items are getting it for the sake of consistency.
+		</p>
+		<p>
+		  Credit to Great Blue for the idea.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) Added: "+25% faster consumption speed" upgrade ($50 × 3 ticks)
+				</li>
+				<ul>
+			  	<li class="stat upside">
+						<i>The rate at which Heavy's foods give health would be sped up by this upgrade so you always get the full amount</i>
+					</li>
+			  </ul>
+		  </ul>
+		</ul>
+	</td>
+</tr>
+ 
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+	<td colspan="2">
+	  <h2>
+	    Secondary-slot Shotguns
+	  </h2>
+	  <p>
+	  	Damage-dealing secondary weapons are quite bad in MvM because they fall significantly behind the primary weapon as the game goes on, and they take money away from the primary weapon to upgrade while simply never reaching the same level. I want these weapons to be viable choices, but instead of trying to compete in terms of raw damage (which would require some insane buffs to achieve, and then would risk diluting class identity), I want them to be able to support the primary weapon at doing its job.
+	  </p>
+	  <p>
+	  	Engineer's Shotgun doesn't get this because it would invalidate the Frontier Justice's Crits, would be overpowered on the Widowmaker, and given that Engineer's <i>de facto</i> primary is the Sentry Gun, wouldn't even achieve my goal.
+	  </p>
+	</td>
+</tr>
+<tr>
+	<td colspan="1">
+	  <ul>
+	  	<li class="stat neutral"><b>Changes:</b></li>
+			<ul>
+				<li class="stat upside">
+					(+) Added: “+3s Crits on Kill” upgrade ($300 × 2 ticks)
+		  	</li>
+		  </ul>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+	<td colspan="2">
+	  <h2>
+	    Melee Weapons
+	  </h2>
+	  <p>
+	  	Melee weapons on most classes are also quite bad, aside from the occasional niche Tank-busting option. I like the risk/reward gameplay that the Crits on Kill upgrade adds to Grenade Demo’s gameplay, so I decided to give that option to everyone else, too.
+	  </p>
+	</td>
+</tr>
+<tr>
+	<td colspan="1">
+	  <ul>
+	  	<li class="stat neutral"><b>Changes:</b></li>
+			<ul>
+				<li class="stat upside">
+					(+) Added: All non-Demoman and non-Spy melee weapons gain “+3s Crits on Kill” upgrade ($150 × 2 ticks)
+		  	</li>
+		  	<li class="stat upside">
+					(+) Demoman and Spy's Crits on Kill upgrade cost reduced to $300 and duration increased to 3 sec (was $350 for 2 sec)
+		  	</li>
+		  </ul>
+		</ul>
+  </td>
+</tr>
+ 
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<!--Scout-->
+
+<tr>
+	<td colspan="2">
+	  <h2>
+	    Scout's Pistol
+	  </h2>
+	  <p>
+	  	The Pistol has the same issue that Shotguns do. I think it would benefit from the exact same upgrade.
+	  </p>
+	</td>
+</tr>
+<tr>
+	<td colspan="1">
+	  <ul>
+	  	<li class="stat neutral"><b>Changes:</b></li>
+			<ul>
+				<li class="stat upside">
+					(+) Added: “+3s Crits on Kill” upgrade ($300 × 2 ticks)
+		  	</li>
+		  </ul>
+		</ul>
+  </td>
+</tr>
+
+<tr>  <!-- Bonk! Atomic Punch -->
+  <td colspan="2">
+    <h2>Bonk! Atomic Punch</h2>
+    <p>
+      The changes to this weapon leave it in a rather unfortunate state in the context of MvM. I don't want to give it a unique upgrade because Bonk is such a situational effect that I don't think forcing the player to spend money on the item to make it not painful to use would be a good idea. I'm not opposed to small, weapon-specific baseline balance changes in MvM in select cases, so this might be one of those cases. 
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b></li>
+      <ul>
+        <li class="stat upside">
+          (+) Damage taken while invulnerable in MvM does not inflict slow
+        </li>
+      </ul>
+    </ul>
+  </td>
+  <td colspan="1">
+    <div class="container">
+      <div class="rounded-rectangle">
+        <div class="column image">
+          <img src="../weapons/scout/Bonk.png" alt="Bonk! Atomic Punch"/>
+        </div>
+        <div class="column text">
+          <h3>Bonk! Atomic Punch</h3>
+          <p class="stat subtle">
+            Radioactive Beverage
+          </p>
+          <p class="stat neutral">
+            Drink to become invulnerable to ranged damage and take reduced knockback from Sentry Guns for 5 seconds. Cannot attack during this time.
+          </p>
+          <p class="stat downside">
+            Damage absorbed will temporarily slow you.
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Mad Milk -->
+  <td colspan="2">
+    <h2>Mad Milk</h2>
+    <p>
+      Mad Milk fundamentally behaves differently now, and this has significant implications for MvM. I don't think there's anything fundamentally wrong with how the current Milk functions in MvM, and the enjoyment of the Robots isn't a factor that needs to be balanced around, so I think it should have an upgrade that brings that back. Seeing as the jar does nothing to enemies intrinsically anymore, it no longer makes sense to me to keep the slowing upgrade.
+    </p>
+    <p>
+      I also hope that Milk requiring some initial investment helps make other secondaries more appealing picks.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b></li>
+      <ul>
+        <li class="stat upside">
+          (+) Added: "Coated enemies release Milk" upgrade ($300 × 1 tick)
+        </li>
+        <ul>
+	        <li class="stat upside2">
+	          <i>This is the current Milk effect — the upgrade re-adds the ability for the jar to coat enemies and it applies a debuff that grants 60% lifesteal against the target</i>
+	        </li>
+	        <li class="stat upside2">
+	          <i>All of this would be explained in the Upgrade Station tooltip since this is technically not a debuff that exists outside of MvM anymore</i>
+	        </li>
+	      </ul>
+      </ul>
+    </ul>
+  </td>
+  <td colspan="1">
+    <div class="container">
+      <div class="rounded-rectangle">
+        <div class="column image">
+          <img src="../weapons/scout/Mad_Milk.png" alt="Mad Milk"/>
+        </div>
+        <div class="column text">
+          <h3>Mad Milk</h3>
+          <p class="stat subtle">
+            Non-Milk Substance
+          </p>
+          <p class="stat neutral">
+            Throw at teammates to heal and extinguish them.
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Flying Guillotine</h2>
+		<p>
+		  The Guillotine has abysmal DPS and its burst damage isn't strong enough to make a meaningful improvement in your ability to kill anything. There is an upgrade we could add that would give it a niche at efficiently dropping Medics and Snipers.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+			  <ul>
+			  	<li class="stat upside">
+						(+) Added: "Weapon is Crit-boosted" upgrade ($400 × 1 tick)
+					</li>
+			  </ul>
+		  </li>
+		</ul>
+	</td>
+</tr>
+ 
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Bats</h2>
+		<p>
+		  The Fan O'War outclasses Scout's other melees because it provides strong and frequently-applicable utility for a downside that currently doesn't matter. Making the Mark a universal capability of Scout's melees would give the others more opportunity to shine in their respective niches while keeping the Fan as the best one if all you need is Marking.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+			  <ul>
+			  	<li class="stat upside">
+						(+) Added: "Mark-for-Death On Hit" upgrade ($350 × 1 tick)
+					</li>
+					<ul>
+				  	<li class="stat upside2">
+							<i>The Fan O'War itself would not get this for obvious reasons</i>
+						</li>
+				  </ul>
+				  <li class="stat upside">
+						(+) The Sandman and Wrap Assassin now have "+10% Attack Speed" upgrades like every other melee in the game
+					</li>
+			  </ul>
+		  </li>
+		</ul>
+	</td>
+</tr>
+ 
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Sandman</h2>
+		<p>
+		  The PvP changes to the Sandman would make it immensely powerful in MvM if I didn't address it. Any sort of vulnerability that stacks with (Mini-)Crit sources would be overpowered and making it do something else specifically to Giants wouldn't make sense. I've opted to make it do nothing to them and, in return, give it back its former capabilities as a unique upgrade since the bots can't complain about being CC'd (the Sandman already has a unique upgrade so I think there's prececent for this).
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+			  <ul>
+					<li class="stat upside">
+						(+) Added: "Ball Stuns Target" upgrade ($500 × 1 tick)
+					</li>
+					<ul>
+						<li class="stat upside2">
+							<i>This would apply the same effect as a Sapper, with duration scaling with distance, and it does not work on invulnerable enemies</i>
+						</li>
+					</ul>
+			  	<li class="stat neutral">
+						(~) Removed: "Ball Marks Target" upgrade, which is now redundant
+					</li>
+			  	<li class="stat downside">
+						(-) No longer intrinsically applies any debuff to Giant Robots
+					</li>
+			  </ul>
+		  </li>
+		</ul>
+	</td>
+</tr>
+ 
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<!--Soldier-->
+
+<tr>
+  <td colspan="2">
+		<h2>Rocket Launcher</h2>
+		<p>
+		  Rocket Specialist's main effect is quite powerful but also doesn't stack. The secondary effects aren't substantial enough to be worth the cost of the upgrade on their own. This makes more than one point of Rocket Specialist a really poor investment.
+		</p>
+  </td>
+</tr>
+<tr>
+	<td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+			  <ul>
+			  	<li class="stat upside">
+						(+) Added: "+15% Blast Radius" upgrade ($200 × 4 ticks)
+					</li>
+			  	<li class="stat downside">
+						(-) Rocket Specialist upgrade no longer increases blast radius or projectile speed, and its cost is now $500 × 1 tick
+					</li>
+			  </ul>
+		  </li>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Direct Hit</h2>
+		<p>
+		  Even with the effective damage buff from the upgrade rework, this weapon would still struggle to find overall use due to extreme specialisation. I’ve tried to find a way to let the Direct Hit contribute something against crowds while still feeling like the Direct Hit.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) Added: “+1 Projectile Penetration” upgrade
+				</li>
+				<ul>
+					<li class="stat upside2">
+				  	$400 × 3 ticks
+				  </li>
+				</ul>
+				<ul>
+					<li class="stat upside2">
+				  	This works the same way as the Minigun upgrade — your rockets penetrate one enemy per tick
+				  </li>
+				</ul>
+				<ul>
+					<li class="stat upside2">
+				  	The explosion would only trigger when the projectile hits a surface or the final enemy, and the explosion would not damage anything that had already been hit by the projectile
+				  </li>
+				</ul>
+		  	<li class="stat downside">
+					(-) Removed: "+15% Blast Radius" upgrade
+				</li>
+		  </ul>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Cow Mangler 5000</h2>
+		<p>
+		  I like when things with interesting gimmicks get to leverage those gimmicks in MvM instead of feeling like minor variations of stock. The Mangler's charge shot isn't very useful in MvM, but this can be easily addressed.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) Added: "Charged shot is Mini-Crit-boosted" upgrade ($400 × 1 tick)
+			  </li> 
+			</ul>
+			<ul>
+		  	<li class="stat upside">
+					(+) Alt-fire only consumes the equivalent of four rockets instead of the entire battery with Clip Size upgrades
+			  </li> 
+			</ul>
+		</ul>
+	</td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Rocket Jumper</h2>
+		<p>
+		  The Rocket Jumper is a weapon that exists. As much as I resent that fact, I've commited to finding a purpose for it in MvM. Since it's not a proper primary weapon, its upgrades shouldn't be the same price. That frees the user up to invest more money into the Shotgun, melee and resistances.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) All upgrades on this weapon are now half price relative to the Rocket Launcher
+				</li>
+				<ul>
+					<li class="stat upside2">
+				  	Notably, this includes that "Rocket Specialist" is now a mere $250
+				  </li>
+				</ul>
+		  	<li class="stat neutral">
+		    	(~) Removed "+25% Damage", "+25% Max Ammo" and "+15% Blast Radius" upgrades since they don't do anything
+		    </li>
+		  </ul>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Mantreads</h2>
+		<p>
+		  My PvP changes to the Mantreads ended up depriving it of a situational use it has in MvM, so I want to bring that back. It also generally suffers from being weaker overall than the Banners.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul><li class="stat upside">
+				(+) Added: “-30% Knockback Taken” upgrade; $50 × 3 ticks
+		  </ul></li>
+		  </li>
+		  <ul><li class="stat neutral">
+		    (+) Added: “Stun enemies when you land” upgrade; $500 × 1 tick
+		  </ul></li>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<!--Pyro-->
+
+<tr>
+  <td colspan="2">
+		<h2>Burn Damage and Burn Duration</h2>
+		<p>
+		  The Afterburn upgrades are quite poor. It takes a surprisingly high amount of investiment to max out Afterburn and the return on your investment is negligible. My baseline changes to Afterburn would make it better on their own, but if we want Afterburn to be meaningful later into the game, the upgrades need improvement and streamlining.
+		</p>
+  </td>	
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) "Burn Time” and “Burn Damage” upgrades condensed into a single “Afterburn Mastery” Pyro-specific body upgrade ($250 × 4 ticks)
+				</li>
+				<ul>
+					<li class="stat upside2">
+				  	This applies to all of Pyro’s Afterburn sources simultaneously
+				  </li>
+					<li class="stat upside2">
+				  	Each tick increases Afterburn damage and duration by +50% and makes the Flamethrower take 25% less damage to ignite targets
+				  </li>
+				</ul>
+			</ul>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Flamethrower</h2>
+		<p>
+			Airblast Force is an awkward upgrade. Airblast isn't actually supposed to do much to Giants and only does now because of a bug, and spending time and money on stalling smaller enemies when you could kill them instead is suboptimal and annoying for teammates to have to play around. Pushing enemies is not an important part of Pyro gameplay and it shouldn't be presented as such. I’d rather the Airblast upgrade instead focus on the flashier, more fun part of Airblast. As a bonus, this provides more reason to run the Degreaser or Flamethrower.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) Added: “Reflect Mastery” upgrade ($350 × 1 tick)
+				</li>
+				<ul>
+					<li class="stat upside2">
+				  	The upgrade makes reflected projectiles inflict Afterburn on hit, briefly stun enemies on direct hits (<i>a la</i> Rocket Specialist), and travel 100% faster
+				  </li>	
+				</ul>
+		  	<li class="stat upside">
+					(+) Reflected projectiles inherit the Flamethrower's Damage upgrades
+				</li>
+				<ul>
+					<li class="stat upside2">
+				  	These stack multiplicatively with any damage bonuses on the enemy that fired the projectile
+				  </li>
+				</ul>
+		  	<li class="stat downside">
+					(-) Removed: “+25% Airblast Force” upgrade
+				</li>
+		  </ul>
+		</ul>
+	</td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Flare Guns</h2>
+		<p>
+		  The in-game tips present the Flare Gun as a powerful standalone weapon. It doesn't quite live up to that in practice. I think the Afterburn changes will help it out a lot, particularly in terms of anti-Giant damage, but I'd also like to swap out the Reload Speed upgrade for Damage. This is partly because having two upgrades that increase fire rate is a bit silly, partly because the Reload Speed upgrade truncating part of the reload animation looks terrible, and partly because more ways to increase the weapon's total damage would help it out.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) Added: "+25% Damage" upgrade ($200 × 4 ticks)
+				</li>
+		  	<li class="stat downside">
+					(-) Removed: "+20% Reload Speed" upgrade
+				</li>
+		  </ul>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Thermal Thruster</h2>
+		<p>
+		  The Thruster's upgrades are priced strangely. The mobility upgrade costs as much as a damage upgrade while being really situational, and the stun upgrade costs less for some reason despite actually being rather strong.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) “Able to re-launch while already in flight” upgrade cost reduced to $150
+				</li>
+		  	<li class="stat downside">
+					(-) “Stun enemies when you land” upgrade cost increased to $500 and no longer stuns invulnerable enemies
+				</li>
+		  </ul>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Gas Passer</h2>
+		<p>
+		  This should go without saying.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) Added: "-35% Slow on Targets" upgrade ($200 × 1 tick)
+				</li>
+				<ul>
+			  	<li class="stat upside2">
+						<i>This would actually be -35% and not the current version that's bugged to be more powerful</i>
+					</li>
+			  </ul>
+		  	<li class="stat downside">
+					(-) Removed: "Explode on Ignite" upgrade
+				</li>
+		  </ul>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<!--Demoman-->
+
+<tr>
+  <td colspan="2">
+		<h2>Demoman</h2>
+		<p>
+		  Demoman is tremendously expensive to upgrade. He excels in missions that let him easily spawncamp the Robots with sticky traps (which I consider largely a fault of bad map design that a lot of community maps have avoided, and which I have given the Robots counters to anyway), but other than that, he isn't so powerful that his Damage upgrade uniquely needs to be $500.
+		</p>
+		<p>
+		  Given the improvements to Demoknight's melee capabilities at baseline, however, he needs reigning in in the late game to keep him from melting Giants and Tanks. I think the melee being given the same damage upgrade as his other weapons would address that.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) "+20% Damage" upgrade on the Grenade and Stickybomb Launchers costs $400 (down from $500)
+				</li>
+		  	<li class="stat downside">
+					(-) Damage upgrade on the swords reduced down to +20% per tick (was +25%)
+				</li>
+		  </ul>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Shields</h2>
+		<p>
+		  Demoknight's main flaw (aside from only being able to kill one thing at a time, which has been addressed) is that he takes a lot of investment to properly get going and doesn't contribute as much as other Demo playstyles in most of the game. The PvP changes address this somewhat, but I think we could go further in terms of making his unique upgrades cheaper.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) "+100% Charge Recharge Rate" upgrade cost reduced to $100 (was $150)
+				</li>
+				<li class="stat neutral">
+					(~) "-30% Push Force On Wearer" upgrade rescaled to -25% push force per tick at $50 per tick (was $100 per tick)
+				</li>
+		  </ul>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<!--Heavy-->
+
+<tr>
+  <td colspan="2">
+		<h2>Minigun</h2>
+		<p>
+		  Heavy puts out massive damage in the early game because of his exceptionally high close-quarters damage and lack of downtime combined with his sheer ease of use. His damage then continues scaling up a fair amount with upgrades. In all the games I've played, it's rare that the Heavy <i>doesn't</i> top damage.
+		</p>
+		<p>
+		  Some of the Minigun's other upgrades are also a bit below par. Knockback Rage is almost always a liability and would probably still be mediocre even if it didn't reduce your damage on use. Destroy Projectiles 1 goes on cooldown for 0.3 seconds on hit and also needs to hit projectiles twice to fully destroy them, which gives it a significant weakness against sustained spam. It <i>should</i> have a weakness relative to the upgraded form, but it's just so much worse I rarely find it worth it to buy just on its own.
+		</p> 
+		<p>
+		  My goal is to lower Heavy's immense early-game potential while making his other abilities a more important part of his gameplay.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) "Destroy Projectiles" upgrade cost reduced to $350, and the first tick now destroys projectiles in one hit
+				</li>
+		  	<li class="stat neutral">
+					(!) Knockback Rage reworked into a different upgrade with the same name
+				</li>
+				<ul>
+					<li class="stat neutral2">
+						$400 × 1 tick
+					</li>
+				</ul>
+				<ul>
+					<li class="stat neutral2">
+						Deal damage to fill the Rage meter; when full, press Special Attack to release a shockwave in front of you that stuns enemies (<i>a la</i> Rocket Specialist, but for double the duration) and knocks back common Robots
+					</li>
+				</ul>
+		  	<li class="stat neutral">
+					(~) Damage penalty against Tanks reduced to -70%
+				</li>
+				<ul>
+					<li class="stat neutral2">
+						This compensates for the base Minigun changes to keep his Tank DPS mostly unchanged (6% higher than current)
+					</li>
+				</ul>
+		  	<li class="stat downside">
+					(-) Damage against Giant Robots reduced by 20%
+				</li>
+				<ul>
+					<li class="stat downside2">
+						Between this and the base Minigun changes, this brings his damage down to ~71% of what it currently is
+					</li>
+				</ul>
+		  </ul>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<!--Engineer-->
+
+<tr>
+  <td colspan="2">
+		<h2>Disposable Mini-Sentry</h2>
+		<p>
+			The Mini isn't very useful. Whilst a very cool idea, it's an expensive upgrade that requires you to spent time, Metal and focus maintaining an extra building in the chaos of battle, and then it doesn't do that much damage.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) The Disposable Sentry properly inherits any upgrades to the main Sentry
+				</li>
+				<li class="stat upside">
+					(+) Upgrade cost reduced to $250
+				</li>
+		  </ul>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Engineer's Pistol</h2>
+		<p>
+			The Pistol is particularly bad as secondaries in MvM go, since Engineer's real primary weapon is the Sentry Gun and he has a Shotgun for when he wants to shoot things himself, leaving the Pistol a tertiary weapon that would likely still pale in comparison to the other secondaries even in their nerfed states. Making it a strong damage source is unfeasable, but there is some distinct utility we could give it.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) Added: "+5 Metal on Hit" upgrade ($200 × 5 ticks)
+				</li>
+		  </ul>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Gunslinger and Mini-Sentry</h2>
+		<p>
+			The principle of the Gunslinger is shifting some power from the Sentry Gun to the Engineer himself. It fails to maintain this in MvM. The Mini-Sentry is significantly worse than the Level 3 Sentry and the extra health for the Engineer isn't nearly enough to make up for that. Given that the Shotgun properly becomes Engineer's primary when he can no longer rely on the Sentry for high damage, I think it'd be fair for the Upgrade Station to treat it like a primary.
+		</p>
+		<p>
+			I considered an upgrade that would let you have more Sentries, but I figured having to run around and constantly replace them as they blow up would be annoying and detract from the point of the Gunslinger.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) Equipping the Gunslinger adds a Damage upgrade to the primary weapon ($400 × 4 ticks)
+				</li>
+				<ul>
+					<li class="stat upside2">
+						<i>This upgrade's description would specify that it is tied to the Gunslinger and would no longer function if the Engineer swaps melees</i>
+					</li>
+				</ul>
+		  	<li class="stat upside">
+					(+) Mini-Sentries no longer spawn Sentry Busters
+				</li>
+		  </ul>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<!--Medic-->
+
+<tr>
+  <td colspan="2">
+		<h2>Medic</h2>
+		<p>
+			I want to make Healing Mastery a body upgrade that improves the primary weapon's healing as well as the Amputator's taunt, since this allows those weapons to continue scaling into the late game just like the Medi-Gun does, without requiring the user to divert money away from Medi-Gun upgrades. 
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) "Healing Mastery" upgrade is now tied to the Medic himself rather than the Medi-Gun, and improves healing from all sources
+				</li>
+		  	<li class="stat neutral">
+					(~) "Healing Mastery" upgrade no longer improves revive speed, but Reanimators recieve +50% healing intrinsically
+				</li>
+				<ul>
+					<li class="stat neutral2">
+						<i>This is equivalent to two points of Healing Mastery</i>
+					</li>
+				<ul>
+		  </ul>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Crusader's Crossbow</h2>
+		<p>
+			I don't see why the Crossbow couldn't have the same debuffing upgrade as the Syringe Gun, especially since the Syringe Gun now has access to the Crossbow's healing ability in turn.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) Added: "Mad Milk Syringes" upgrade
+				</li>
+		  	<li class="stat upside">
+					(+) The weapon will passively reload up to its maximum clip size over time instead of only reloading one shot
+				</li>
+		  </ul>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Medi-Guns</h2>
+		<p>
+			The Projectile Shield upgrade is obscenely powerful. It's effectively a team-wide ÜberCharge that deals its own damage on top when used properly, and it's a contributing factor towards the Kritzkreig being the obvious best Medi-Gun and stock being outclassed in most missions.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat neutral">
+					(!) "Projectile Shield" upgrade cost rescaled to $500 × 3 ticks
+				</li>
+				<ul>
+					<li class="stat neutral2">
+						<i>The first tick has a shield with half the width and less range in front of the Medic compared to the current level 1, deals the same damage per tick but with half the tick rate and applies a 15% slowdown on hit</i>
+					</li>
+					<li class="stat neutral2">
+						<i>The second tick has the same properties as the current level 1</i>
+					</li>
+					<li class="stat neutral2">
+						<i>The third tick has the same properties as the current level 2</i>
+					</li>
+		  	<li class="stat upside">
+					(+) Amount of Projectile Shield Energy given by damage blocked by ÜberCharge increased by 100% (400 damage blocked to full charge; was 800)
+				</li>
+				<li class="stat downside">
+					(-) Amount of Projectile Shield Energy given by damage dealt by teammates decreased by 25% (5000 damage dealt to full charge; was 4000)
+				</li>
+				<li class="stat downside">
+					(-) Healing given to Reanimators no longer provides double Energy to the Projectile Shield
+				</li>
+				<li class="stat downside">
+					(-) Projectile Shield duration is now dependent on level of the upgrade — 6 seconds at base with an extra 2 seconds for each level beyond the first (was 12 seconds for all levels)
+				</li>
+				<li class="stat downside">
+					(-) "Canteen Specialist" upgrade reverted back into "Share Power-Ups" from pre-Two Cities ($600 × 1 tick, and no effects beyond the canteen sharing)
+				</li>
+		  </ul>
+		  </ul>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Bonesaws</h2>
+		<p>
+		  The Übersaw is blatantly the best Medic melee in MvM. I don't expect the PvP changes to change this since farming Über off the Robots is more generally applicable than doing so against human players. The alternatives could do with some other utility to make them more viable choices.  
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) Added: "Mark-for-Death on Hit" upgrade for all Medic melees except the Übersaw ($200 × 1 tick)
+				</li>
+			</ul>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<!--Sniper-->
+
+<tr>
+  <td colspan="2">
+		<h2>Sniper Rifle</h2>
+		<p>
+		  Sniper is obscenely powerful in MvM. His Giant damage is solid as you'd expect from an assassin class, but he also gets possibly the best crowd control in the game in Explosive Headshot.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat downside">
+					(-) “Explosive Headshot" only triggers on fully charged shots, deals bullet damage (instead of bleed), and has its cost increased to $500 × 1 tick
+				</li>
+		    <ul>
+		    	<li class="stat downside2">
+						<i>Dealing bullet damage means the AoE will now be affected by any resistances that the bullet itself is</i>
+					</li>
+		    </ul>
+			</ul>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Huntsman</h2>
+		<p>
+		  The PvP changes I gave the Huntsman hurt it a bit in MvM. I want to change some of its upgrades to bring it back roughly to where it is now since, after its bugs got fixed, the Huntsman has proven to be solid without needing any further help.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) “Faster Reload Speed” upgrade replaced with "Bow Expert” ($350 × 2 ticks); increases reload speed, charge speed and headshot damage by 25%
+				</li>
+				<ul>
+			  	<li class="stat upside2">
+						<i>From my calculations, this Huntsman does 440 DPS with max Damage and Bow Expert ($2100), and the current one does 436 DPS with max Damage and Reload Speed ($2350), and then the extra $250 can be spent on Ammo Capacity to bring the reserve ammo back to the current value</i>
+					</li>
+			  </ul>
+		  </ul>
+		  <ul>
+		  	<li class="stat upside">
+					(+) Arrows upgraded with "Projectile Penetration" no longer break on contact with Übered players and no longer have less forgiving headshot hit registration
+				</li>
+		  </ul>
+		</ul>
+  </td>
+</tr>
+
+<!--Spy-->
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Spy</h2>
+		<p>
+		  Spy is a perfectly viable class in MvM. Some people are led to believe the opposite because he's more specialised than the others (aside from Medic) and his learning curve is practically a cliff. I don't want to lower his high skill ceiling or change his maximum effectiveness except to keep him in line with changes to other classes, but I do think he would benefit from being easier to pick up and a little more well-rounded particularly in the early game.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b>
+			  <ul>
+			  	<li class="stat upside">
+						(+) Added: Spy has the same fast respawn as Scout
+			  	</li>
+			  </ul>
+			</li>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Revolver</h2>
+		<p>
+		  I don't want to give the Revolver a Crit-focused upgrade since Spy can very easily take advantage of Crits on Kill on the Knife, and the Ambassador and Diamondback already have innate Crit mechanics. Instead, a Damage upgrade would make Spy's existing Crits stronger and allow for a viable hybrid-gunspy playstyle.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) Added: "+25% Damage" upgrade; $200 × 2 ticks
+				</li>
+				<ul>
+			  	<li class="stat upside2">
+						<i>It only has two ticks because otherwise a maxed Revolver with Crits on Kill active would do 1000 DPS, and that's a bit much. 750 DPS in very short bursts for $800 plus Crits on Kill is hopefully reasonable.</i>
+					</li>
+		  	</ul>
+		  </ul>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Ambassador</h2>
+		<p>
+		  The Ambassador is a fun weapon I think could do with a unique upgrade to help it leverage its gimmick in a more gun-focused playstyle that otherwise already has access to Crits. Anything that breaks Spy's disguise forces him to spend time taking cover and redisguising and it's hard to make a headshot comparable in value to a backstab without making the headshot immensely powerful (the reason I'm not giving it Explosive Headshot or anything like that). Instead, I thought it better to remove this time cost and make the Ambassador a quick and easy way to dispatch certain types of enemies.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b>
+		  <ul>
+		  	<li class="stat upside">
+					(+) Added: "Assassination Specialist" upgrade; $400 × 1 tick
+			  </li>
+			  <ul>
+			  	<li class="stat upside2">
+			  		<i>This upgrade gives headshots a 4× multiplier (over 150 damage with out any damage upgrades), removes their damage fall-off, makes them drop red money on kill and the weapon not break disguise when a fully accurate shot is fired</i>
+			  	</li>
+			  </ul> 
+			</ul>
+		 </li>
+		</ul>
+	</td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Sapper</h2>
+		<p>
+		  The Sapper is Spy's main means of contributing against large swarms (which dominate the early game in a lot of missions) and a lot of less experienced Spies rely on it because of the safety it offers. Sapper Power is relatively pricey and the latter ticks contribute almost nothing (anything worth sapping will be dead before the 7 second stun from Sapper Power 3 has a chance to matter). I would like investment into the Sapper to offer a bigger boost to the Spy's supportive abilities than it currently does.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+			<ul>
+				<li class="stat upside">
+					(+) Added: "+15% Recharge Rate" upgrade ($250 × 3 ticks)
+				</li>
+				<ul>
+					<li class='stat upside2'>
+						<i>Yes, this is one less tick than other cooldown-based items get because this stops the maximum uptime of the stun exceeding what is currently possible</i>
+					</li>
+				</ul>
+				<li class="stat upside">
+					(+) Sapping a building no longer disables the Sapper until either the placed sapper or the building is destroyed
+				</li>
+				<li class="stat neutral">
+					(~) Replaced "Robot Sapper Power" upgrade with "Sapper Radial Stun" ($250 × 1 tick)
+				</li>
+				<ul>
+					<li class='stat upside2'>
+						<i>This upgrade has the same effect as Sapper Power 1 does currently</i>
+					</li>
+				</ul>
+				<li class="stat downside">
+					(-) Robot Engineers will no longer fail to notice Red-Tape Recorders on their buildings
+				</li>
+		  </ul>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Knife</h2>
+		<p>
+		  Spy's damage versus Giants massively exceeds everything else in the game. It <i>should</i> be high because he is a specialist single-target remover and he often has to do his damage in short bursts because of how much aggro he draws when attacking, but 
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) Base backstab damage against Giants is now 800 (was 750)
+				</li>
+				<li class="stat downside">
+					(-) "Armor Penetration" upgrade ticks reduced to 3 (was 4)
+				</li>
+				<ul>
+					<li class="stat downside2">
+						<i>Maximum backstab damage is now 800, down from 938</i>
+					</li>
+					<li class="stat downside2">
+						<i>Here are the new stabs-to-kill thresholds for Giants at max Armour Penetration:</i>
+					</li>
+					<ul>
+						<li class="stat downside2">
+							<i>Scout: 2 --> 2</i>
+						</li>
+						<li class="stat downside2">
+							<i>Pyro: 4 --> 4</i>
+						</li>
+						<li class="stat downside2">
+							<i>Demoman: 4 --> 5</i>
+						</li>
+						<li class="stat downside2">
+							<i>Soldier: 5 --> 6</i>
+						</li>
+						<li class="stat downside2">
+							<i>Medic: 5 --> 6</i>
+						</li>
+						<li class="stat downside2">
+							<i>Heavy: 6 --> 7</i>
+						</li>
+						<li class="stat downside2">
+							<i>Bosses take ~20% more stabs to kill</i>
+						</li>
+					</ul>
+				</ul>
+		  </ul>
+		</ul>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+		<h2>Your Eternal Reward</h2>
+		<p>
+		  This weapon was specifically nerfed in MvM due to concerns that it would trivialise packs of common enemies. They did this by straight-up making the upside not work. I've experienced the unnerfed version in community MvM and while a solid option, it isn't overpowered because it's not particularly efficient and Spy is at his best when focusing on Giant-killing anyway.
+		</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) Backstabs against Robots once again grant instantaneous disguises
+			  </li>
+			  <ul>
+			  	<li class="stat upside2">
+			  		<i>Note that Robots can still sometimes detect YER backstabs (which I'm not changing), they will just not open fire on you unless they directly witness you attack</i>
+			  	</li>
+			  </ul> 
+			</ul>
+		</ul>
+	</td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+	<h2>Invis Watches</h2>
+	<p>
+	  Robots aren't fooled by cloaking in front of them. They will keep firing in your direction and only stop after a second or so of not getting hits on you. The Dead Ringer is obviously the best pick because the speed and damage resistance helps you avoid being beamed down through cloak, and its alternatives bring virtually nothing to the table.
+	</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+		<ul>
+		  <li class="stat neutral"><b>Changes:</b></li>
+		  <ul>
+		  	<li class="stat upside">
+					(+) Added: "Speed Boost while Cloaked" upgrade ($200 × 1 tick)
+				</li>
+		  </ul>
+		</ul>
+  </td>
+</tr>

@@ -4,7 +4,7 @@
 <a href="../index.html" class="home-button">
   <div class="image-container">
     <img src="../resources/Home.png" class="normal" alt="Home"/>
-    <img src="../resources/Scout_inv.png" class="hover" alt="Home"/>
+    <img src="../resources/Home_inv.png" class="hover" alt="Home"/>
   </div>
 </a>
 
@@ -20,49 +20,73 @@
 </h1>
 
 <table>
-	<tr>
-      <td colspan="2">
-        <h2>Frontier Justice</h2>
-        <p>
-          The design of this weapon – trade some of your power normally for a boost when you would otherwise 
-		  be vulnerable – is interesting, but the current implementation creates some issues. In addition to
-		  being another weapon that can snowball off kills, enemies are often unable to tell if destroying any
-		  given Sentry will grant the Engie Crits, how many Crits the Engie gets, and whether or not he still
-		  has them when the weapon is stowed. I also dislike how the loadout system allows players to take advantage
-		  of the weapon's strength situationally without needing to engage with its downside.
-        </p>
-      </td>
-	</tr>
-	<tr>
-      <td colspan="1">
+
+<tr>  <!-- Core Class -->
+  <td colspan="2">
+    <h2>
+      Core class
+    </h2>
+    <p>
+      Engineer is stated in the developer commentary to be designed around needing to use his own weapons to compensate for the Sentry Gun's weaknesses. This is important because it adds skill expression to the class. He is currently very easy to kill for any combat class, and the current strongest Engineer weapons being ones that take power away from him and give it to the Sentry suggests combat on Engineer is an afterthought. Putting more of the class's emphasis onto combat Engineer gives him more room to shine outside of defense and raises his skill ceiling.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Changes:</b>
         <ul>
-		<li class="stat neutral"><b>Goal:</b> Make the item more predictable to fight against, and incentivise
-		more active use of the shotgun
-		</li>
-		<li class="stat neutral"><b>Changes:</b>
+          <li class="stat upside">
+            (+) Max health increased to 150
+          </li>
+        </ul>
+    </ul>
+  </td>
+  <td colspan="1">      
+    <div class="container">
+
+    </div>
+  </td> 
+</tr>
+
+<tr>  <!-- Frontier Justice -->
+  <td colspan="2">
+    <h2>Frontier Justice</h2>
+    <p>
+      The design of this weapon — trade some of your power normally for a boost when you would otherwise be vulnerable — is interesting, but the current implementation creates some issues. In addition to being another weapon that can snowball off kills, enemies are often unable to tell if destroying any given Sentry will grant the Engie Crits, how many Crits the Engie gets, and whether or not he still has them when the weapon is stowed. I also dislike how the loadout system allows players to take advantage of the weapon's strength situationally without needing to engage with its downside.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+      <ul>
+  	<li class="stat neutral"><b>Goal:</b> Make the item more predictable to fight against, and incentivise
+  	more active use of the shotgun
+  	</li>
+  	<li class="stat neutral"><b>Changes:</b>
           <ul><li class="stat upside">
             (+) Kills by the Engineer that are assisted by their Sentry grant 2 stored Crits (instead of 1)
           </ul></li>
-		<ul><li class="stat downside">
+  	<ul><li class="stat downside">
             (-) Only Sentries built while the weapon is equipped will store Revenge Crits
-		</li>
-		  <ul><li class="stat downside2"><i>
-			Sentries built with this weapon equipped will have a capacitor and antenna (similar to the device
-			on the gun) attached to them for the sake of telegraphing
-		  </ul></li></i>
-		  <ul><li class="stat downside2"><i>
-			If this Sentry dies while you have a different primary equipped, you still do not get Revenge Crits
-		  </ul></li></i>
-		</ul>
-		<ul><li class="stat downside">
+  	</li>
+  	  <ul><li class="stat downside2"><i>
+  		Sentries built with this weapon equipped will have a capacitor and antenna (similar to the device
+  		on the gun) attached to them for the sake of telegraphing
+  	  </ul></li></i>
+  	  <ul><li class="stat downside2"><i>
+  		If this Sentry dies while you have a different primary equipped, you still do not get Revenge Crits
+  	  </ul></li></i>
+  	</ul>
+  	<ul><li class="stat downside">
             (-) Revenge Crits have a 10 second timer on use after Sentry destruction, after which they will be
-			reset to 0
+  		reset to 0
           </ul></li>
-		<ul><li class="stat neutral">
+  	<ul><li class="stat neutral">
             (~) Destruction of a Sentry that would cause the Engineer to gain Revenge Crits causes him to play a voiceline
           </ul></li>
         </ul>
-      </td>
+  </td>
   <td colspan="1">
     <!-- Stat card -->
     <div class="container">
@@ -80,17 +104,17 @@
           <p class="stat upside">
             Your Sentry stores 2 Revenge Crits for each Sentry kill or kills assisted by the Sentry, and 1 for each other Sentry assist when your Sentry is destroyed
           </p>
-		<p class="stat downside">
+  	<p class="stat downside">
             -50% clip size
           </p>
-		<p class="stat downside">
+  	<p class="stat downside">
             Revenge Crits are lost on death or after 10 seconds
           </p>
         </div>
       </div>
     </div>
   </td>
-	</tr>
+</tr>
 	
 <tr>
   <td colspan="2">
@@ -98,87 +122,80 @@
   </td>
 </tr>
 
-	<tr>
-      <td colspan="2">
-        <h2>Rescue Ranger</h2>
-        <p>
-         The last nerf to this item was intended to reduce its overall power due to the sheer amount of utility
-		 it provides. The change succeeded at this, but the item is still extremely powerful in defensive 
-		 scenarios because of how it significantly reduces risk to the Engineer. I think a more targeted change
-		 to address this problem would make the weapon more fair.
-        </p>
-      </td>
-	</tr>
-	<tr>
-      <td colspan="1">
-        <ul>
-		<li class="stat neutral"><b>Goal:</b> Make it more difficult to sustain buildings from safety
-		</li>
-		<li class="stat neutral"><b>Changes:</b>
-          <ul><li class="stat upside">
-            (+) Base damage increased to 50 (was 40)
-          </ul></li>
-		<ul><li class="stat upside">
-            (+) Repairs no longer cost Metal
-          </ul></li>
-		<ul><li class="stat downside">
-            (-) Ramp-up reduced to 120% (max damage unchanged)
-          </ul></li>
-		<ul><li class="stat downside">
-            (-) Healing is applied over time at a rate of 20 health/second
-		</li>
-		  <ul><li class="stat downside2"><i>
-			This effect can stack
-		  </ul></li></i>
-		</ul>
-		<ul><li class="stat downside">
-            (-) Buildings targeted by the Alt-fire undergo a brief deconstruction animation back into a toolbox
-			before being teleported to the Engineer
-		</li>
-            <ul><li class="stat downside2"><i>
-			Buildings deconstruct four times as fast as they take to build
-		  </ul></li></i>
-		  <ul><li class="stat downside2"><i>
-			The Engineer cannot pick up any other buildings during the deconstruction animation, and the building
-			will self-destruct if the Engineer dies during it
-		  </ul></li></i>
-		</ul>
-        </ul>
-      </td>
+<tr>   <!-- Rescue Ranger -->
+  <td colspan="2">
+    <h2>Rescue Ranger</h2>
+    <p>
+      While the teleport ability allows for new strategies and lots of creative potential, being able to rescue your Sentry Gun from danger and repair it in safety for a fraction of the cost and time investment of building another one is an extremely powerful stalling tactic. While I find the ranged repair ability less objectionable, I think the previous nerf should be taken further and the sustained repair output be brought down slightly.
+    </p>
+  </td>
+</tr>
+<tr>
   <td colspan="1">
-    <!-- Stat card -->
+    <ul>
+    	<li class="stat neutral"><b>Goal:</b> Make it more difficult to sustain buildings from safety, while slightly improving the weapon's damage potential as consolation</li>
+    	<li class="stat neutral"><b>Changes:</b></li>
+      <ul>
+        <li class="stat upside">
+          (+) Base damage increased to 50 (was 40)
+        </li>
+        <li class="stat downside">
+          (-) Ramp-up reduced to 120% (max damage unchanged)
+        </li>
+        <li class="stat downside">
+          (-) Repairs from the primary fire consumes Metal in the same ratio as the Wrench (was 33% more efficient)
+        </li>
+        <li class="stat downside">
+          (-) The Resupply Cabinet no longer instantly reloads this weapon
+        </li>
+    	  <li class="stat downside">
+          (-) Buildings targeted by the Alt-fire undergo a brief deconstruction animation back into a toolbox before being teleported to the Engineer
+    	  </li>
+        <ul>
+          <li class="stat downside2">
+            <i>Buildings deconstruct four times as fast as they take to build on their own, and the de-levelling animation adds to this time</i>
+    	    </li>
+          <li class="stat downside2">
+            <i>The teleport will still be instant in MvM, reflecting how buildings in MvM can redeploy instantly</i>
+          </li>
+          <li class="stat downside2">
+    		    <i>The Engineer cannot pick up any other buildings during the deconstruction animation, and the building will self-destruct immediately if the Engineer dies during it</i>
+    	    </li>
+        </ul>      
+    	</ul>
+    </ul>
+  </td>
+  <td colspan="1">
     <div class="container">
       <div class="rounded-rectangle">
-        <!-- Left column -->
         <div class="column image">
           <img src="../weapons/engineer/Rescue Ranger.png" alt="Rescue Ranger" />
         </div>
-        <!-- Right column -->
         <div class="column text">
           <h3>Rescue Ranger</h3>
           <p class="stat subtle">
             Modified Shotgun
           </p>
           <p class="stat upside">
-            Alt-fire: Use 100 Metal to pick up your targeted building from long range after a brief animation
+            Alt-fire: Use 100 Metal to pick up your targeted building from long range after a brief delay
           </p>
-		<p class="stat upside">
-            Fires a special bolt that can repair friendly buildings
+  	      <p class="stat upside">
+            Fires a special bolt that can repair friendly buildings at the cost of Metal
           </p>
-		<p class="stat downside">
+  	      <p class="stat downside">
             -34% clip size
           </p>
-		<p class="stat downside">
+  	      <p class="stat downside">
             -50% max primary ammo on wearer
           </p>
-		<p class="stat downside">
+  	      <p class="stat downside">
             Self Mark-for-Death when hauling buildings
           </p>
         </div>
       </div>
     </div>
   </td>
-	</tr>
+</tr>
 	
 <tr>
   <td colspan="2">
@@ -191,7 +208,7 @@
         <h2>Wrangler</h2>
         <p>
          The current version of the Wrangler is extremely good at stalling pushes due to its ability to create a 
-		 600 health object that can waste the vast majority of an Über’s duration on its own. This ability also 
+		 600+ health object that can waste the vast majority of an Über’s duration on its own. This ability also 
 		 requires fairly little effort from the Engineer player.
         </p>
         <p>
@@ -363,36 +380,41 @@
   </td>
 </tr>
 
-	<tr>
-      <td colspan="2">
-        <h2>Gunslinger & Mini-Sentry</h2>
-        <p>
-         The Gunslinger is a somewhat polarising weapon. It's especially threatening to short-range classes who
-		 struggle to effectively kill the Mini-Sentries. However, the Minis are more of an annoyance than a threat
-		 to classes like Demo, and in my opinion the Gunslinger doesn't keep up with the Jag even for aggressive play.
-        </p>
-      </td>
-	</tr>
-	<tr>
-      <td colspan="1">
-        <ul>
-		<li class="stat neutral"><b>Goal:</b> Make the Mini-Sentry less annoying and more powerful
-		</li>
-		<li class="stat neutral"><b>Changes:</b>
-          <ul><li class="stat upside">
-            (+) Mini-Sentry base construction speed increased to pre-Gun Mettle levels
-          </li></ul>
-		<ul><li class="stat downside">
-            (-) Mini-Sentry bullets do not deal knockback or inflict flinch
-          </li></ul>
-		<ul><li class="stat downside">
-            (-) Mini-Sentry turn speed reduced to that of a Level 1 Sentry
-          </li></ul>
-		<ul><li class="stat downside">
-            (-) Mini-Sentry health reduced to 80
-          </li></ul>
-        </ul>
-      </td>
+<tr>
+  <td colspan="2">
+    <h2>Gunslinger & Mini-Sentry</h2>
+    <p>
+      The Gunslinger is a somewhat polarising weapon. It's especially threatening to short-range classes who struggle to effectively kill the Mini-Sentries. However, the Minis are more of an annoyance than a threat to classes like Demo, and in my opinion the Gunslinger doesn't keep up with the Jag even for aggressive play.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+  		<li class="stat neutral"><b>Goal:</b> Make the Mini-Sentry less annoying, more consistent in its strength versus different classes and more directly powerful overall</li>
+  		<li class="stat neutral"><b>Changes:</b></li>
+      <ul>
+        <li class="stat upside">
+          (+) Mini-Sentries build at their maximum speed even when not being hit by the Engineer
+        </li>
+        <li class="stat upside">
+          (+) Mini-Sentry base damage increased to 12.8, bringing its DPS in line with the Level 1 Sentry
+        </li>
+        <li class="stat downside">
+          (-) Mini-Sentry bullets do not deal knockback or inflict flinch
+        </li>
+        <li class="stat downside">
+          (-) Mini-Sentry turn speed reduced to that of a Level 1 Sentry
+        </li>
+        <li class="stat downside">
+          (-) Mini-Sentry sight radius reduced by 25% (800 Hu, was 1200)
+        </li>
+        <li class="stat downside">
+          (-) Mini-Sentries have a 25% vulnerability to bullet damage
+        </li>
+      </ul>
+    </ul>
+  </td>
   <td colspan="1">
     <!-- Stat card -->
     <div class="container">
@@ -403,31 +425,21 @@
         </div>
         <!-- Right column -->
         <div class="column text">
-          <h3>Short Circuit</h3>
+          <h3>Gunslinger</h3>
           <p class="stat subtle">
-            Mechanical Arm
+            Robot Arm
           </p>
-          <p class="stat neutral">
-            Fires a short-distance electrical arc
+          <p class="stat uspide">
+            +25 max health on wearer
           </p>
-		<p class="stat neutral">
-           Hold to charge, increasing damage, and Metal cost
-          </p>
-		<p class="stat neutral">
-           Fully-charged shots destroy projectiles and explode in your hand when overcharged
-          </p>
-		<p class="stat neutral">
-           Uses Metal for ammo
-          </p>
-		<p class="stat neutral">
-           Per shot: 10-40 Metal
+		      <p class="stat neutral">
+            Replaces the Sentry with a cheaper and faster-building but weaker Mini-Sentry
           </p>
         </div>
       </div>
     </div>
   </td>
-	</tr>
-	
-	
-  </table>
+</tr>
+
+</table>
 </html>

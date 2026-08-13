@@ -4,7 +4,7 @@
 <a href="../index.html" class="home-button">
   <div class="image-container">
     <img src="../resources/Home.png" class="normal" alt="Home"/>
-    <img src="../resources/Scout_inv.png" class="hover" alt="Home"/>
+    <img src="../resources/Home_inv.png" class="hover" alt="Home"/>
   </div>
 </a>
 
@@ -19,120 +19,249 @@
   Scout
 </h1>
 
- <table>
-  <tr id="hitscan"> <!-- Primary changes -->
-    <h2>
-      Force-A-Nature
-    </h2>
+<table>
+
+<tr> <!-- Scattergun -->
+  <td colspan="2">
+    <h2>Scattergun</h2>
     <p>
-	 The knockback on this weapon is, more often than not, a liability. The first shot blasts the target out of range of the second shot, forcing the user to have to fight the weapon in order to use it to its full potential.
+      This change is meant to keep Scout in line with the other combat classes after the global explosive nerf. Now, he has to play a bit more aggressively which gives those classes more opportunity to land solid hits on him.
     </p>
-     <td colspan="1">
-      <ul>
-      <li class="stat neutral"><b>Goal:</b> Make the weapon more reliable at dealing damage (and generally more consistent)
-      </li>
-      <li class="stat neutral"><b>Changes:</b>
-          <ul><li class="stat upside">
-            (+) Removed: If ammo is unused when reloading, it is lost
-          </ul></li>
-		<ul><li class="stat upside">
-            (+) Force jumping no longer temporarily stuns the user (disables their ability to strafe)
-          </ul></li>
-		 <ul><li class="stat upside">
-            (+) Increased bullets per shot to +40%
-          </ul></li>
-		<ul><li class="stat neutral">
-            (~) This weapon has a modified spread pattern, with the extra four bullets forming a smaller ring inside of the standard one (see image)
-          </ul></li>
-		<ul><li class="stat neutral">
-            (~) Reduced knockback
-          </li>
-		  <ul><li class="stat neutral2"><i>
-            Horizontal knockback reduced to a 200% multiplier (was 300%)
-            </ul></li></i>
-		  <ul><li class="stat neutral2"><i>
-            Fixed vertical knockback now scales inversely with distance (from 0 at 400 HU to the current value of 268 HU/s at point-blank)
-            </ul></li></i>
-		</ul>
-		<ul><li class="stat downside">
-            (-) Damage penalty increased to 20%
-          </ul></li>
-		<ul><li class="stat downside">
-            (-) Knockback does not stun enemies, takes their existing momentum into account, and respects knockback resistances/immunities
-          </ul></li>
-	   </li>
-        </ul>
-      </td>
+    <p>
+      I'm also including a buff versus builings partly to help offset the other change and partly because the Scattergun's reliance on its uniquely high ramp-up for its damage makes it bad at fighting Sentry Guns to a degree I think is excessive.
+    </p>
+  </td>
+</tr>
+<tr>
   <td colspan="1">
-    <!-- Stat card -->
+    <ul>
+      <li class="stat neutral"><b>Changes:</b></li>
+      <ul>
+        <li class="stat upside">
+          (+) Deals 15% increased damage to buildings
+        </li>
+        <li class="stat downside">
+          (-) Uses a new spread pattern with three rows of five pellets (15 total), 20% wider than the current shotgun spread pattern
+        </li>
+        <ul>
+          <li class="stat downside2">
+            The overall per-shot damage is identical; the damage is just split between more pellets
+          </li>
+        </ul>
+      </ul>
+    </ul>
+  </td>
+  <td colspan="1">
     <div class="container">
       <div class="rounded-rectangle">
-        <!-- Left column -->
         <div class="column image">
-          <img src="../weapons/scout/Force-A-Nature.png" alt="Force-A-Nature" />
+          <img src="../weapons/scout/Scattergun.png" alt="Scattergun"/>
         </div>
-        <!-- Right column -->
         <div class="column text">
-          <h3>Force-A-Nature</h3>
+          <h3stock>Scattergun</h3stock>
           <p class="stat subtle">
             Scattergun
-          </p>
-		 <p class="stat upside">
-            +50% faster firing speed
-          </p>
-          <p class="stat upside">
-            Knockback on target and shooter
-          </p>
-          <p class="stat upside">
-            +40% bullets per shot
-          </p>
-          <p class="stat downside">
-            20% damage penalty
-          </p>
-          <p class="stat downside">
-            -66% clip size
-          </p>
-		<p class="stat neutral">
-            This weapon fires in a wide spread pattern and reloads its entire clip at once.
           </p>
         </div>
       </div>
     </div>
   </td>
-  </tr>
-  
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr> <!-- Force-a-Nature -->
+  <td colspan="2">
+    <h2>Force-a-Nature</h2>
+    <p>
+      The knockback on this weapon is often a liability. It makes mid-air combat more cumbersome, and the first shot blasts the target out of the second shot's effective range which makes two-shotting power classes less reliable. It is also annoying to play against. The knockback is an important part of the weapon's identity and playstyle, so rather than take a heavy-handed approach and remove it, I'm making slight adjustments to its properties and those of the weapon itself.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Make the weapon more reliable at dealing damage (and generally more user-friendly)</li>
+      <li class="stat neutral"><b>Changes:</b></li>
+        <ul>
+          <li class="stat upside">
+            (+) Increased bullets per shot to +45%
+          </li>
+          <ul>
+            <li class="stat upside2">
+              <i>These extra five pellets form a + shape in the middle of the spread pattern, stacking on top of the existing pellets</i>
+            </li>
+          </ul>
+          <li class="stat upside">
+            (+) Self-knockback is now tied to an alt-fire attack that otherwise functions identically to the primary fire
+          </li>
+          <li class="stat downside">
+            (-) Damage penalty increased to 25% (max per-shot damage of 118)
+          </li>
+          <li class="stat downside">
+            (-) Knockback does not stun enemies, takes their existing momentum into account, and respects knockback resistances/immunities
+          </li>
+        </ul>
+    </ul>
+  </td>
+  <td colspan="1">
+    <div class="container">
+      <div class="rounded-rectangle">
+        <div class="column image">
+          <img src="../weapons/scout/Force-a-Nature.png" alt="Force-a-Nature"/>
+        </div>
+        <div class="column text">
+          <h3>Force-a-Nature</h3>
+          <p class="stat subtle">
+            Double-Barrel Scattergun
+          </p>
+          <p class="stat upside">
+            +50% faster firing speed
+          </p>
+          <p class="stat upside">
+            Inflicts knockback on hit
+          </p>
+          <p class="stat upside">
+            +50% bullets per shot
+          </p>
+          <p class="stat downside">
+            25% damage penalty
+          </p>
+          <p class="stat downside">
+            -66% clip size
+          </p>
+          <p class="stat neutral">
+            Alt-fire: Fire a shot that knocks you back
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
 <tr>
   <td colspan="2">
     <hr>
   </td>
 </tr>
   
-<tr>
-<td colspan="2">
-  <h2>
-    Shortstop
-  </h2>
-  <p>
-   The Shortstop is not that bad of a weapon, but it could do with a little bit of help. The reload speed did not need to be nerfed as hard as it was. 
-   Many of the original design's problems came from the extra survivability, which has since been removed.
-  </p>
-</td>
+<tr>  <!-- Baby Face's Blaster -->
+  <td colspan="2">
+    <h2>
+      Baby Face's Blaster
+    </h2>
+    <p>
+      Players often complain that Boost is too easily lost. A couple of stray bullets or a bit of splash damage is enough to drop a Scout from 520 HU/s back down to 360 HU/s. The Boost drain on double jump compounds this by making it harder to dodge explosives.
+    </p>
+    <p>
+      Aside from this, I rather like the current design. It focuses on providing options to both Scout and the other team. It tries to control the power of the Boost by giving the other team the ability to slow the Scout down with damage, instead of with penaltiesto other parts of the gun. This means the Scout is still able to do normal Scout things instead of being locked out of jumping or being forced to chip people from range.
+    </p>
+  </td>
 </tr>
 <tr>
- <td colspan="1">
-  <ul>
-  <li class="stat neutral"><b>Goal:</b> Make the weapon less clunky
-  </li>
-  <li class="stat neutral"><b>Changes:</b>
-	  <ul><li class="stat upside">
-		(+) Reload time reduced by 25%
-	  </li>
-	  <ul><li class="stat upside2"><i>
-		Was ~1.5 seconds, now ~1.15 seconds
-		</ul></li></i>
-	  </ul>
-   </li>
-	</ul>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Refine the current design to be more user-friendly and consistent
+      </li>
+      <li class="stat neutral"><b>Changes:</b>
+    	  <ul><li class="stat upside">
+    		  (+) Ratio of damage to Boost lost changed to 1:2 (was 1:4)
+    	  </li></ul>
+    	  <ul><li class="stat upside">
+    		  (+) Boost loss from double jumping changed to 50% (was 75%)
+    	  </li></ul>
+    	  <ul><li class="stat upside">
+    		  (+) User passively build Boost (at a rate of 2%/sec)
+    	  </li></ul>
+    	  <ul><li class="stat upside">
+    		  (+) Fall damage does not drain Boost
+    	  </li></ul>
+    	  <ul><li class="stat downside">
+    		  (-) Ratio of damage to boost gained changed to 3:2 (was 1:1)
+    	  </li></ul>
+       </li>
+  	</ul>
+  </td>
+  <td colspan="1">      
+    <div class="container">
+      <div class="rounded-rectangle">
+        <!-- Left column -->
+        <div class="column image">
+          <img src="../weapons/scout/Baby Face's Blaster.png" alt="Baby Face's Blaster" />
+        </div>
+        <!-- Right column -->
+        <div class="column text">
+          <h3>Baby Face's Blaster</h3>
+          <p class="stat subtle">
+            Scattergun
+          </p>
+          <p class="stat upside">
+            Boost builds on hit and slowly over time
+          </p>
+		      <p class="stat upside">
+            Run speed increases with Boost
+          </p>
+		      <p class="stat downside">
+            -34% clip size
+          </p>
+		      <p class="stat downside">
+            10% slower move speed on wearer
+          </p>
+		      <p class="stat downside">
+            50% Boost drained on air jumps
+          </p>
+		      <p class="stat downside">
+             Boost reduced when hit
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>	
+</tr>
+ 
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Shortstop -->
+  <td colspan="2">
+    <h2>
+      Shortstop
+    </h2>
+    <p>
+     The Shortstop has one of the slowest reloads in the game, which makes it feel cumbersome to use and extremely punishing when the user misses its very tight damage thresholds. The reload, however, does need to be slow because the Shortstop is capable of strong and consistent damage from outside the effective range of many other classes, so the Scout needs to be incentivised to take risks and secure kills in as few shots as possible to keep the weapon from feeling unfair.
+    </p>
+    <p>
+      Credit to Sile Animus for the segmented reload idea.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Add more forgiveness to the weapon without raising the mid/long-range DPS significantly</li>
+      <li class="stat neutral"><b>Note:</b> This weapon is unaffected by the base Scattergun changes as it is not a Scattergun</li>
+      <li class="stat neutral"><b>Changes:</b></li>
+      <ul>
+        <li class="stat neutral">
+          (~) Shells are reloaded one at a time instead of all at once
+        </li>
+        <ul>
+          <li class="stat neutral2">
+            <i>The initial animation of opening the weapon takes 0.2 seconds and each shell takes 0.35 seconds, for a maximum duration of 1.6 seconds</i>
+          </li>
+        </ul>
+        <li class="stat downside">
+          (-) Each shot is split into five pellets rather than four
+        </li>
+      </ul>
+    </ul>
   </td>
   <td colspan="1">
     <!-- Stat card -->
@@ -151,145 +280,362 @@
           <p class="stat downside">
             20% increased knockback while active
           </p>
-		<p class="stat neutral">
-            This handgun fires faster and more accurately than the Scattergun at the cost of damage. It holds a 4-shot clip and reloads it all at once.
+          <p class="stat neutral">
+            This handgun fires faster and more accurately than the Scattergun at the cost of damage. It holds a 4-shot clip and reloads one shell at a time.
           </p>
-		<p class="stat neutral">
+          <p class="stat neutral">
             Alt-fire to reach out and shove someone!
           </p>
         </div>
       </div>
     </div>
-  </td>	
- </tr>
+  </td> 
+</tr>
  
 <tr>
   <td colspan="2">
     <hr>
   </td>
 </tr>
-  
-<tr>
-<td colspan="2">
-  <h2>
-    Baby Face's Blaster
-  </h2>
-  <p>
-   Players often complain that Boost is too easily lost. A couple of stray bullets or a 
-   bit of splash damage is enough to drop a Scout from 520 HU/s back down to 360 HU/s. 
-   The Boost drain on double jump compounds this by making it harder to dodge explosives.
-  </p>
-  <p>
-   Aside from this, I rather like the current design. It focuses on providing options to 
-   both Scout and the other team. It tries to control the power of the Boost by giving 
-   the other team the ability to slow the Scout down with damage, instead of with penalties
-   to other parts of the gun. This means the Scout is still able to do normal Scout things
-   instead of being locked out of jumping or being forced to chip people from range.
-  </p>
-</td>
+
+<tr>  <!-- Pretty Boy's Pocket Pistol -->
+  <td colspan="2">
+    <h2>Pretty Boy's Pocket Pistol</h2>
+    <p>
+      Following its rework, this weapon was overpowered because it had better DPS than the Pistol on top of its healing. I think the healing is the more interesting aspect of the weapon — the Winger also has a minor burst damage focus — so I'm going to shift the focus of the weapon entirely into that.
+    </p>
+  </td>
 </tr>
 <tr>
- <td colspan="1">
-  <ul>
-  <li class="stat neutral"><b>Goal:</b> Refine the current design to be more user-friendly and consistent
-  </li>
-  <li class="stat neutral"><b>Changes:</b>
-	  <ul><li class="stat upside">
-		(+) Ratio of damage to Boost lost changed to 1:2 (was 1:4)
-	  </li></ul>
-	  <ul><li class="stat upside">
-		(+) Boost loss from double jumping changed to 50% (was 75%)
-	  </li></ul>
-	  <ul><li class="stat upside">
-		(+) User passively build Boost (at a rate of 2%/sec)
-	  </li></ul>
-	  <ul><li class="stat upside">
-		(+) Fall damage does not drain Boost
-	  </li></ul>
-	  <ul><li class="stat downside">
-		(-) Ratio of damage to boost gained changed to 3:2 (was 1:1)
-	  </li></ul>
-   </li>
-	</ul>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Remove the improved burst and tune the healing to better encourage aggression</li>
+      <li class="stat neutral"><b>Changes:</b></li>
+      <ul>
+        <li class="stat upside">
+          (+) Added: On kill, gain 15 health
+        </li>
+        <li class="stat neutral">
+          (~) Healing on hit is now proportional to damage dealt (4 health at 19 damage down to 1 health at 10 damage)
+        </li>
+        <li class="stat downside">
+          (+) Removed: 15% faster firing speed
+        </li>
+      </ul>
+    </ul>
   </td>
   <td colspan="1">
-    <!-- Stat card -->
     <div class="container">
       <div class="rounded-rectangle">
-        <!-- Left column -->
         <div class="column image">
-          <img src="../weapons/scout/Baby Face's Blaster.png" alt="Baby Face's Blaster" />
+          <img src="../weapons/scout/Pretty_Boy's_Pocket_Pistol.png" alt="Pretty Boy's Pocket Pistol"/>
         </div>
-        <!-- Right column -->
         <div class="column text">
-          <h3>Baby Face's Blaster</h3>
+          <h3>Pretty Boy's Pocket Pistol</h3>
           <p class="stat subtle">
-            Scattergun
+            Pistol
           </p>
           <p class="stat upside">
-            Boost builds on hit and slowly over time
+            On Kill: Gain +15 health
           </p>
-		<p class="stat upside">
-            Run speed increases with Boost
+          <p class="stat upside">
+            On Hit: Gain up to +4 health
           </p>
-		<p class="stat downside">
-            -34% clip size
-          </p>
-		<p class="stat downside">
-            10% slower move speed on wearer
-          </p>
-		<p class="stat downside">
-            50% Boost drained on air jumps
-          </p>
-		<p class="stat downside">
-            Boost reduced when hit
+          <p class="stat downside">
+            25% clip size penalty
           </p>
         </div>
       </div>
     </div>
-  </td>	
- </tr>
- 
- <tr>
+  </td>
+</tr>
+
+<tr>
   <td colspan="2">
     <hr>
   </td>
 </tr>
 
-
-<tr>
+<tr>  <!-- Bonk! Atomic Punch -->
   <td colspan="2">
-	<h2>Bat</h2>
-	<p>
-	  Relative to other melee weapons, the Bat's low damage avoids Scout being too capable at melee combat. This is fine conceptually, but the Bat's
-	  damage is just so low that it's rarely useful.
-	</p>
+    <h2>Bonk! Atomic Punch</h2>
+    <p>
+      Despite the re-addition of the slow effect when the invulnerability wears off, Bonk still doesn't require skill or carry much of a downside. The Scout is still able to disengage from a fight or rush past an entire team largely unimpeded, and since the slow only applies once the Scout has already gotten past the people shooting at him, most classes still struggle to chase him.
+    </p>
+    <p>
+     However, the amount of knockback Sentries do can leave the weapon feeling <i>too</i> easily countered when trying to push through nests, even though this is the intended main use of the item.
+    </p>
   </td>
 </tr>
 <tr>
   <td colspan="1">
-	<ul>
-	  <li class="stat neutral"><b>Changes:</b></li>
-	  <ul><li class="stat upside">
-		(+) Damage increased to 40
-	  </ul></li>
-	</ul>
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Tone down the more annoying aspects of the weapon and add more opportunities for counterplay, while improving its effectiveness against Sentry Guns</li>
+      <li class="stat neutral"><b>Changes:</b></li>
+        <ul>
+          <li class="stat upside">
+            (+) The Scout is able to freely swap weapons during the effect
+          </li>
+          <li class="stat upside">
+            (+) Knockback and damage (for the purposes of the slow) recieved from Sentry Guns is reduced by 66%
+          </li>
+          <li class="stat neutral">
+            (~) Duration reduced to 5 seconds
+          </li>
+          <li class="stat downside">
+            (-) The slowdown from taking damage is applied during the phasing effect, rather than when phasing wears off
+          </li>
+          <ul>
+            <li class="stat downside2">
+              <i>It lasts for 3 seconds and scales with the cumulative amount of damage recieved, and it can still linger once the phasing effect has worn off</i>
+            </li>
+          </ul>
+          <li class="stat downside">
+            (-) The Scout is no longer immune to melee damage during the effect
+          </li>
+          <li class="stat downside">
+            (-) Once the effect ends, the deploy animation of the active weapon must play before the Scout is able to attack
+          </li>
+        </ul>
+    </ul>
   </td>
-<td colspan="1">
-<div class="container">
-  <div class="rounded-rectangle">
-	<div class="column image">
-	  <img src="../weapons/scout/Bat.png" alt="Bat" />
-	</div>
-	<div class="column text">
-	  <h3>Bat</h3>
-	  <p class="stat subtle2">
-		Bat
-	  </p>
-	</div>
-  </div>
-</div>
-</td>
+  <td colspan="1">
+    <div class="container">
+      <div class="rounded-rectangle">
+        <div class="column image">
+          <img src="../weapons/scout/Bonk.png" alt="Bonk! Atomic Punch"/>
+        </div>
+        <div class="column text">
+          <h3>Bonk! Atomic Punch</h3>
+          <p class="stat subtle">
+            Radioactive Beverage
+          </p>
+          <p class="stat neutral">
+            Drink to become invulnerable to ranged damage and take reduced knockback from Sentry Guns for 5 seconds. Cannot attack during this time.
+          </p>
+          <p class="stat downside">
+            Damage absorbed will temporarily slow you.
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Crit-a-Cola -->
+  <td colspan="2">
+    <h2>Crit-a-Cola</h2>
+    <p>
+      Mini-Crits are a strong effect, and the downside of the Scout taking Mini-Crits himself can be mitigated by a Medic, or simply exploiting his lack of fall-off to deal damage from a range where the opponent's attacks are easily avoided (particularly strong with the Shortstop). The Mini-Crits also don't improve Scout's ideal times-to-kill on non-Shortstop primaries, except against light classes who die in one shot, and I think this encourages trying to play more passively with the buff. While it may lose some of the flavour of the item, I think a different effect could help solve these problems.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Replace the Mini-Crit buff with an effect that encourages more aggression and leaves enemies more opportunity to hit the Scout</li>
+      <li class="stat neutral"><b>Changes:</b></li>
+        <ul>
+          <li class="stat neutral">
+            (~) Instead of Mini-Crits, drinking grants 25% faster firing speed, 50% faster reload, the speed boost effect, and 35% <i>increased</i> bullet spread
+          </li>
+          <li class="stat downside">
+            (-) The Scout cannot be targeted by Medi-Gun beams during the buff
+          </li>
+          <li class="stat downside">
+            (-) Mark-for-Death is now applied immediately after drinking and lasts two seconds when the buff wears off, instead of being applied when attacking
+          </li>
+        </ul>
+    </ul>
+  </td>
+  <td colspan="1">
+    <div class="container">
+      <div class="rounded-rectangle">
+        <div class="column image">
+          <img src="../weapons/scout/Crit-a-Cola.png" alt="Crit-a-Cola"/>
+        </div>
+        <div class="column text">
+          <h3>Crit-a-Cola</h3>
+          <p class="stat subtle">
+            Radioactive Beverage
+          </p>
+          <p class="stat neutral">
+            Drink to gain increased attack, reload and move speed and reduced weapon accuracy for 8 seconds. Also become Marked-for-Death for 10 seconds.
+          </p>
+          <p class="stat downside">
+            Blocks healing from Medi-Guns after consuming.
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Mad Milk -->
+  <td colspan="2">
+    <h2>Mad Milk</h2>
+    <p>
+      Thrown Milk jars can easily swing a teamfight because the debuff puts players at such a massive disadvantage while it's on them. I think the concept of debuffing enemies so that you can heal off of them is a bit silly, and if we unshackle ourselves from it we could have a version of the weapon that's easier to balance and isn't as frustrating to fight.
+    </p>
+    <p>
+      Credit to Sile Animus for the idea. We have playtested this and it feels quite good.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Shift the focus of the item from hindering enemies to directly helping allies</li>
+      <li class="stat neutral"><b>Changes:</b></li>
+      <ul>
+        <li class="stat upside">
+          (+) Teammates (including the Scout himself) in the blast radius heal 65 health
+        </li>
+        <li class="stat downside">
+          (-) No longer does anything to enemies
+        </li>
+        <li class="stat downside">
+          (-) Splash radius reduced to 150 Hu (was 200)
+        </li>
+        <li class="stat downside">
+          (-) Starts empty and is not refilled by the Resupply Cabinet
+        </li>
+      </ul>
+    </ul>
+  </td>
+  <td colspan="1">
+    <div class="container">
+      <div class="rounded-rectangle">
+        <div class="column image">
+          <img src="../weapons/scout/Mad_Milk.png" alt="Mad Milk"/>
+        </div>
+        <div class="column text">
+          <h3>Mad Milk</h3>
+          <p class="stat subtle">
+            Non-Milk Substance
+          </p>
+          <p class="stat neutral">
+            Throw at teammates to heal and extinguish them.
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Flying Guillotine -->
+  <td colspan="2">
+    <h2>Flying Guillotine</h2>
+    <p>
+      Despite its 'recent' nerf, this weapon remains a powerful spam tool. Its high burst damage and short cooldown allow it to put out better ranged damage than the Pistol. I think the weapon should be reworked into an execution tool (it <i>is</i> a Guillotine, after all) that can finish wounded enemies better than the Pistols, but with lower sustained damage and a harsher downside for missing.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Reduce spammability down chokes and rework the weapon into a finisher that rewards deliberate throws</li>
+      <li class="stat neutral"><b>Changes:</b></li>
+      <ul>
+        <li class="stat upside">
+          (+) Added: Kills reduce recharge time by 50%
+        </li>
+        <li class="stat upside">
+          (+) Can now damage buildings
+        </li>
+        <li class="stat downside">
+          (-) Cooldown increased to 6 seconds (was 5.1)
+        </li>
+        <li class="stat downside">
+          (-) Removed: Bleed on hit
+        </li>
+        <li class="stat downside">
+          (-) Removed: Long-distance hits reduce recharge time
+        </li>
+      </ul>
+    </ul>
+  </td>
+  <td colspan="1">
+    <div class="container">
+      <div class="rounded-rectangle">
+        <div class="column image">
+          <img src="../weapons/scout/Flying_Guillotine.png" alt="Flying Guillotine"/>
+        </div>
+        <div class="column text">
+          <h3>Flying Guillotine</h3>
+          <p class="stat subtle">
+            Cleaver
+          </p>
+          <p class="stat neutral">
+            Throw at your enemies to cut them up from a distance!
+          </p>
+          <p class="stat upside">
+            Kills reduce recharge time by 50%
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Bat -->
+  <td colspan="2">
+  	<h2>Bat</h2>
+  	<p>
+      Relative to other melee weapons, the Bat's low damage avoids Scout being too capable at melee combat with his speed. This is fine conceptually, but the Bat's damage is just so low that it's rarely useful.
+  	</p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+  	<ul>
+  	  <li class="stat neutral"><b>Changes:</b></li>
+    	  <ul>
+          <li class="stat upside">
+    		    (+) Damage increased to 40
+          </li>
+    	  </ul>
+  	</ul>
+  </td>
+  <td colspan="1">
+    <div class="container">
+      <div class="rounded-rectangle">
+      	<div class="column image">
+      	  <img src="../weapons/scout/Bat.png" alt="Bat" />
+      	</div>
+      	<div class="column text">
+      	  <h3stock>Bat</h3stock>
+      	  <p class="stat subtle">
+      		  Bat
+      	  </p>
+      	</div>
+      </div>
+    </div>
+  </td>
 </tr>
  
 <tr>
@@ -297,3 +643,262 @@
     <hr>
   </td>
 </tr>
+
+<tr>  <!-- Sandman -->
+  <td colspan="2">
+    <h2>Sandman</h2>
+    <p>
+      Movement-impairing mechanics are frustrating to fight against. Nerfing the weapon they're attached to doesn't make them less frustrating, it just frustrates the user as well. Since the slow is always just going to be annoying, it should be removed entirely and replaced with something else.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Remove the slow mechanic and give the weapon a less frustrating debuff</li>
+      <li class="stat neutral"><b>Changes:</b></li>
+      <ul>
+        <li class="stat upside">
+          (+) Added: Ball reduces victim’s max health and incoming healing from healers by 20% for up to 5 seconds, scaling with distance
+        </li>
+        <ul>
+          <li class="stat upside2">
+            <i>Point-blank duration is 2 seconds, and max duration is reached at 900 HU (mid-long range)</i>
+          </li>
+        </ul>
+      </ul>
+      <ul>
+        <li class="stat downside">
+          (-) Removed: Ball slows targets on hit
+        </li>
+      </ul>
+    </ul>
+  </td>
+  <td colspan="1">
+    <div class="container">
+      <div class="rounded-rectangle">
+        <div class="column image">
+          <div class="image-bg">
+            <img src="../weapons/scout/Bat.png" alt="Sandman"/>
+          </div>
+        </div>
+        <div class="column text">
+          <h3>Sandman</h3>
+          <p class="stat subtle">
+            Bat
+          </p>
+          <p class="stat upside">
+            Alt-fire: Launch a ball that reduces enemies' max health and healing recieved on hit 
+          </p>
+          <p class="stat downside">
+            -15 max health on wearer
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Sun-on-a-Stick -->
+  <td colspan="2">
+    <h2>Sun-on-a-Stick</h2>
+    <p>
+      This weapon is reliant on another class to take advantage of its gimmick, and its gimmick isn’t particularly strong anyway.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Allow the item to ignite people on its own</li>
+      <li class="stat neutral"><b>Changes:</b></li>
+        <ul>
+          <li class="stat neutral">
+            (~) Added: Alt-fire: Set yourself on fire!
+          </li>
+          <li class="stat upside">
+            (+) Added: On hit: Transfers Afterburn from yourself to the victim
+          </li>
+          <li class="stat downside">
+            (-) Added: On holster: User takes remaining Afterburn damage on them all at once
+          </li>
+          <li class="stat downside">
+            (-) 25% fire resistance changed to 30% but only applies to self-inflicted Afterburn
+          </li>
+        </ul>
+    </ul>
+  </td>
+  <td colspan="1">
+    <div class="container">
+      <div class="rounded-rectangle">
+        <div class="column image">
+          <img src="../weapons/scout/Bat.png" alt="Sandman"/>
+        </div>
+        <div class="column text">
+          <h3>Sun-on-a-Stick</h3>
+          <p class="stat subtle">
+            Fire Mace
+          </p>
+          <p class="stat upside">
+            Crits versus burning players
+          </p>
+          <p class="stat upside">
+            On hit while burning: transfer Afterburn to victim
+          </p>
+          <p class="stat downside">
+            25% damage penalty
+          </p>
+          <p class="stat downside">
+            On holster while burning: take remaining Afterburn damage all at once. Idiot.
+          </p>
+          <p class="stat neutral">
+            Alt-fire to set yourself on fire! You take 30% less damage from your own Afterburn.
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Fan O'War -->
+  <td colspan="2">
+    <h2>Fan O'War</h2>
+    <p>
+      This weapon is rarely used because marking an enemy and then shooting them is rarely worth the time and effort compared to just shooting them an extra time.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Make it easier for the Scout to get value from Marking enemies</li>
+      <li class="stat neutral"><b>Changes:</b></li>
+        <ul>
+          <li class="stat upside">
+            (+) Added: 70% longer melee range
+          </li>
+          <li class="stat upside">
+            (+) Added: When the Marked target dies, the Scout is healed 30 health
+          </li>
+          <li class="stat downside">
+            (-) Applied Mark-for-Death effects are now removed instantly if the Scout dies
+          </li>
+          <li class="stat downside">
+            (-) Removed: Crits when it would otherwise Mini-Crit
+          </li>
+        </ul>
+    </ul>
+  </td>
+  <td colspan="1">
+    <div class="container">
+      <div class="rounded-rectangle">
+        <div class="column image">
+          <img src="../weapons/scout/Bat.png" alt="Fan O'War"/>
+        </div>
+        <div class="column text">
+          <h3>Fan O'War</h3>
+          <p class="stat subtle">
+            Gunbai
+          </p>
+          <p class="stat upside">
+            On hit: One target at a time is Marked-for-Death, causing all damage taken to be Mini-Crits
+          </p>
+          <p class="stat upside">
+            Gain +30 health when an enemy you Mark is killed
+          </p>
+          <p class="stat upside">
+            70% longer melee range
+          </p>
+          <p class="stat downside">
+            75% damage penalty
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+<tr>  <!-- Atomizer -->
+  <td colspan="2">
+    <h2>Atomizer</h2>
+    <p>
+      Following the previous nerf to this weapon, it became a lot more fair to play against but also lost much of its uniqueness — there are other weapons that give you extra mobility while active, but a passive mobility buff was distinct. Personally, I think the current version is one of the contenders for best-in-slot but not particularly fun to use.
+    </p>
+  </td>
+</tr>
+<tr>
+  <td colspan="1">
+    <ul>
+      <li class="stat neutral"><b>Goal:</b> Make it easier for the Scout to get value from Marking enemies</li>
+      <li class="stat neutral"><b>Changes:</b></li>
+        <ul>
+          <li class="stat upside">
+            (+) Added: 70% longer melee range
+          </li>
+          <li class="stat upside">
+            (+) Added: When the Marked target dies, the Scout is healed 30 health
+          </li>
+          <li class="stat downside">
+            (-) Applied Mark-for-Death effects are now removed instantly if the Scout dies
+          </li>
+          <li class="stat downside">
+            (-) Removed: Crits when it would otherwise Mini-Crit
+          </li>
+        </ul>
+    </ul>
+  </td>
+  <td colspan="1">
+    <div class="container">
+      <div class="rounded-rectangle">
+        <div class="column image">
+          <img src="../weapons/scout/Atomizer.png" alt="Atomizer"/>
+        </div>
+        <div class="column text">
+          <h3>Atomizer</h3>
+          <p class="stat subtle">
+            Bat
+          </p>
+          <p class="stat upside">
+            On hit: One target at a time is Marked-for-Death, causing all damage taken to be Mini-Crits
+          </p>
+          <p class="stat upside">
+            Gain +30 health when an enemy you Mark is killed
+          </p>
+          <p class="stat upside">
+            70% longer melee range
+          </p>
+          <p class="stat downside">
+            75% damage penalty
+          </p>
+        </div>
+      </div>
+    </div>
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
+</table>
+</html>
