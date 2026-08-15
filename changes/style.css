@@ -57,10 +57,11 @@ h3stock {    /* For stock weapons*/
 
 p {
 	font-family: TF2Secondary;
-	font-size: 24px;
+	font-size: 20px;
 	text-align: center;
 	color: #ebe2ca;
 	margin: 0 100px 30px 100px;
+  line-height: 1.4;
 }
 
 /* Images */
@@ -162,12 +163,12 @@ td {
 /* Stat colors */
 .stat {
 	font-family: TF2Secondary;
-	font-size: 24px;
+	font-size: 20px;
 	margin: 0px 7px;
 	margin-bottom: 12px;
 	text-align: left;
 	text-shadow: 1px 1px #141414;
-	line-height: 1.2;
+	line-height: 1.4;
 }
 .upside { color: #99CCFF; }
 .upside2 { color: #86b6e4; }
