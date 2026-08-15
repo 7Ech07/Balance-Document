@@ -89,21 +89,40 @@
       <li class="stat neutral"><b>Changes:</b></li>
         <ul>
           <li class="stat upside">
-            (+) Increased bullets per shot to +45%
+            <details>
+              <summary>
+                (+) Increased bullets per shot to +45%
+              </summary>
+              <ul>
+                <li class="stat upside2">
+                  <i>These extra five pellets form a + shape in the middle of the spread pattern, stacking on top of the existing pellets</i>
+                </li>
+              </ul>
+            </details>
           </li>
-          <ul>
-            <li class="stat upside2">
-              <i>These extra five pellets form a + shape in the middle of the spread pattern, stacking on top of the existing pellets</i>
-            </li>
-          </ul>
           <li class="stat upside">
-            (+) Self-knockback is now tied to an alt-fire attack that otherwise functions identically to the primary fire
+            (+) Self-knockback no longer stuns the user and is now tied to an alt-fire attack that otherwise functions identically to the primary fire
           </li>
           <li class="stat downside">
             (-) Damage penalty increased to 25% (max per-shot damage of 118)
           </li>
           <li class="stat downside">
-            (-) Knockback does not stun enemies, takes their existing momentum into account, and respects knockback resistances/immunities
+            <details>
+              <summary>
+                (-) Reworked how enemy knockback works
+              </summary>
+              <ul>
+                <li class="stat downside2">
+                  <i>Firstly, knockback can be re-applied to a target even before they hit the ground, but the base knockback strength is reduced by 33%</i>
+                </li>
+                <li class="stat downside2">
+                  <i>Secondly, knockback applies a shorter-duration version of the 'lost footing' debuff from Airblast (reduces friction with the ground by 90% for 0.3 sec or until slowed below 50 Hu/sec) instead of a stun, and the fixed upwards push force is reduced to 100 Hu/s (was ~268.3, which is the same as pre-JI Airblast and equivalent to forcing your victim to press jump)</i>
+                </li>
+                <li class="stat downside2">
+                  <i>Finally, knockback fully respects knockback resistances and immunities (currently, the damage component of the knockback is resisted but not the 'Airblast' component)</i>
+                </li>
+              </ul>
+            </details>
           </li>
         </ul>
     </ul>
@@ -360,10 +379,10 @@
   <td colspan="2">
     <h2>Bonk! Atomic Punch</h2>
     <p>
-      Despite the re-addition of the slow effect when the invulnerability wears off, Bonk still doesn't require skill or carry much of a downside. The Scout is still able to disengage from a fight or rush past an entire team largely unimpeded, and since the slow only applies once the Scout has already gotten past the people shooting at him, most classes still struggle to chase him.
+      Despite the re-addition of the slow effect when the invulnerability wears off, Bonk still doesn't require skill to use or carry much of a downside. The Scout is still able to disengage from a fight or rush past an entire team largely unimpeded, and since the slow only applies after the effect wears off, most classes still struggle to chase him and their damage can end up feeling wasted.
     </p>
     <p>
-     However, the amount of knockback Sentries do can leave the weapon feeling <i>too</i> easily countered when trying to push through nests, even though this is the intended main use of the item.
+      However, the amount of knockback Sentries do can leave the weapon feeling <i>too</i> easily countered when trying to slip through a nest, even though this is the intended main use of the item.
     </p>
   </td>
 </tr>
@@ -376,20 +395,24 @@
           <li class="stat upside">
             (+) The Scout is able to freely swap weapons during the effect
           </li>
-          <li class="stat upside">
-            (+) Knockback and damage (for the purposes of the slow) recieved from Sentry Guns is reduced by 66%
+          <li class="stat neutral">
+            (~) Sentry Guns will not target you during the effect
           </li>
           <li class="stat neutral">
             (~) Duration reduced to 5 seconds
           </li>
           <li class="stat downside">
-            (-) The slowdown from taking damage is applied during the phasing effect, rather than when phasing wears off
+            <details>
+              <summary>
+                (-) The slowdown from taking damage is applied during the phasing effect, rather than when phasing wears off
+              </summary>
+              <ul>
+                <li class="stat downside2">
+                  <i>It lasts for 3 seconds and scales with the cumulative amount of damage recieved, and it can still linger once the phasing effect has worn off</i>
+                </li>
+              </ul>
+            </details>
           </li>
-          <ul>
-            <li class="stat downside2">
-              <i>It lasts for 3 seconds and scales with the cumulative amount of damage recieved, and it can still linger once the phasing effect has worn off</i>
-            </li>
-          </ul>
           <li class="stat downside">
             (-) The Scout is no longer immune to melee damage during the effect
           </li>
@@ -411,7 +434,7 @@
             Radioactive Beverage
           </p>
           <p class="stat neutral">
-            Drink to become invulnerable to ranged damage and take reduced knockback from Sentry Guns for 5 seconds. Cannot attack during this time.
+            Drink to become invulnerable to ranged damage and invisible to Sentry Guns for 5 seconds. Cannot attack during this time.
           </p>
           <p class="stat downside">
             Damage absorbed will temporarily slow you.
@@ -419,6 +442,13 @@
         </div>
       </div>
     </div>
+  </td>
+</tr>
+<tr>
+  <td colspan="2">
+    <p>
+      I am aware not being able to be targeted by Sentries is not purely an upside since it disables the ability to distract them for your team. This is fine. Deliberate, even. Distracting Sentries requires more coordination than you will find in most Casual teams, but takes little setup or investment to perform and has no realistic counter save for the Wrangler.
+    </p>
   </td>
 </tr>
 
@@ -432,7 +462,7 @@
   <td colspan="2">
     <h2>Crit-a-Cola</h2>
     <p>
-      Mini-Crits are a strong effect, and the downside of the Scout taking Mini-Crits himself can be mitigated by a Medic, or simply exploiting his lack of fall-off to deal damage from a range where the opponent's attacks are easily avoided (particularly strong with the Shortstop). The Mini-Crits also don't improve Scout's ideal times-to-kill on non-Shortstop primaries, except against light classes who die in one shot, and I think this encourages trying to play more passively with the buff. While it may lose some of the flavour of the item, I think a different effect could help solve these problems.
+      Mini-Crits are a strong effect, and the downside of the Scout taking Mini-Crits himself can be mitigated by a Medic, or simply exploiting his lack of fall-off to deal damage from a range where the opponent's attacks are easily avoided (particularly strong with the Shortstop). The Mini-Crits also don't improve Scout's close-range times-to-kill on non-Shortstop primaries, except against light classes who die in one shot, which also encourages trying to play more passively with the buff. While it may lose some of the flavour of the item, I think a different effect could lead to more interesting and fun gameplay.
     </p>
   </td>
 </tr>
@@ -678,9 +708,7 @@
     <div class="container">
       <div class="rounded-rectangle">
         <div class="column image">
-          <div class="image-bg">
-            <img src="../weapons/scout/Bat.png" alt="Sandman"/>
-          </div>
+          <img src="../weapons/scout/Bat.png" alt="Sandman"/>
         </div>
         <div class="column text">
           <h3>Sandman</h3>
@@ -709,7 +737,7 @@
   <td colspan="2">
     <h2>Sun-on-a-Stick</h2>
     <p>
-      This weapon is reliant on another class to take advantage of its gimmick, and its gimmick isn’t particularly strong anyway.
+      This weapon is reliant on another class to take advantage of its gimmick, and its gimmick currently isn’t that strong anyway. With some small changes, it could easily become the wacky, stupid gimmick melee it wants to be.
     </p>
   </td>
 </tr>
@@ -720,7 +748,7 @@
       <li class="stat neutral"><b>Changes:</b></li>
         <ul>
           <li class="stat neutral">
-            (~) Added: Alt-fire: Set yourself on fire!
+            (~) Added: Alt-fire: Stick your hand into the sun and set yourself on fire!
           </li>
           <li class="stat upside">
             (+) Added: On hit: Transfers Afterburn from yourself to the victim
@@ -738,7 +766,7 @@
     <div class="container">
       <div class="rounded-rectangle">
         <div class="column image">
-          <img src="../weapons/scout/Bat.png" alt="Sandman"/>
+          <img src="../weapons/scout/Bat.png" alt="Sun-on-a-Stick"/>
         </div>
         <div class="column text">
           <h3>Sun-on-a-Stick</h3>
@@ -790,10 +818,13 @@
             (+) Added: 70% longer melee range
           </li>
           <li class="stat upside">
-            (+) Added: When the Marked target dies, the Scout is healed 30 health
+            (+) Added: When a Marked target dies, the Scout is healed 30 health
+          </li>
+          <li class="stat upside">
+            (+) Multiple enemies can now be Marked at a time
           </li>
           <li class="stat downside">
-            (-) Applied Mark-for-Death effects are now removed instantly if the Scout dies
+            (-) Applied Mark-for-Death effects are now removed instantly if the Scout dies or moves more than 500 Hu away from the Marked target
           </li>
           <li class="stat downside">
             (-) Removed: Crits when it would otherwise Mini-Crit
@@ -813,7 +844,7 @@
             Gunbai
           </p>
           <p class="stat upside">
-            On hit: One target at a time is Marked-for-Death, causing all damage taken to be Mini-Crits
+            On hit: Mark your victim for death, causing all damage taken to be Mini-Crits
           </p>
           <p class="stat upside">
             Gain +30 health when an enemy you Mark is killed
@@ -847,22 +878,19 @@
 <tr>
   <td colspan="1">
     <ul>
-      <li class="stat neutral"><b>Goal:</b> Make it easier for the Scout to get value from Marking enemies</li>
+      <li class="stat neutral"><b>Goal:</b></li>
       <li class="stat neutral"><b>Changes:</b></li>
-        <ul>
-          <li class="stat upside">
-            (+) Added: 70% longer melee range
-          </li>
-          <li class="stat upside">
-            (+) Added: When the Marked target dies, the Scout is healed 30 health
-          </li>
-          <li class="stat downside">
-            (-) Applied Mark-for-Death effects are now removed instantly if the Scout dies
-          </li>
-          <li class="stat downside">
-            (-) Removed: Crits when it would otherwise Mini-Crit
-          </li>
-        </ul>
+      <ul>
+        <li class="stat upside">
+          (+) Added: 70% longer melee range
+        </li>
+        <li class="stat neutral">
+          (+) Replaced: "Melee attacks Mini-Crits while airborne" with "Deals Crits after falling for 0.5 seconds" 
+        </li>
+        <li class="stat downside">
+          (-) Increased damage penalty to -25% (still 30 damage)
+        </li>
+      </ul>
     </ul>
   </td>
   <td colspan="1">
