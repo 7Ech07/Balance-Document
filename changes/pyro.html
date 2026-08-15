@@ -44,7 +44,7 @@
         </li>
         <ul>
           <li class="stat neutral2">
-            <i>Almost all Afterburn sources will apply the max duration of Afterburn on hit, and it can never be extended beyond this duration (at least not in PvP)</i>
+            <i>Almost all Afterburn sources will apply the max duration of Afterburn, and it can never be extended beyond this duration (at least not in PvP)</i>
           </li>
         </ul>
         <li class="stat neutral">
@@ -74,9 +74,6 @@
     <p>
       Pyro struggles to stand up to the other combat classes. One of the reasons for this is that having a short range, stream damage primary forces them to have to expose themself to a lot of incoming damage in order to use it. 
     </p>
-    <p>
-      I don't expect or want this change to make it viable to just hold W at people. The aim is to make Pyro a bit less succeptible to chip damage, and help even the odds versus Scout and Heavy.
-    </p>
   </td>
 </tr>
 <tr>
@@ -96,6 +93,13 @@
     </div>
   </td> 
 </tr> 
+<tr>
+  <td colspan="2">
+    <p>
+      I don't expect or want this change to make it viable to just hold W at people. The aim is to make Pyro a bit less succeptible to chip damage, and help even the odds versus Scout and Heavy.
+    </p>
+  </td>
+</tr>
 
 <tr>
   <td colspan="2">
@@ -137,17 +141,14 @@
           (-) Max Flamethrower DPS reduced to 150 (was ~180)
         </li>
         <li class="stat downside">
-          (-) Targets will only become ignited after dealing 30 damage to them in 0.5 seconds or less
+          (-) Targets will only become ignited after being in contact with flames for 0.5 seconds continuously
         </li>
         <ul>
           <li class="stat downside2">
-            Any <i>damage dealt to an already-burning target will reset the Afterburn duration to max</i>
+            <i>Flame damage dealt to an already-burning target will bypass this and reset the Afterburn duration to max</i>
           </li>
           <li class="stat downside2">
             <i>When a target is ignited, it will be accompanied by a particle and sound cue (like what the Dragon's Fury does on consecutive hits)</i>
-          </li>
-          <li class="stat downside2">
-            <i>Spy's debuff resistance from cloak also increases this threshold, so he requires 45 damage in 0.5 seconds to be ignited</i>
           </li>
         </ul>
       </ul>
@@ -161,8 +162,6 @@
               <i>There is a 0.75 sec regen delay after using alt-fire, after which Pressure will start regenerating at a rate of 1 charge per 0.75 sec</i>
             </li>
           </ul>
-        </ul>
-        <ul>  
           <li class="stat upside"> 
             (+) Added: Flame Blast attack – Hold M2 to charge a fireball and release to fire it, launching yourself backwards if airborne. Flame Burst requires and consumes a Pressure charge as well as the same ammo as an Airblast
           </li>
@@ -170,18 +169,12 @@
             <li class="stat upside2">
               <i>The fireball takes 1.5 seconds to charge, and can be held for another 0.5 seconds before automatically discharging</i>
             </li>
-          </ul>
-          <ul>
             <li class="stat upside2">
               <i>Projectile speed scales from 950 to 2000 Hu/s and knockback scales from 50 to 250 Hu/s with charge</i>
             </li>
-          </ul>
-          <ul>
             <li class="stat upside2">
               <i>On hit, the fireball deals 20 damage and instantly applies Afterburn, and also destroys stickies in a small radius on surface hits</i>
             </li>
-          </ul>
-          <ul>
             <li class="stat upside2">
               <i>Pressure is consumed on discharge instead of while charging, but Pressure will not regenerate while charging</i>
             </li>
@@ -209,7 +202,7 @@
             Flamethrower
           </p>
           <p class="stat neutral">
-            Sustained damage to flammable enemies applies Afterburn, which deals additional damage over time.
+            Damage heats up flammable enemies until they catch fire, dealing additional damage over time.
           </p>
           <p class="stat neutral">
             Alt-fire tap: Discharge a blast of air that pushes enemies and deflects projectiles.
@@ -248,28 +241,18 @@
           <li class="stat upside">
             (+) Reflected projectiles use their own base damage when calculating self-damage rather than the Flamethrower's, and the Pyro has 50% damage resistance to their own reflected projectile explosions if no enemy is hit
           </li>
-        </ul>
-        <ul>  
           <li class="stat upside"> 
             (+) Reflected <i>airborne<i> stickies are converted to the Pyro's team affiliation, have their arm times reset and immediately detonate when armed, reflected <i>stuck<i> stickies are unable to be detonated while rolling, and other reflected projectiles have their fuses and lifetimes reset where applicable
           </li>
-        </ul>
-        <ul>
           <li class="stat downside">
             (-) Airblast requires and consumes a Pressure charge
           </li>
-        </ul>
-        <ul>
           <li class="stat downside">
-            (-) Airblast knockback is 33% lower, and now respects knockback resistances and immunities
+            (-) Airblast knockback now respects knockback resistances and immunities (e.g. Heavy's intrinsic 50% resistance)
           </li>
-        </ul>
-        <ul>
           <li class="stat downside">
             (-) Removed: Airblast reduces targets' air control
           </li>
-        </ul>
-        <ul>
           <li class="stat downside">
             (-) Removed: Airblast extinguishes teammates
           </li>
@@ -303,8 +286,16 @@
       <li class="stat neutral"><b>Changes:</b>
         <ul>
           <li class="stat upside">
-            (+) Back hit detection angle increased to 120° (was 90°)
+            (+) Reworked back detection to be more lenient and more similar to backstab detection
           </li>
+          <ul>
+            <li class="stat upside2">
+              <i>It will now check if the Pyro is behind the victim (180°) and the dot product of the victim's facing ignoring their camera pitch and the flames' velocity on the horizontal plane is greater than 0.5 (up to 60° off either side)</i>
+            </li>
+            <li class="stat upside2">
+              <i>What it currently does is check if the dot product of the victim's facing and the flames' velocity is greater than 0.8 (up to ~37° off in any direction)</i>
+            </li>
+          </ul>
           <li class="stat upside"> 
             (+) Removed: +250% increased Airblast cost
           </li>
@@ -312,7 +303,7 @@
             (-) Added: -60% max primary ammo on wearer
           </li>
           <li class="stat downside"> 
-            (-) Replaced Crits on back hits with Mini-Crits
+            (-) Replaced Crits on back hits with Mini-Crits and instantaneous Afterburn application
           </li>
           <li class="stat neutral"> 
             (i) Visual: This weapon uses unique flame effects that are darker and smokier
@@ -373,13 +364,10 @@
       <li class="stat neutral"><b>Changes:</b>
       <ul>
         <li class="stat upside">
-          (+) Damage to non-burning players increased to half of the damage to burning players (37.5 at base; was 25)
+          (+) Damage to non-burning players and on grazing hits increased to half of the damage to burning players (37.5 at base; was 25)
         </li>
-        <li class="stat neutral">
-          (~) Afterburn from this weapon applies its full duration to fireproof targets, but they will not take any damage from it
-        </li>
-        <li class="stat neutral">
-          (~) Flame Blast on this weapon charges twice as fast but does not fire a projectile or deal damage in any way
+        <li class="stat upside">
+          (+) Base repressurisation time reduced to 0.75 sec (was 0.8 sec)
         </li>
         <li class="stat downside">
           (-) Projectile hitbox size reduced by 0.22...% (35 Hu in radius; was 45 Hu)
@@ -388,6 +376,12 @@
           (-) Projectiles only apply 1 second of Afterburn, including on hits against already-burning targets
         </li>
         <li class="stat neutral"> 
+          (i) This weapon no longer uses a custom Afterburn effect that damages Pyros, but Afterburn is applied for a guaranteed 0.75 seconds against Pyros due to the base Afterburn changes
+        </li>
+          <li class="stat neutral2"> 
+            <i>This makes Pyros take an additional shot to kill at range compared to Soldiers, but also adds leeway for playing around opponents' Airblast</i>
+          </li>
+        <li class="stat neutral"> 
           (i) Visual: Fireballs use simpler visual effects that do not have a dynamic light and which are actually attached to the fireball hitbox instead of being separate and glitching out when the projectile is reflected or destroyed 
         </li>
         <li class="stat neutral"> 
@@ -395,7 +389,7 @@
         </li>
         <ul>
           <li class="stat neutral2"> 
-            <i>The aim is to prevent the blinding flash that happens when you fire the weapon, and I suspect this is caused by spawning the large, visually noisy particle effect right inside of the user</i>
+            <i>The aim is to prevent the blinding flash that happens when you fire the weapon, which I suspect is caused by spawning the large, visually noisy particle effect right inside of the user's camera</i>
           </li>
         </ul>
       </ul>
@@ -424,7 +418,7 @@
             Alt-fire press: Discharge a blast of air that deflects enemies and projectiles.
           </p>
           <p class="stat neutral">
-            Alt-fire hold: Charge a blast that launches you backwards while airborne.
+            Alt-fire hold: Charge a damaging blast of flame. Release to discharge, knocking you backwards if you are airborne. Projectile speed and knockback force increase the longer Flame Blast is charged.
           </p>
           <p class="stat upside">
             50% faster repressurisation rate on hit
@@ -552,7 +546,7 @@
             +100% damage to buildings
           </p>
           <p class="stat neutral">
-            Alt-Fire: Detonate flare, creating an explosion that destroys stickybombs and extends the Afterburn duration on burning targets.
+            Alt-Fire: Detonate flare, creating an explosion that destroys stickybombs and re-ignites burning targets.
           </p>
           <p class="stat neutral">
             This weapon will reload automatically when not active.
@@ -575,30 +569,26 @@
       Scorch Shot
     </h2>
     <p>
-      This weapon has multiple upsides and requires little effort to utilise them. It also encourages the tactic of spamming projectiles from range in order to deal chip damage to people, which is not engaging to play or fun to fight against. The Detonator has already filled the niche of an explosive Flare Gun, so I want to take it in a slightly different direction.
+      This weapon has multiple upsides and requires little effort to utilise them. It also encourages the tactic of spamming projectiles from range in order to deal chip damage to people, which is not engaging to play or fun to fight against. The Detonator has already filled the niche of an explosive Flare Gun, so I want to take this weapon in a slightly different direction.
     </p>
   </td>
 </tr>
 <tr>
   <td colspan="1">
     <ul>
-      <li class="stat neutral"><b>New Design</b> – Mini-traps to manipulate enemy movement
+      <li class="stat neutral"><b>! New Design !</b> – Mini-traps to manipulate enemy movement
         <ul>
           <li class="stat upside">
-            (+) On impact, the projectile bounces off the target and creates a lingering pool of fire on its second impact
+            (+) On impact, the projectile bounces off the target and creates a lingering pool of fire when it hits the ground
           </li>
           <ul>
             <li class="stat upside2">
               <i>This is the exact same effect Flame Blast creates on impact</i>
             </li>
-          </ul>
-          <ul>
             <li class="stat upside2">
               <i>The bounce will trigger whether it hits a player, building or terrain</i>
             </li>
           </ul>
-        </ul>
-        <ul>  
           <li class="stat downside"> 
             (-) 50% reduced ammo
           </li>
@@ -720,8 +710,13 @@
           <li class="stat upside">
             (+) Gas debuff is not removed when the victim takes damage, and can be reapplied infinitely by the cloud even if the victim is already on fire
           </li>
+          <ul>
+            <li class="stat upside2">
+              <i>This means their Afterburn duration will keep resetting to max as long as the debuff is on them, and the debuff will remain on them as long as they're in the cloud</i>
+            </li>
+          </ul>
           <li class="stat upside">
-            (+) Shooting your own cloud with a Flame Burst, Phlogistinator alt-fire or Dragon's Fury projectile burns the cloud, dealing 50 damage to enemies in the radius and consuming it in the process
+            (+) Shooting your own cloud with a Flame Blast or Phlogistinator alt-fire detonates it, dealing 50 damage to enemies in the radius and destroying the cloud in the process
           </li>
           <li class="stat upside">
             (+) Hitting an enemy with the thrown canister deals 30 damage
@@ -773,7 +768,7 @@
       Fire Axe
     </h2>
     <p>
-      With the Flamethrower's decent close-range damage, ease of use and lack of downtime (and also the fact that Pyro has the Shotgun in their stock kit), Pyro simply has little use for a basic melee weapon. Valve gave Scout a custom base melee statline presumably to keep him from being too effective in melee with his speed, and I think Pyro would be the perfect candidate to do the opposite to.
+      With the Flamethrower's decent close-range damage, ease of use and lack of downtime (and also the fact that Pyro has the Shotgun in their stock kit), Pyro simply has little use for a basic melee weapon. Pyro has a great number of melee unlocks and making the base functionality actually useful makes these easier to tune.
     </p>
   </td>
 </tr>
@@ -783,12 +778,7 @@
       <li class="stat neutral"><b>Changes:</b>
         <ul>
           <li class="stat upside">
-            (+) Damage increased to 100
-          </li>
-        </ul>
-        <ul>
-          <li class="stat downside">
-            (+) Attack interval increased to 1.0 seconds (was 0.8)
+            (+) Damage increased to 80
           </li>
         </ul>
       </li>
@@ -825,7 +815,7 @@
       Axtinguisher
     </h2>
     <p>
-      I feel the current version of this weapon is often not worth the effort compared to just burning targets to death. In spite of that, it is almost strictly better than the Fire Axe because it lacks a meaningful downside. The changes to Afterburn and the Fire Axe also shift the context that this weapon exists in, so it needs changes regardless.
+      I feel the current version of this weapon is often not worth the effort compared to just burning targets to death. In spite of that, it is almost strictly better than the Fire Axe because it lacks a meaningful downside. The changes to Afterburn and the Fire Axe also shift the context that this weapon exists in, so it needs to be changed regardless.
     </p>
   </td>
 </tr>
@@ -837,13 +827,9 @@
           <li class="stat upside">
             (+) Deals Crits to burning players instead of Mini-Crits
           </li>
-        </ul>
-        <ul>
           <li class="stat downside">
-            (-) Damage penalty increased to 50% (50 damage)
+            (-) Damage penalty increased to 37.5% (50 damage)
           </li>
-        </ul>
-        <ul>
           <li class="stat downside">
             (-) Removed: Damage increases based on remaining duration of Afterburn
           </li>
@@ -877,7 +863,7 @@
             This weapon holsters 35% slower
           </p>
           <p class="stat downside">
-            No melee combo
+            No melee damage ramp-up
           </p>
         </div>
       </div>
@@ -904,18 +890,14 @@
 <tr>
   <td colspan="1">
     <ul>
-      <li class="stat neutral"><b>New Design</b> – The old Gas Jockey item set, reincarnated</li>
+      <li class="stat neutral"><b>! New Design !</b> – The old Gas Jockey item set, reincarnated</li>
         <ul>
           <li class="stat upside">
             (+) 10% faster movement speed on wearer
           </li>
-        </ul>
-        <ul>
           <li class="stat downside">
             (-) -35 max health on wearer (165 max health)
           </li>
-        </ul>
-        <ul>
           <li class="stat neutral">
             (~) Visual: This item is visibly holstered on the user’s back
           </li>
@@ -972,15 +954,14 @@
           <li class="stat upside">
             (+) Added: Health packs can overheal wearer
           </li>
-        </ul>
-        <ul>
           <li class="stat downside">
             (-) Reduced healing from healers applies to all teammate sources of healing (e.g. Crossbow, Mad Milk, etc.) rather than just Medi-beams
           </li>
-        </ul>
-        <ul>
           <li class="stat downside">
             (-) Removed: 25% damage bonus
+          </li>
+          <li class="stat neutral">
+            (~) Visual: This item is visibly holstered on the user’s back
           </li>
         </ul>
       </li>
@@ -1038,23 +1019,12 @@
           <li class="stat upside">
             (+) Added: 50% faster deploy speed
           </li>
-        </ul>
-        <ul>
           <li class="stat upside">
             (+) Speed boost lasts 2 seconds, which is doubled to 4 seconds if you hit both slaps in the one combo
           </li>
-        </ul>
-        <ul>
           <li class="stat upside">
-            (+) Base damage of the Hot Hand's archetype raised to 50 (from 35) so the damage penalty reduces it to 40 (from 28)
+            (+) Base damage of the Hot Hand's archetype raised to 40 and damage penalty removed
           </li>
-          <ul>
-            <li class="stat upside2">
-              Ignoring the damage penalty, it now has the same damage (across both slaps) as the Fire Axe and the same attack interval
-            </li>
-          </ul>
-        </ul>
-        <ul>
           <li class="stat neutral2">
             (i) Other: Description now explains the weapon's unique behaviour
           </li>
@@ -1083,9 +1053,6 @@
           </p>
           <p class="stat downside">
             Each swing performs two attacks for half damage each
-          </p>
-          <p class="stat downside">
-            20% damage penalty
           </p>
         </div>
       </div>
