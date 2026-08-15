@@ -29,9 +29,6 @@
     <p>
       In many cases, Afterburn is regarded as an annoyance rather than a threat. Locking a portion of Pyro's damage behind a slow DoT is one of the many things holding the class back, and is rarely fun or engaging to play against. If it were faster, it would give Pyro a bigger impact in fights, particularly if they can keep multiple people lit, while also not forcing opponents to endure it for as long.
     </p>
-    <p>
-      This is a change to the fundamental nature of Afterburn. It is focused less on scaring enemies into retreating for health and more on being a small but important source of direct-combat DPS that rewards the Pyro for juggling keeping crowds ignited and dealing direct weapon DPS. Note also that there is a trend in this document of making Afterburn harder to apply to justify its greater power.
-    </p>
   </td>
 </tr>
 <tr>
@@ -40,13 +37,17 @@
       <li class="stat neutral"><b>Changes:</b></li>
       <ul>
         <li class="stat neutral">
-          (~) Afterburn now deals 10 damage per tick for 3 seconds
+          <details>
+            <summary>
+              (~) Afterburn now deals 10 damage per tick for 3 seconds
+            </summary>
+            <ul>
+              <li class="stat neutral2">
+                <i>Almost all Afterburn sources will apply the max duration of Afterburn, and it can never be extended beyond this duration (at least not in PvP)</i>
+              </li>
+            </ul>
+          </details>
         </li>
-        <ul>
-          <li class="stat neutral2">
-            <i>Almost all Afterburn sources will apply the max duration of Afterburn, and it can never be extended beyond this duration (at least not in PvP)</i>
-          </li>
-        </ul>
         <li class="stat neutral">
           (~) Applying Afterburn to a Pyro or other fireproof player target will make them count as being on fire for 0.75 seconds, but they will not take any damage from this
         </li>
@@ -134,13 +135,17 @@
       <li class="stat neutral"><b>Changes (flames):</b></li>
       <ul>
         <li class="stat upside">
-          (+) Instead of being dependent on particle age, Flamethrower damage now has damage fall-off, linearly decreasing from 100% to 66% over 340 Hu
-        </li>
-        <ul>
-          <li class="stat upside2">
-            <i>Because this is considered normal fall-off, buildings aren't affected by it and Crit damage bypasses it</i>
+          <details>
+            <summary>
+              (+) Instead of being dependent on particle age, Flamethrower damage now has damage fall-off, linearly decreasing from 100% to 66% over 340 Hu
+            </summary>
+              <ul>
+                <li class="stat upside2">
+                  <i>Because this is considered normal fall-off, buildings aren't affected by it and Crit damage bypasses it</i>
+                </li>
+              </ul>
+            </details>
           </li>
-        </ul>
         <li class="stat neutral"> 
           (~) Flame damage now scales with the density of flame particles touching the victim rather than ramping up over time with sustained contact
         </li>
@@ -148,49 +153,62 @@
           (-) Max Flamethrower DPS reduced to 150 (was ~180)
         </li>
         <li class="stat downside">
-          (-) Targets will only become ignited after being in contact with flames for 0.5 seconds continuously
+          <details>
+            <summary>
+              (-) Targets will only become ignited after being in contact with flames for 0.5 seconds continuously
+            </summary>
+            <ul>
+              <li class="stat downside2">
+                <i>Flame damage dealt to an already-burning target will bypass this and reset the Afterburn duration to max</i>
+              </li>
+              <li class="stat downside2">
+                <i>When a target is ignited, it will be accompanied by a particle and sound cue (like what the Dragon's Fury does on consecutive hits)</i>
+              </li>
+            </ul>
+          </details>
         </li>
-        <ul>
-          <li class="stat downside2">
-            <i>Flame damage dealt to an already-burning target will bypass this and reset the Afterburn duration to max</i>
-          </li>
-          <li class="stat downside2">
-            <i>When a target is ignited, it will be accompanied by a particle and sound cue (like what the Dragon's Fury does on consecutive hits)</i>
-          </li>
-        </ul>
       </ul>
       <li class="stat neutral"><b>Changes (alt-fire):</b>
         <ul>
           <li class="stat neutral">
-            (-) The Flamethrower has a Pressure meter with two charges; these act as a cooldown for Airblast and a new secondary attack
+            <details>
+              <summary>
+                (-) The Flamethrower has a Pressure meter with two charges; these act as a cooldown for Airblast and a new secondary attack
+              </summary>
+              <ul>
+                <li class="stat neutral2">
+                  <i>There is a 0.75 sec regen delay after using alt-fire, after which Pressure will start regenerating at a rate of 1 charge per 0.75 sec</i>
+                </li>
+              </ul>
+            </details>
           </li>
-          <ul>
-            <li class="stat neutral2">
-              <i>There is a 0.75 sec regen delay after using alt-fire, after which Pressure will start regenerating at a rate of 1 charge per 0.75 sec</i>
-            </li>
-          </ul>
-          <li class="stat upside"> 
-            (+) Added: Flame Blast attack – Hold M2 to charge a fireball and release to fire it, launching yourself backwards if airborne. Flame Burst requires and consumes a Pressure charge as well as the same ammo as an Airblast
-          <ul>
-            <li class="stat upside2">
-              <i>The fireball takes 1.5 seconds to charge, and can be held for another 0.5 seconds before automatically discharging</i>
-            </li>
-            <li class="stat upside2">
-              <i>Projectile speed scales from 950 to 2000 Hu/s and knockback scales from 50 to 250 Hu/s with charge</i>
-            </li>
-            <li class="stat upside2">
-              <i>The fireball lasts 0.5 seconds or until it hits something</i>
-            </li>
-            <li class="stat upside2">
-              <i>The fireball deals 20 damage, instantly applies Afterburn and applies minor knockback to burning enemies (</i>a la<i> the Dragon's Fury), and on surface hits destroys stickies and creates a lingering pool of fire for 2 seconds</i>
-            </li>
-            <li class="stat upside2">
-              <i>Pressure is consumed on discharge instead of while charging, but Pressure will not regenerate while charging</i>
-            </li>
-            <li class="stat upside2">
-              <i>If M2 is held for 0.2 seconds or less, it will Airblast on release; else, it will trigger a Flame Blast instead</i>
-            </li>
-          </ul>
+          <li class="stat upside">
+            <details>
+              <summary>
+                (+) Added: Flame Blast attack – Hold M2 to charge a fireball and release to fire it, launching yourself backwards if airborne. Flame Burst requires and consumes a Pressure charge as well as the same ammo as an Airblast
+              </summary>
+              <ul>
+                <li class="stat upside2">
+                  <i>The fireball takes 1.5 seconds to charge, and can be held for another 0.5 seconds before automatically discharging</i>
+                </li>
+                <li class="stat upside2">
+                  <i>Projectile speed scales from 950 to 2000 Hu/s and knockback scales from 50 to 250 Hu/s with charge</i>
+                </li>
+                <li class="stat upside2">
+                  <i>The fireball lasts 0.5 seconds or until it hits something</i>
+                </li>
+                <li class="stat upside2">
+                  <i>The fireball deals 20 damage, instantly applies Afterburn and applies minor knockback to burning enemies (</i>a la<i> the Dragon's Fury), and on surface hits destroys stickies and creates a lingering pool of fire for 2 seconds</i>
+                </li>
+                <li class="stat upside2">
+                  <i>Pressure is consumed on discharge instead of while charging, but Pressure will not regenerate while charging</i>
+                </li>
+                <li class="stat upside2">
+                  <i>If M2 is held for 0.2 seconds or less, it will Airblast on release; else, it will trigger a Flame Blast instead</i>
+                </li>
+              </ul>
+            </details>
+          </li>
         </ul>
       </li>
     </ul>
@@ -299,16 +317,20 @@
       <li class="stat neutral"><b>Changes:</b>
         <ul>
           <li class="stat upside">
-            (+) Reworked back detection to be more lenient and more similar to backstab detection
+            <details>
+              <summary>
+                (+) Reworked back detection to be more lenient and more similar to backstab detection
+              </summary>
+              <ul>
+                <li class="stat upside2">
+                  <i>It will now check if the Pyro is behind the victim (180°) and the dot product of the victim's facing ignoring their camera pitch and the flames' velocity on the horizontal plane is greater than 0.5 (up to 60° off either side)</i>
+                </li>
+                <li class="stat upside2">
+                  <i>What it currently does is check if the dot product of the victim's facing and the flames' velocity is greater than 0.8 (up to ~37° off in any direction)</i>
+                </li>
+              </ul>
+            </details>
           </li>
-          <ul>
-            <li class="stat upside2">
-              <i>It will now check if the Pyro is behind the victim (180°) and the dot product of the victim's facing ignoring their camera pitch and the flames' velocity on the horizontal plane is greater than 0.5 (up to 60° off either side)</i>
-            </li>
-            <li class="stat upside2">
-              <i>What it currently does is check if the dot product of the victim's facing and the flames' velocity is greater than 0.8 (up to ~37° off in any direction)</i>
-            </li>
-          </ul>
           <li class="stat upside"> 
             (+) Removed: +250% increased Airblast cost
           </li>
@@ -389,22 +411,20 @@
           (-) Projectiles only apply 1 second of Afterburn, including on hits against already-burning targets
         </li>
         <li class="stat neutral"> 
-          (i) This weapon no longer uses a custom Afterburn effect that damages Pyros, but Afterburn is applied for a guaranteed 0.75 seconds against Pyros due to the base Afterburn changes
+          <details>
+            <summary>
+              (i) This weapon no longer uses a custom Afterburn effect that damages Pyros, but Afterburn is applied for a guaranteed 0.75 seconds against Pyros due to the base Afterburn changes
+            </summary>
+            <ul>
+              <li class="stat neutral2"> 
+                <i>This makes Pyros take an additional shot to kill at range compared to Soldiers, but also adds leeway for playing around opponents' Airblast</i>
+              </li>
+            </ul>
+          </details>
         </li>
-          <li class="stat neutral2"> 
-            <i>This makes Pyros take an additional shot to kill at range compared to Soldiers, but also adds leeway for playing around opponents' Airblast</i>
-          </li>
         <li class="stat neutral"> 
-          (i) Visual: Fireballs use simpler visual effects that do not have a dynamic light and which are actually attached to the fireball hitbox instead of being separate and glitching out when the projectile is reflected or destroyed 
+          (i) Visual: Fireballs use simpler visual effects that do not have a dynamic light and which are actually attached to the fireball hitbox, instead of being separate and glitching out when the projectile is reflected or destroyed 
         </li>
-        <li class="stat neutral"> 
-          (i) Visual: Fireball visuals are invisible for the first two ticks (~0.03 sec) of their lifetime 
-        </li>
-        <ul>
-          <li class="stat neutral2"> 
-            <i>The aim is to prevent the blinding flash that happens when you fire the weapon, which I suspect is caused by spawning the large, visually noisy particle effect right inside of the user's camera</i>
-          </li>
-        </ul>
       </ul>
     </ul>
   </td>
@@ -592,16 +612,20 @@
       <li class="stat neutral"><b>! New Design !</b> – Mini-traps to manipulate enemy movement
         <ul>
           <li class="stat upside">
-            (+) On impact, the projectile bounces off the target and creates a lingering pool of fire when it hits the ground
+            <details>
+              <summary>
+                (+) On impact, the projectile bounces off the target and creates a lingering pool of fire when it hits the ground
+              </summary>
+              <ul>
+                <li class="stat upside2">
+                  <i>This is the exact same effect Flame Blast creates on impact</i>
+                </li>
+                <li class="stat upside2">
+                  <i>The bounce will trigger whether it hits a player, building or terrain, and the projectile will follow normal physics like grenades do</i>
+                </li>
+              </ul>
+            </details>
           </li>
-          <ul>
-            <li class="stat upside2">
-              <i>This is the exact same effect Flame Blast creates on impact</i>
-            </li>
-            <li class="stat upside2">
-              <i>The bounce will trigger whether it hits a player, building or terrain</i>
-            </li>
-          </ul>
           <li class="stat downside"> 
             (-) 50% reduced ammo
           </li>
@@ -721,18 +745,22 @@
       <li class="stat neutral"><b>Changes:</b></li>
         <ul>
           <li class="stat upside">
-            (+) Gas debuff is not removed when the victim takes damage, and can be reapplied infinitely by the cloud even if the victim is already on fire
+            <details>
+              <summary>
+                (+) Gas debuff is not removed when the victim takes damage, and can be reapplied infinitely by the cloud even if the victim is already on fire
+              </summary>
+              <ul>
+                <li class="stat upside2">
+                  <i>This means victims' Afterburn duration will keep resetting to max as long as the debuff is on them, and the debuff will remain on them as long as they're in the cloud</i>
+                </li>
+              </ul>
+            </details>
           </li>
-          <ul>
-            <li class="stat upside2">
-              <i>This means their Afterburn duration will keep resetting to max as long as the debuff is on them, and the debuff will remain on them as long as they're in the cloud</i>
-            </li>
-          </ul>
           <li class="stat upside">
             (+) Shooting your own cloud with a Flame Blast or Phlogistinator alt-fire detonates it, dealing 50 damage to enemies in the radius and destroying the cloud in the process
           </li>
           <li class="stat upside">
-            (+) Hitting an enemy with the thrown canister deals 30 damage
+            (+) Hitting an enemy with the thrown canister deals 30 damage and inflicts minor knockback
           </li>
           <li class="stat neutral">
             (~) Now has a fixed 20 second cooldown that starts empty and isn't refilled by the Resupply Cabinet
@@ -761,7 +789,7 @@
             Creates a horrific visible gas cloud that coats enemies with a flammable material, which then ignites into afterburn if they take damage (even enemy Pyros!)
           </p>
           <p class="stat neutral">
-            Shooting the cloud with a projectile from your primary weapon causes an explosion.
+            Burning the cloud with a Flame Blast causes an explosion.
           </p>
         </div>
       </div>

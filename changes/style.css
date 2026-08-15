@@ -64,6 +64,20 @@ p {
   line-height: 1.4;
 }
 
+details summary {
+  cursor: pointer;
+  list-style: none;
+  text-decoration-line: underline;
+  text-decoration-style: dotted;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+
+details
+summary::-webkit-details-marker {
+  display: none;
+}
+
 /* Images */
 a {
   text-decoration: none;
