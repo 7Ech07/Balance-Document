@@ -136,8 +136,8 @@
 	<ul>
 	  <li class="stat neutral"><b>Changes:</b></li>
 	  <ul><li class="stat upside">
-	  (+) Accuracy on hitscan weapons steadily improves the longer you wait between shots, reaching perfect accuracy
-		after 1.0 seconds.
+	  (+) Accuracy on non-pellet hitscan weapons steadily improves the longer you wait between shots, reaching perfect accuracy
+		after whatever thr weapon's firing interval is plus 0.5 seconds.
 	  </ul></li>
 	</ul>
   </td>
@@ -460,6 +460,12 @@
           </li>
           <li class="stat upside">
             (+) Added: -20% self-damage taken from blast jumping
+          </li>
+          <li class="stat upside">
+            (+) Horizontal movement speed is now capped at 500 Hu/sec (was 300 Hu/sec)
+          </li>
+          <li class="stat downside">
+            (-) Adjusted how air control works with the parachute deployed, so your absolute horizontal velocity can never accelerate beyond the cap (e.g. by air strafing) and trying to accelerate to the side while at the cap will drain your forwards velocity by the same amount
         </ul>
       </li>
     </ul>
