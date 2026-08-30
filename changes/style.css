@@ -174,7 +174,7 @@ td {
   width: 100%;
   height: auto;
   background-color: #2b2724; /* Background colour */
-  border-radius: 50px; /* Radius for rounded corners */
+  border-radius: 20px; /* Radius for rounded corners */
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow */
   display: flex;
   flex-direction: column;
@@ -215,6 +215,7 @@ td {
   background-color: #3c362f;
   border-radius: 32px;
   aspect-ratio: 4 / 3;
+  border-radius: 20px;
   width: 40%;
   height: 40%;
   display: flex;
