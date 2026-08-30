@@ -199,7 +199,7 @@ td {
   border-radius: 50px; /* Radius for rounded corners */
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Optional shadow */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin: 20px; /* External margin */
   padding: 10px; /* Internal padding */
 }
@@ -218,15 +218,15 @@ td {
 }
 
 .column.image img {
-  max-width: 100%; /* Cap width to the column's width */
-  max-height: 100%; /* Ensure the image doesn’t overflow */
+  max-width: 30%; /* Cap width to the column's width */
+  max-height: 100px; /* Ensure the image doesn’t overflow */
   object-fit: contain; /* Preserve aspect ratio within column */
   margin: 0; /* Remove extra margins around the image */
 }
 
 .column.text {
   flex: 2; /* Text column takes up 2 parts of the space */
-  padding-left: 15px; /* Add space between the image and the text */
+  padding-top: 30px; /* Add space between the image and the text */
   text-align: left; /* Align text to the left */
   color: #333; /* Text colour */
 }
