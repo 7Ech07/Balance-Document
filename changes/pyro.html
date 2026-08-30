@@ -22,6 +22,12 @@
 
 <table>
 
+<tr>
+  <td colspan="2">
+    <hr>
+  </td>
+</tr>
+
 <tr>  <!-- Afterburn -->
   <td colspan="2">
     <h2>
@@ -130,98 +136,96 @@
   </td>
 </tr>
 <tr>
-  <td colspan="1">
+  <td class="changes">
+    <li class="stat neutral"><b>Goal:</b> Increase the depth and skill requirement of the Flamethrower, and make it more fun and fair to fight</li>
+    <li class="stat neutral"><b>Changes (flames):</b></li>
     <ul>
-      <li class="stat neutral"><b>Goal:</b> Increase the depth and skill requirement of the Flamethrower, and make it more fun and fair to fight</li>
-      <li class="stat neutral"><b>Changes (flames):</b></li>
+      <li class="stat upside">
+        <details>
+          <summary>
+            (+) Instead of being dependent on particle age, Flamethrower damage now has damage fall-off, linearly decreasing from 100% to 66% over 340 Hu
+          </summary>
+            <ul>
+              <li class="stat upside2">
+                <i>Because this is considered normal fall-off, buildings aren't affected by it and Crit damage bypasses it</i>
+              </li>
+            </ul>
+          </details>
+        </li>
+      <li class="stat neutral"> 
+        (~) Flame damage now scales with the density of flame particles touching the victim rather than ramping up over time with sustained contact
+      </li>
+      <li class="stat downside">
+        (-) Max Flamethrower DPS reduced to 150 (was ~180)
+      </li>
+      <li class="stat downside">
+        <details>
+          <summary>
+            (-) Targets will only become ignited after being in contact with flames for 0.5 seconds continuously
+          </summary>
+          <ul>
+            <li class="stat downside2">
+              <i>Flame damage dealt to an already-burning target will bypass this and reset the Afterburn duration to max</i>
+            </li>
+            <li class="stat downside2">
+              <i>When a target is ignited, it will be accompanied by a particle and sound cue (like what the Dragon's Fury does on consecutive hits)</i>
+            </li>
+          </ul>
+        </details>
+      </li>
+    </ul>
+    <li class="stat neutral"><b>Changes (alt-fire):</b>
       <ul>
+        <li class="stat neutral">
+          <details>
+            <summary>
+              (-) The Flamethrower has a Pressure meter with two charges; these act as a cooldown for Airblast and a new secondary attack
+            </summary>
+            <ul>
+              <li class="stat neutral2">
+                <i>There is a 0.75 sec regen delay after using alt-fire, after which Pressure will start regenerating at a rate of 1 charge per 0.75 sec</i>
+              </li>
+            </ul>
+          </details>
+        </li>
         <li class="stat upside">
           <details>
             <summary>
-              (+) Instead of being dependent on particle age, Flamethrower damage now has damage fall-off, linearly decreasing from 100% to 66% over 340 Hu
-            </summary>
-              <ul>
-                <li class="stat upside2">
-                  <i>Because this is considered normal fall-off, buildings aren't affected by it and Crit damage bypasses it</i>
-                </li>
-              </ul>
-            </details>
-          </li>
-        <li class="stat neutral"> 
-          (~) Flame damage now scales with the density of flame particles touching the victim rather than ramping up over time with sustained contact
-        </li>
-        <li class="stat downside">
-          (-) Max Flamethrower DPS reduced to 150 (was ~180)
-        </li>
-        <li class="stat downside">
-          <details>
-            <summary>
-              (-) Targets will only become ignited after being in contact with flames for 0.5 seconds continuously
+              (+) Added: Flame Blast attack – Hold M2 to charge a fireball and release to fire it, launching yourself backwards if airborne. Flame Blast requires and consumes a Pressure charge as well as the same ammo as an Airblast
             </summary>
             <ul>
-              <li class="stat downside2">
-                <i>Flame damage dealt to an already-burning target will bypass this and reset the Afterburn duration to max</i>
+              <li class="stat upside2">
+                <i>The fireball takes 1.5 seconds to charge, and can be held for another 0.5 seconds before automatically discharging</i>
               </li>
-              <li class="stat downside2">
-                <i>When a target is ignited, it will be accompanied by a particle and sound cue (like what the Dragon's Fury does on consecutive hits)</i>
+              <li class="stat upside2">
+                <i>Projectile speed scales from 950 to 2000 Hu/s and knockback scales from 50 to 250 Hu/s with charge</i>
+              </li>
+              <li class="stat upside2">
+                <i>The fireball lasts 0.5 seconds or until it hits something</i>
+              </li>
+              <li class="stat upside2">
+                <i>The fireball deals 20 damage, instantly applies Afterburn and applies minor knockback to burning enemies (</i>a la<i> the Dragon's Fury), and on surface hits destroys stickies and creates a lingering pool of fire for 2 seconds</i>
+              </li>
+              <li class="stat upside2">
+                <i>Pressure is consumed on discharge instead of while charging, but Pressure will not regenerate while charging</i>
+              </li>
+              <li class="stat upside2">
+                <i>If M2 is held for 0.2 seconds or less, it will Airblast on release; else, it will trigger a Flame Blast instead</i>
               </li>
             </ul>
           </details>
         </li>
       </ul>
-      <li class="stat neutral"><b>Changes (alt-fire):</b>
-        <ul>
-          <li class="stat neutral">
-            <details>
-              <summary>
-                (-) The Flamethrower has a Pressure meter with two charges; these act as a cooldown for Airblast and a new secondary attack
-              </summary>
-              <ul>
-                <li class="stat neutral2">
-                  <i>There is a 0.75 sec regen delay after using alt-fire, after which Pressure will start regenerating at a rate of 1 charge per 0.75 sec</i>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li class="stat upside">
-            <details>
-              <summary>
-                (+) Added: Flame Blast attack – Hold M2 to charge a fireball and release to fire it, launching yourself backwards if airborne. Flame Blast requires and consumes a Pressure charge as well as the same ammo as an Airblast
-              </summary>
-              <ul>
-                <li class="stat upside2">
-                  <i>The fireball takes 1.5 seconds to charge, and can be held for another 0.5 seconds before automatically discharging</i>
-                </li>
-                <li class="stat upside2">
-                  <i>Projectile speed scales from 950 to 2000 Hu/s and knockback scales from 50 to 250 Hu/s with charge</i>
-                </li>
-                <li class="stat upside2">
-                  <i>The fireball lasts 0.5 seconds or until it hits something</i>
-                </li>
-                <li class="stat upside2">
-                  <i>The fireball deals 20 damage, instantly applies Afterburn and applies minor knockback to burning enemies (</i>a la<i> the Dragon's Fury), and on surface hits destroys stickies and creates a lingering pool of fire for 2 seconds</i>
-                </li>
-                <li class="stat upside2">
-                  <i>Pressure is consumed on discharge instead of while charging, but Pressure will not regenerate while charging</i>
-                </li>
-                <li class="stat upside2">
-                  <i>If M2 is held for 0.2 seconds or less, it will Airblast on release; else, it will trigger a Flame Blast instead</i>
-                </li>
-              </ul>
-            </details>
-          </li>
-        </ul>
-      </li>
-    </ul>
+    </li>
   </td>
-  <td colspan="1">      
+  <td class="card-column">      
     <div class="container">
       <div class="rounded-rectangle">
-        <!-- Left column -->
         <div class="column image">
-          <img src="../weapons/pyro/Flamethrower.png" alt="Flamethrower" />
+          <div class="image-bg">
+            <img src="../weapons/pyro/Flamethrower.png" alt="Flamethrower" />
+          </div>
         </div>
-        <!-- Right column -->
         <div class="column text">
           <h3stock>Flamethrower</h3stock>
           <p class="stat subtle">
@@ -266,31 +270,29 @@
 </tr>
 <tr>
   <td colspan="1">
-    <ul>
-      <li class="stat neutral"><b>Goal:</b> Reduce the effectiveness of Airblast and Airblast-centric playstyles in favour of offensive play
-      <li class="stat neutral"><b>Changes:</b>
-        <ul>
-          <li class="stat upside">
-            (+) Reflected projectiles use their own base damage when calculating self-damage rather than the Flamethrower's, and the Pyro has 50% damage resistance to their own reflected projectile explosions if no enemy is hit
-          </li>
-          <li class="stat upside"> 
-            (+) Reflected <i>airborne</i> stickies are converted to the Pyro's team affiliation, have their arm times reset and immediately detonate when armed, reflected <i>stuck</i> stickies are unable to be detonated while rolling, and other reflected projectiles have their fuses and lifetimes reset where applicable
-          </li>
-          <li class="stat downside">
-            (-) Airblast requires and consumes a Pressure charge
-          </li>
-          <li class="stat downside">
-            (-) Airblast knockback now respects knockback resistances and immunities (e.g. Heavy's intrinsic 50% resistance)
-          </li>
-          <li class="stat downside">
-            (-) Removed: Airblast reduces targets' air control
-          </li>
-          <li class="stat downside">
-            (-) Removed: Airblast extinguishes teammates
-          </li>
-        </ul>
-      </li>
-    </ul>
+    <li class="stat neutral"><b>Goal:</b> Reduce the effectiveness of Airblast and Airblast-centric playstyles in favour of offensive play
+    <li class="stat neutral"><b>Changes:</b>
+      <ul>
+        <li class="stat upside">
+          (+) Reflected projectiles use their own base damage when calculating self-damage rather than the Flamethrower's, and the Pyro has 50% damage resistance to their own reflected projectile explosions if no enemy is hit
+        </li>
+        <li class="stat upside"> 
+          (+) Reflected <i>airborne</i> stickies are converted to the Pyro's team affiliation, have their arm times reset and immediately detonate when armed, reflected <i>stuck</i> stickies are unable to be detonated while rolling, and other reflected projectiles have their fuses and lifetimes reset where applicable
+        </li>
+        <li class="stat downside">
+          (-) Airblast requires and consumes a Pressure charge
+        </li>
+        <li class="stat downside">
+          (-) Airblast knockback now respects knockback resistances and immunities (e.g. Heavy's intrinsic 50% resistance)
+        </li>
+        <li class="stat downside">
+          (-) Removed: Airblast reduces targets' air control
+        </li>
+        <li class="stat downside">
+          (-) Removed: Airblast extinguishes teammates
+        </li>
+      </ul>
+    </li>
   </td>
 </tr>
 
@@ -312,50 +314,48 @@
 </tr>
 <tr>
   <td colspan="1">
-    <ul>
-      <li class="stat neutral"><b>Goal:</b> 
-      </li>
-      <li class="stat neutral"><b>Changes:</b>
-        <ul>
-          <li class="stat upside">
-            <details>
-              <summary>
-                (+) Reworked back detection to be more lenient and more similar to backstab detection
-              </summary>
-              <ul>
-                <li class="stat upside2">
-                  <i>It will now check if the Pyro is behind the victim (180°) and the dot product of the victim's facing ignoring their camera pitch and the flames' velocity on the horizontal plane is greater than 0.5 (up to 60° off either side)</i>
-                </li>
-                <li class="stat upside2">
-                  <i>What it currently does is check if the dot product of the victim's facing and the flames' velocity is greater than 0.8 (up to ~37° off in any direction)</i>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li class="stat upside"> 
-            (+) Removed: +250% increased Airblast cost
-          </li>
-          <li class="stat downside"> 
-            (-) Added: -60% max primary ammo on wearer
-          </li>
-          <li class="stat downside"> 
-            (-) Replaced Crits on back hits with Mini-Crits and instantaneous Afterburn application
-          </li>
-          <li class="stat neutral"> 
-            (i) Visual: This weapon uses unique flame effects that are darker and smokier
-          </li>
-        </ul>
-      </li>
-    </ul>
+    <li class="stat neutral"><b>Goal:</b> 
+    </li>
+    <li class="stat neutral"><b>Changes:</b>
+      <ul>
+        <li class="stat upside">
+          <details>
+            <summary>
+              (+) Reworked back detection to be more lenient and more similar to backstab detection
+            </summary>
+            <ul>
+              <li class="stat upside2">
+                <i>It will now check if the Pyro is behind the victim (180°) and the dot product of the victim's facing ignoring their camera pitch and the flames' velocity on the horizontal plane is greater than 0.5 (up to 60° off either side)</i>
+              </li>
+              <li class="stat upside2">
+                <i>What it currently does is check if the dot product of the victim's facing and the flames' velocity is greater than 0.8 (up to ~37° off in any direction)</i>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li class="stat upside"> 
+          (+) Removed: +250% increased Airblast cost
+        </li>
+        <li class="stat downside"> 
+          (-) Added: -60% max primary ammo on wearer
+        </li>
+        <li class="stat downside"> 
+          (-) Replaced Crits on back hits with Mini-Crits and instantaneous Afterburn application
+        </li>
+        <li class="stat neutral"> 
+          (i) Visual: This weapon uses unique flame effects that are darker and smokier
+        </li>
+      </ul>
+    </li>
   </td>
   <td colspan="1">      
     <div class="container">
       <div class="rounded-rectangle">
-        <!-- Left column -->
         <div class="column image">
-          <img src="../weapons/pyro/Backburner.png" alt="Backburner"/>
+          <div class="image-bg">
+            <img src="../weapons/pyro/Backburner.png" alt="Backburner"/>
+          </div>
         </div>
-        <!-- Right column -->
         <div class="column text">
           <h3>Backburner</h3>
           <p class="stat subtle">
@@ -394,48 +394,46 @@
 </tr>
 <tr>
   <td colspan="1">
+    <li class="stat neutral"><b>Goal:</b> Minorly tweak the weapon's performance in various interactions, and address how the base Flamethrower changes would otherwise impact this weapon</li>
+    <li class="stat neutral"><b>Changes:</b>
     <ul>
-      <li class="stat neutral"><b>Goal:</b> Minorly tweak the weapon's performance in various interactions, and address how the base Flamethrower changes would otherwise impact this weapon</li>
-      <li class="stat neutral"><b>Changes:</b>
-      <ul>
-        <li class="stat upside">
-          (+) Damage to non-burning players and on grazing hits increased to half of the damage to burning players (37.5 at base; was 25)
-        </li>
-        <li class="stat upside">
-          (+) Base repressurisation time reduced to 0.75 sec (was 0.8 sec)
-        </li>
-        <li class="stat downside">
-          (-) Projectile hitbox size reduced by 0.22...% (35 Hu in radius; was 45 Hu)
-        </li>
-        <li class="stat downside">
-          (-) Projectiles only apply 1 second of Afterburn, including on hits against already-burning targets
-        </li>
-        <li class="stat neutral"> 
-          <details>
-            <summary>
-              (i) This weapon no longer uses a custom Afterburn effect that damages Pyros, but Afterburn is applied for a guaranteed 0.75 seconds against Pyros due to the base Afterburn changes
-            </summary>
-            <ul>
-              <li class="stat neutral2"> 
-                <i>This makes Pyros take an additional shot to kill at range compared to Soldiers, but also adds leeway for playing around opponents' Airblast</i>
-              </li>
-            </ul>
-          </details>
-        </li>
-        <li class="stat neutral"> 
-          (i) Visual: Fireballs use simpler visual effects that do not have a dynamic light and which are actually attached to the fireball hitbox, instead of being separate and glitching out when the projectile is reflected or destroyed 
-        </li>
-      </ul>
+      <li class="stat upside">
+        (+) Damage to non-burning players and on grazing hits increased to half of the damage to burning players (37.5 at base; was 25)
+      </li>
+      <li class="stat upside">
+        (+) Base repressurisation time reduced to 0.75 sec (was 0.8 sec)
+      </li>
+      <li class="stat downside">
+        (-) Projectile hitbox size reduced by 0.22...% (35 Hu in radius; was 45 Hu)
+      </li>
+      <li class="stat downside">
+        (-) Projectiles only apply 1 second of Afterburn, including on hits against already-burning targets
+      </li>
+      <li class="stat neutral"> 
+        <details>
+          <summary>
+            (i) This weapon no longer uses a custom Afterburn effect that damages Pyros, but Afterburn is applied for a guaranteed 0.75 seconds against Pyros due to the base Afterburn changes
+          </summary>
+          <ul>
+            <li class="stat neutral2"> 
+              <i>This makes Pyros take an additional shot to kill at range compared to Soldiers, but also adds leeway for playing around opponents' Airblast</i>
+            </li>
+          </ul>
+        </details>
+      </li>
+      <li class="stat neutral"> 
+        (i) Visual: Fireballs use simpler visual effects that do not have a dynamic light and which are actually attached to the fireball hitbox, instead of being separate and glitching out when the projectile is reflected or destroyed 
+      </li>
     </ul>
   </td>
   <td colspan="1">      
     <div class="container">
       <div class="rounded-rectangle">
-        <!-- Left column -->
         <div class="column image">
-          <img src="../weapons/pyro/Dragons_Fury.png" alt="Dragon's Fury"/>
+          <div class="image-bg">
+            <img src="../weapons/pyro/Dragons_Fury.png" alt="Dragon's Fury"/>
+          </div>
         </div>
-        <!-- Right column -->
         <div class="column text">
           <h3>Dragon's Fury</h3>
           <p class="stat subtle">
@@ -483,24 +481,22 @@
 </tr>
 <tr>
   <td colspan="1">
-    <ul>
-      <li class="stat neutral"><b>Changes:</b>
-        <ul>
-          <li class="stat upside">
-            (+) Added: +100% damage to buildings
-          </li>
-        </ul>
-      </li>
-    </ul>
+    <li class="stat neutral"><b>Changes:</b>
+      <ul>
+        <li class="stat upside">
+          (+) Added: +100% damage to buildings
+        </li>
+      </ul>
+    </li>
   </td>
   <td colspan="1">      
     <div class="container">
       <div class="rounded-rectangle">
-        <!-- Left column -->
         <div class="column image">
-          <img src="../weapons/pyro/Flare_Gun.png" alt="All Flare Guns" />
+          <div class="image-bg">
+            <img src="../weapons/pyro/Flare_Gun.png" alt="All Flare Guns" />
+          </div>
         </div>
-        <!-- Right column -->
         <div class="column text">
           <h3>Flare Gun</h3>
           <p class="stat subtle">
@@ -539,34 +535,32 @@
 </tr>
 <tr>
   <td colspan="1">
-    <ul>
-      <li class="stat neutral"><b>Goal:</b> Reduce the effectiveness of flare spam, and buff the rest of the weapon to compensate
-      <li class="stat neutral"><b>Changes:</b>
-        <ul>
-          <li class="stat upside">
-            (+) Removed: 25% damage penalty
-          </li>  
-          <li class="stat upside"> 
-            (+) Removed: +50% damage to self
-          </li>
-          <li class="stat downside">
-            (-) Explosions do not inflict Afterburn, but will reset the Afterburn duration on already-burning targets
-          </li>
-          <li class="stat neutral">
-            (i) Other: Updated description to mention stickybomb-destroying ability
-          </li>
-        </ul>
-      </li>
-    </ul>
+    <li class="stat neutral"><b>Goal:</b> Reduce the effectiveness of flare spam, and buff the rest of the weapon to compensate
+    <li class="stat neutral"><b>Changes:</b>
+      <ul>
+        <li class="stat upside">
+          (+) Removed: 25% damage penalty
+        </li>  
+        <li class="stat upside"> 
+          (+) Removed: +50% damage to self
+        </li>
+        <li class="stat downside">
+          (-) Explosions do not inflict Afterburn, but will reset the Afterburn duration on already-burning targets
+        </li>
+        <li class="stat neutral">
+          (i) Other: Updated description to mention stickybomb-destroying ability
+        </li>
+      </ul>
+    </li>
   </td>
   <td colspan="1">      
     <div class="container">
       <div class="rounded-rectangle">
-        <!-- Left column -->
         <div class="column image">
-          <img src="../weapons/pyro/Detonator.png" alt="Detonator" />
+          <div class="image-bg">
+            <img src="../weapons/pyro/Detonator.png" alt="Detonator" />
+          </div>
         </div>
-        <!-- Right column -->
         <div class="column text">
           <h3>Detonator</h3>
           <p class="stat subtle">
@@ -608,39 +602,37 @@
 </tr>
 <tr>
   <td colspan="1">
-    <ul>
-      <li class="stat neutral"><b>! New Design !</b> – Mini-traps to manipulate enemy movement
-        <ul>
-          <li class="stat upside">
-            <details>
-              <summary>
-                (+) On impact, the projectile bounces off the target and creates a lingering pool of fire when it hits the ground
-              </summary>
-              <ul>
-                <li class="stat upside2">
-                  <i>This is the exact same effect Flame Blast creates on impact</i>
-                </li>
-                <li class="stat upside2">
-                  <i>The bounce will trigger whether it hits a player, building or terrain, and the projectile will follow normal physics like grenades do</i>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li class="stat downside"> 
-            (-) 50% reduced ammo
-          </li>
-        </ul>
-      </li>
-    </ul>
+    <li class="stat neutral"><b>! New Design !</b> – Mini-traps to manipulate enemy movement
+      <ul>
+        <li class="stat upside">
+          <details>
+            <summary>
+              (+) On impact, the projectile bounces off the target and creates a lingering pool of fire when it hits the ground
+            </summary>
+            <ul>
+              <li class="stat upside2">
+                <i>This is the exact same effect Flame Blast creates on impact</i>
+              </li>
+              <li class="stat upside2">
+                <i>The bounce will trigger whether it hits a player, building or terrain, and the projectile will follow normal physics like grenades do</i>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li class="stat downside"> 
+          (-) 50% reduced ammo
+        </li>
+      </ul>
+    </li>
   </td>
   <td colspan="1">      
     <div class="container">
       <div class="rounded-rectangle">
-        <!-- Left column -->
         <div class="column image">
-          <img src="../weapons/pyro/Scorch_Shot.png" alt="Scorch Shot" />
+          <div class="image-bg">
+            <img src="../weapons/pyro/Scorch_Shot.png" alt="Scorch Shot" />
+          </div>
         </div>
-        <!-- Right column -->
         <div class="column text">
           <h3>Scorch Shot</h3>
           <p class="stat subtle">
@@ -679,33 +671,31 @@
 </tr>
 <tr>
   <td colspan="1">
-    <ul>
-      <li class="stat neutral"><b>Changes:</b></li>
-        <ul>
-          <li class="stat upside">
-            (+) Deploy and holster now works like every other weapon
-          </li>
-          <li class="stat upside">
-            (+) Stomp damage multiplier increased to 5×
-          </li>
-          <li class="stat upside">
-            (+) Hidden 50% knockback vulnerability on wearer only applies while airborne from the Thruster's effect
-          </li>
-          <li class="stat upside">
-            (+) Removed: 50% reduced air control when using Thruster jumps
-          </li>
-        </ul>
-      </li>
-    </ul>
+    <li class="stat neutral"><b>Changes:</b></li>
+      <ul>
+        <li class="stat upside">
+          (+) Deploy and holster now works like every other weapon
+        </li>
+        <li class="stat upside">
+          (+) Stomp damage multiplier increased to 5×
+        </li>
+        <li class="stat upside">
+          (+) Hidden 50% knockback vulnerability on wearer only applies while airborne from the Thruster's effect
+        </li>
+        <li class="stat upside">
+          (+) Removed: 50% reduced air control when using Thruster jumps
+        </li>
+      </ul>
+    </li>
   </td>
   <td colspan="1">      
     <div class="container">
       <div class="rounded-rectangle">
-        <!-- Left column -->
         <div class="column image">
-          <img src="../weapons/pyro/Thermal_Thruster.png" alt="Thermal Thruster" />
+          <div class="image-bg">
+            <img src="../weapons/pyro/Thermal_Thruster.png" alt="Thermal Thruster" />
+          </div>
         </div>
-        <!-- Right column -->
         <div class="column text">
           <h3>Thermal Thruster</h3>
           <p class="stat subtle">
@@ -741,45 +731,43 @@
 </tr>
 <tr>
   <td colspan="1">
-    <ul>
-      <li class="stat neutral"><b>Changes:</b></li>
-        <ul>
-          <li class="stat upside">
-            <details>
-              <summary>
-                (+) Gas debuff is not removed when the victim takes damage, and can be reapplied infinitely by the cloud even if the victim is already on fire
-              </summary>
-              <ul>
-                <li class="stat upside2">
-                  <i>This means victims' Afterburn duration will keep resetting to max as long as the debuff is on them, and the debuff will remain on them as long as they're in the cloud</i>
-                </li>
-              </ul>
-            </details>
-          </li>
-          <li class="stat upside">
-            (+) Shooting your own cloud with a Flame Blast or Phlogistinator alt-fire detonates it, dealing 50 damage to enemies in the radius and destroying the cloud in the process
-          </li>
-          <li class="stat upside">
-            (+) Hitting an enemy with the thrown canister deals 30 damage and inflicts minor knockback
-          </li>
-          <li class="stat neutral">
-            (~) Now has a fixed 20 second cooldown that starts empty and isn't refilled by the Resupply Cabinet
-          </li>
-          <li class="stat downside">
-            (-) Gas debuff duration reduced to 2 seconds
-          </li>
-        </ul>
-      </li>
-    </ul>
+    <li class="stat neutral"><b>Changes:</b></li>
+      <ul>
+        <li class="stat upside">
+          <details>
+            <summary>
+              (+) Gas debuff is not removed when the victim takes damage, and can be reapplied infinitely by the cloud even if the victim is already on fire
+            </summary>
+            <ul>
+              <li class="stat upside2">
+                <i>This means victims' Afterburn duration will keep resetting to max as long as the debuff is on them, and the debuff will remain on them as long as they're in the cloud</i>
+              </li>
+            </ul>
+          </details>
+        </li>
+        <li class="stat upside">
+          (+) Shooting your own cloud with a Flame Blast or Phlogistinator alt-fire detonates it, dealing 50 damage to enemies in the radius and destroying the cloud in the process
+        </li>
+        <li class="stat upside">
+          (+) Hitting an enemy with the thrown canister deals 30 damage and inflicts minor knockback
+        </li>
+        <li class="stat neutral">
+          (~) Now has a fixed 20 second cooldown that starts empty and isn't refilled by the Resupply Cabinet
+        </li>
+        <li class="stat downside">
+          (-) Gas debuff duration reduced to 2 seconds
+        </li>
+      </ul>
+    </li>
   </td>
   <td colspan="1">      
     <div class="container">
       <div class="rounded-rectangle">
-        <!-- Left column -->
         <div class="column image">
-          <img src="../weapons/pyro/Gas_Passer.png" alt="Gas Passer" />
+          <div class="image-bg">
+            <img src="../weapons/pyro/Gas_Passer.png" alt="Gas Passer" />
+          </div>
         </div>
-        <!-- Right column -->
         <div class="column text">
           <h3>Gas Passer</h3>
           <p class="stat subtle">
@@ -815,24 +803,22 @@
 </tr>
 <tr>
   <td colspan="1">
-    <ul>
-      <li class="stat neutral"><b>Changes:</b>
-        <ul>
-          <li class="stat upside">
-            (+) Damage increased to 80
-          </li>
-        </ul>
-      </li>
-    </ul>
+    <li class="stat neutral"><b>Changes:</b>
+      <ul>
+        <li class="stat upside">
+          (+) Damage increased to 80
+        </li>
+      </ul>
+    </li>
   </td>
   <td colspan="1">      
     <div class="container">
       <div class="rounded-rectangle">
-        <!-- Left column -->
         <div class="column image">
-          <img src="../weapons/pyro/Fire_Axe.png" alt="Fire Axe" />
+          <div class="image-bg">
+            <img src="../weapons/pyro/Fire_Axe.png" alt="Fire Axe" />
+          </div>
         </div>
-        <!-- Right column -->
         <div class="column text">
           <h3stock>Fire Axe</h3stock>
           <p class="stat subtle">
@@ -862,30 +848,28 @@
 </tr>
 <tr>
   <td colspan="1">
-    <ul>
-      <li class="stat neutral"><b>Changes:</b>
-        <ul>
-          <li class="stat upside">
-            (+) Deals Crits to burning players instead of Mini-Crits
-          </li>
-          <li class="stat downside">
-            (-) Damage penalty increased to 40% (48 damage)
-          </li>
-          <li class="stat downside">
-            (-) Removed: Damage increases based on remaining duration of Afterburn
-          </li>
-        </ul>
-      </li>
-    </ul>
+    <li class="stat neutral"><b>Changes:</b>
+      <ul>
+        <li class="stat upside">
+          (+) Deals Crits to burning players instead of Mini-Crits
+        </li>
+        <li class="stat downside">
+          (-) Damage penalty increased to 40% (48 damage)
+        </li>
+        <li class="stat downside">
+          (-) Removed: Damage increases based on remaining duration of Afterburn
+        </li>
+      </ul>
+    </li>
   </td>
   <td colspan="1">      
     <div class="container">
       <div class="rounded-rectangle">
-        <!-- Left column -->
         <div class="column image">
-          <img src="../weapons/pyro/Axtinguisher.png" alt="Axtinguisher" />
+          <div class="image-bg">
+            <img src="../weapons/pyro/Axtinguisher.png" alt="Axtinguisher" />
+          </div>
         </div>
-        <!-- Right column -->
         <div class="column text">
           <h3>Axtinguisher</h3>
           <p class="stat subtle">
@@ -930,30 +914,28 @@
 </tr>
 <tr>
   <td colspan="1">
-    <ul>
-      <li class="stat neutral"><b>! New Design !</b> – The old Gas Jockey item set, reincarnated</li>
-        <ul>
-          <li class="stat upside">
-            (+) 10% faster movement speed on wearer
-          </li>
-          <li class="stat downside">
-            (-) -35 max health on wearer (165 max health)
-          </li>
-          <li class="stat neutral">
-            (~) Visual: This item is visibly holstered on the user’s back
-          </li>
-        </ul>
-      </li>
-    </ul>
+    <li class="stat neutral"><b>! New Design !</b> – The old Gas Jockey item set, reincarnated</li>
+      <ul>
+        <li class="stat upside">
+          (+) 10% faster movement speed on wearer
+        </li>
+        <li class="stat downside">
+          (-) -35 max health on wearer (165 max health)
+        </li>
+        <li class="stat neutral">
+          (~) Visual: This item is visibly holstered on the user’s back
+        </li>
+      </ul>
+    </li>
   </td>
   <td colspan="1">      
     <div class="container">
       <div class="rounded-rectangle">
-        <!-- Left column -->
         <div class="column image">
-          <img src="../weapons/pyro/Powerjack.png" alt="Powerjack" />
+          <div class="image-bg">
+            <img src="../weapons/pyro/Powerjack.png" alt="Powerjack" />
+          </div>
         </div>
-        <!-- Right column -->
         <div class="column text">
           <h3>Powerjack</h3>
           <p class="stat subtle">
@@ -989,33 +971,31 @@
 </tr>
 <tr>
   <td colspan="1">
-    <ul>
-      <li class="stat neutral"><b>Changes:</b></li>
-        <ul>
-          <li class="stat upside">
-            (+) Added: Health packs can overheal wearer
-          </li>
-          <li class="stat downside">
-            (-) Reduced healing from healers applies to all teammate sources of healing (e.g. Crossbow, Mad Milk, etc.) rather than just Medi-beams
-          </li>
-          <li class="stat downside">
-            (-) Removed: 25% damage bonus
-          </li>
-          <li class="stat neutral">
-            (~) Visual: This item is visibly holstered on the user’s back
-          </li>
-        </ul>
-      </li>
-    </ul>
+    <li class="stat neutral"><b>Changes:</b></li>
+      <ul>
+        <li class="stat upside">
+          (+) Added: Health packs can overheal wearer
+        </li>
+        <li class="stat downside">
+          (-) Reduced healing from healers applies to all teammate sources of healing (e.g. Crossbow, Mad Milk, etc.) rather than just Medi-beams
+        </li>
+        <li class="stat downside">
+          (-) Removed: 25% damage bonus
+        </li>
+        <li class="stat neutral">
+          (~) Visual: This item is visibly holstered on the user’s back
+        </li>
+      </ul>
+    </li>
   </td>
   <td colspan="1">      
     <div class="container">
       <div class="rounded-rectangle">
-        <!-- Left column -->
         <div class="column image">
-          <img src="../weapons/pyro/Back_Scratcher.png" alt="Back Scratcher" />
+          <div class="image-bg">
+            <img src="../weapons/pyro/Back_Scratcher.png" alt="Back Scratcher" />
+          </div>
         </div>
-        <!-- Right column -->
         <div class="column text">
           <h3>Back Scratcher</h3>
           <p class="stat subtle">
@@ -1054,33 +1034,31 @@
 </tr>
 <tr>
   <td colspan="1">
-    <ul>
-      <li class="stat neutral"><b>Changes:</b></li>
-        <ul>
-          <li class="stat upside">
-            (+) Added: 50% faster deploy speed
-          </li>
-          <li class="stat upside">
-            (+) Speed boost lasts 2 seconds, which is doubled to 4 seconds if you hit both slaps in the one combo
-          </li>
-          <li class="stat upside">
-            (+) Base damage of the Hot Hand's archetype raised to 40 and damage penalty removed
-          </li>
-          <li class="stat neutral2">
-            (i) Other: Description now explains the weapon's unique behaviour
-          </li>
-        </ul>
-      </li>
+    <li class="stat neutral"><b>Changes:</b></li>
+      <ul>
+        <li class="stat upside">
+          (+) Added: 50% faster deploy speed
+        </li>
+        <li class="stat upside">
+          (+) Speed boost lasts 2 seconds, which is doubled to 4 seconds if you hit both slaps in the one combo
+        </li>
+        <li class="stat upside">
+          (+) Base damage of the Hot Hand's archetype raised to 40 and damage penalty removed
+        </li>
+        <li class="stat neutral2">
+          (i) Other: Description now explains the weapon's unique behaviour
+        </li>
+      </ul>
     </ul>
   </td>
   <td colspan="1">      
     <div class="container">
       <div class="rounded-rectangle">
-        <!-- Left column -->
         <div class="column image">
-          <img src="../weapons/pyro/Hot_Hand.png" alt="Hot Hand" />
+          <div class="image-bg">
+            <img src="../weapons/pyro/Hot_Hand.png" alt="Hot Hand" />
+          </div>
         </div>
-        <!-- Right column -->
         <div class="column text">
           <h3>Hot Hand</h3>
           <p class="stat subtle">
