@@ -216,6 +216,7 @@ td {
   border-radius: 32px;
   aspect-ratio: 4 / 3;
   width: 40%;
+  height: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
