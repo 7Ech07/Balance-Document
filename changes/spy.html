@@ -448,6 +448,8 @@
     <p>
       The following is not a particularly large change, but it follows my goal of allowing Spy to follow up more easily on failed backstabs. It also allows Spy to kill the newly-buffed Engineer with three hits from either of his weapons which I think is entirely reasonable.
     </p>
+    <p>
+      It also came to my attention recently that backstabs were <a href="https://github.com/ValveSoftware/Source-1-Games/issues/4020>not fully lag compensated</a>. I presume this was done so that the victim can't turn around in time (from their own perspective) only to watch themselves get stabbed anyway, but I personally think this is unfair to the Spy and no less egregious a scenario than a lagging Sniper being able to kill you around a corner.
   </td>
 </tr>
 <tr>
@@ -455,7 +457,7 @@
     <li class="stat neutral"><b>Changes:</b>
       <ul>
         <li class="stat neutral">
-          (~) The check for determining whether or not the Spy is facing towarss thr victim is now properly lag compensated
+          (~) The check for determining whether or not the Spy is behind the victim is now lag compensated
         </li>
         <li class="stat upside">
           (+) Base damage increased to 50 (was 40)
